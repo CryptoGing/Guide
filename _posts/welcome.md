@@ -3,9 +3,13 @@ title: Welcome
 tags: TeXt
 ---
 
-If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:
+<h2>Welcome to Pi Network's New Developer Guide</h2>
+Welcome to Pi’s home to documentation for new developers. We are excited that you are interested in joining our Ecosystem. This guide is intended to introduce you to all the topics relevant to getting started with building on Pi.
 
-You may want to [config the site](https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration) or [writing a post](https://tianqi.name/jekyll-TeXt-theme/docs/en/writing-posts) next. Please feel free to [create an issue](https://github.com/kitian616/jekyll-TeXt-theme/issues) or [send me email](mailto:kitian616@outlook.com) if you have any questions.
+<h2>Pi’s Mission and Vision</h2>
+Pi Network’s vision is to build the world’s most inclusive peer-to-peer ecosystem and online experience, fueled by Pi, the world’s most widely used cryptocurrency.
+Pi strives to achieve this with a mobile-first approach that can be accessed by a worldwide user base. 
+
 
 <!--more-->
 
