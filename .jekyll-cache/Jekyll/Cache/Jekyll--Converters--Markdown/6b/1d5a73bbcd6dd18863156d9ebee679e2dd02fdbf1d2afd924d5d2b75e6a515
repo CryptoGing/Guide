@@ -1,0 +1,55 @@
+I":<h1 class="no_toc" id="pi-sdk">Pi SDK</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#how-it-works" id="markdown-toc-how-it-works">How it works</a></li>
+  <li><a href="#how-to-integrate-it" id="markdown-toc-how-to-integrate-it">How to integrate it</a></li>
+  <li><a href="#the-sandbox-flag" id="markdown-toc-the-sandbox-flag">The Sandbox Flag</a></li>
+  <li><a href="#important-functions" id="markdown-toc-important-functions">Important Functions</a>    <ol>
+      <li><a href="#authenticate" id="markdown-toc-authenticate">Authenticate</a></li>
+      <li><a href="#create-payment" id="markdown-toc-create-payment">Create Payment</a></li>
+    </ol>
+  </li>
+  <li><a href="#more-in-depth-step-by-step" id="markdown-toc-more-in-depth-step-by-step">More In-Depth Step by Step</a>    <ol>
+      <li><a href="#video-guide" id="markdown-toc-video-guide">Video Guide</a></li>
+      <li><a href="#step-by-step-guide" id="markdown-toc-step-by-step-guide">Step by Step Guide</a></li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="how-it-works">How it works</h2>
+<p>The SDK is a developer’s method to interact with and obtain information from Pi Network. Developers can request information such as a Pioneer’s Username or create a payment within Pi Browser.</p>
+
+<h2 id="how-to-integrate-it">How to integrate it</h2>
+<p>To use Pi SDK, you need to add an SDK script tag to your frontend. Then you need to call the init function to initialize the SDK. You need to specify the version to ensure compatibility with future SDK releases.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://sdk.minepi.com/pi-sdk.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span> <span class="nx">Pi</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span> <span class="na">version</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span> <span class="p">})</span> <span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<p>As of June 2022, version 2.0 is the latest</p>
+
+<h2 id="the-sandbox-flag">The Sandbox Flag</h2>
+<p>If you want to operate the Pi SDK within a local environment there is an optional tag that can be applied titled Sandbox. When testing within the Sandbox the flag should be set to true. In your app’s code it’s handy if you control this variable with the environment variable.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://sdk.minepi.com/pi-sdk.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span> <span class="nx">Pi</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span> <span class="na">version</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span> <span class="na">sandbox</span><span class="p">:</span> <span class="kc">true</span> <span class="p">})</span> <span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<p>The SDK has now been integrated and you can call it within your App by using the window variable</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">Pi</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">Pi</span><span class="p">;</span></code></pre></figure>
+
+<h2 id="important-functions">Important Functions</h2>
+<p>These functions are described in the <a href="/docs/importantTopics/#ImportantTopics">Important Topics</a></p>
+<h3 id="authenticate">Authenticate</h3>
+
+<h3 id="create-payment">Create Payment</h3>
+
+<h2 id="more-in-depth-step-by-step">More In-Depth Step by Step</h2>
+<h3 id="video-guide">Video Guide</h3>
+<p>NEED TO EMBED THE VIDEO</p>
+
+<h3 id="step-by-step-guide">Step by Step Guide</h3>
+:ET

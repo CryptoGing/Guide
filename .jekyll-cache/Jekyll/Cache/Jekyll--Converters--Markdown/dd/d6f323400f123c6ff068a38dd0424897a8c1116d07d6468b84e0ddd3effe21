@@ -1,0 +1,27 @@
+I"�<h1 class="no_toc" id="buttons">Buttons</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#pi-browser-introduction" id="markdown-toc-pi-browser-introduction">Pi Browser Introduction</a>    <ol>
+      <li><a href="#what-is-it" id="markdown-toc-what-is-it">What is it</a></li>
+      <li><a href="#specs-for-developers" id="markdown-toc-specs-for-developers">Specs for Developers</a></li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="pi-browser-introduction">Pi Browser Introduction</h2>
+
+<h3 id="what-is-it">What is it</h3>
+
+<p>The Pi Browser intends to provide a web experience in a decentralized world. In addition to supporting any Web2.0 applications, as do existing web browsers, the Pi Browser also enables people to browse, interact and transact in decentralized applications — applications that integrate with blockchain technology — for a seamless and friendly user experience. Additionally, the Pi Browser will have a directory of selected Pi Apps and its own DNS system to support a whole new class of .pi domains. Developers are able to host their apps on non-Pi domains if they choose.</p>
+
+<p>The Pi Browser is an  open Pi Apps platform because it enables developers to test and deploy the applications that integrate with Pi, Pi Wallet and other elements of the Pi tech stack. It is the only browser that can support Pi applications. As a general-purpose browser tool, however, it is still primitive. That is, the browser is currently in its beta version, and more changes and features will be added later. Developers can integrate the Pi platform SDK with the Testnet and conduct Test-Pi transactions for Pi Apps that allow developers to test their Pi apps on Testnet from their own domains.</p>
+
+<h3 id="specs-for-developers">Specs for Developers</h3>
+<p>The Pi Browser utilizes iFrames to display Apps. This setup allows apps to be displayed on a wide array of devices without the developer needing to create device specific code.</p>
+
+<p>Cookies - Because iFrames are used, all apps displayed on iOS devices will be considered Third Party apps. iOS natively disables cookies from all Third Party apps, unless the device owner manually disables this feature.</p>
+:ET

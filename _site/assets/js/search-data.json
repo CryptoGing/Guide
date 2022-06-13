@@ -1,0 +1,230 @@
+{"0": {
+    "doc": "Access Token",
+    "title": "Access Token",
+    "content": " ",
+    "url": "http://localhost:4000/docs/importantTopics/accessToken/",
+    "relUrl": "/docs/importantTopics/accessToken/"
+  },"1": {
+    "doc": "Community Support",
+    "title": "Community Support",
+    "content": "The fastest way to ask a question or get help is to join our Pi Ecosystem Discord Server. In this server you will find many other developers who are also building on Pi and can assist you with any questions. The Core Team is active in that server as well and can assist. You can also send a message within the chat feature that is in the Pi App. It can be accessed by clicking on the sidebar menu within the Pi App. One of our great Moderators will assist you. ",
+    "url": "http://localhost:4000/docs/communitySupport/",
+    "relUrl": "/docs/communitySupport/"
+  },"2": {
+    "doc": "Developer Portal",
+    "title": "Developer Portal",
+    "content": " ",
+    "url": "http://localhost:4000/docs/gettingSetup/devPortal/",
+    "relUrl": "/docs/gettingSetup/devPortal/"
+  },"3": {
+    "doc": "Developer Portal",
+    "title": "Table of contents",
+    "content": ". | What is it | Register &amp; Create API Key . | Step by Step Video Guide | . | Embed Video . | 1 — REGISTERING AN APP . | 1.A — The basic fields | 1.B — Self hosted / Hosted by pi core team | 1.B.1 — Self hosted | 1.B.1 — Hosted by Pi Core Team | . | 2 — FRONTEND VALIDATION | 3 — API KEY | . | . ",
+    "url": "http://localhost:4000/docs/gettingSetup/devPortal/#table-of-contents",
+    "relUrl": "/docs/gettingSetup/devPortal/#table-of-contents"
+  },"4": {
+    "doc": "Developer Portal",
+    "title": "What is it",
+    "content": "The app is where you register as a developer and get developer credentials to create third-party Pi Apps – web-apps that can be accessed through the Pi Browser. By declaring your app’s URL here, your app will be able to access the Pi APIs and communicate with the Pi servers and the Pi Blockchain. Your app will be accessible directly from your own URL through the Pi Browser. You can put your app on any domain you want and still have a fully functional Pi app. To access this feature either head to develop.pi or open the Pi Browser and click on the develop tile. Currently, all APIs are aimed the Pi Testnet, so only Test-Pi will be involved. This will allow developers to build apps ahead of the release of the Mainnet SDK. Check out the section Mainnet vs Testnet . The only requirement at this stage is that you own the domain of the URL that you provide! You will be asked to verify its ownership. ",
+    "url": "http://localhost:4000/docs/gettingSetup/devPortal/#what-is-it",
+    "relUrl": "/docs/gettingSetup/devPortal/#what-is-it"
+  },"5": {
+    "doc": "Developer Portal",
+    "title": "Register &amp; Create API Key",
+    "content": "Step by Step Video Guide . ",
+    "url": "http://localhost:4000/docs/gettingSetup/devPortal/#register--create-api-key",
+    "relUrl": "/docs/gettingSetup/devPortal/#register--create-api-key"
+  },"6": {
+    "doc": "Developer Portal",
+    "title": "Embed Video",
+    "content": "1 — REGISTERING AN APP . 1.A — The basic fields . When you open the developer portal for the first time, you will see this utility presented. You can click the “New App” button to start the creation process. From here, you should now see the application creation form. App Name and Description are pretty self-explanatory. If you have a Brainstorm project associated with your app, you should use the same name. At the end of the form, you will be asked for your Github and Discord usernames. We may want to create a developers groups on discord and github, so we will start collecting usernames now. These two fields are 100% optional. In the future, we want to create a bridge between Brainstorm and the developer portal, so that the whole app lifecycle is seamless. 1.B — Self hosted / Hosted by pi core team . In the middle of the form, you will see a question asking if you want the app to be self hosted or hosted by Pi Core Team. 1.B.1 — Self hosted . Self Hosted means that you are the one handling your application on production. You can have your own infrastructure, but you are the one taking care of the scaling and the availability. If you select this option, you will be asked for the frontend URL of your application. As explained in previous videos, Pi Utilities are actually websites running in an iframe, therefore you must provide this url for the Pi Browser to be able to display your app. 1.B.1 — Hosted by Pi Core Team . On the other hand, Hosted by Pi Core Team means that we are taking care of your application — no infrastructure management, no availability issues, you simply take care of the code. Although the first option, self-hosting is available for everyone, the second requires approval from the Pi Core Team. Finally, when you select this action, instead of a frontend url, you will be asked for a gitlab username. This will be useful for us in order to provide you with a Gitlab project, already integrated with our deployment pipeline. You can now click the submit button and follow me to the next page. 2 — FRONTEND VALIDATION . If you choose to host your application yourself, you will need to verify your domain ownership. This is meant to avoid developers creating apps from websites they do not represent. For instance, you shouldn’t be able to impersonate the wikipedia.com domain name. In order to prove your ownership over the domain name, you will need to place a specific file at the root of your domain. The content of the file must match the content of the text field in the gray box. When you are done placing the file with the correct content at the root of your domain, you can click the “Verify domain” button. You will either see an error message with some debugging information, or the gray box should disappear and a green check mark should appear next to your domain url. Congratulations, your domain ownership is now verified, and you can access your app through the PI Browser by typing your app url in the address bar. 3 — API KEY . With the Pi SDK comes the Pi API, where you can execute HTTP requests against the main Pi Backend. For now this is only meant to handle payments but more abilities will be added in the future, like creating chat conversations on the Pi Chat from your application. At the bottom of the page, you can see a section called “API Keys”. You will need it to access the PI Backend as an application developer. Keep it safe! Anyone with this key can pretend to be you. Note that accessing the public Pi blockchain does not require any API keys, you can simply produce transactions using your App’s private key and submit them directly to the blockchain through any public node (e.g. your own node, one of Pi Core Team’s nodes, or any other node that is running the “Blockchain API service”) . ",
+    "url": "http://localhost:4000/docs/gettingSetup/devPortal/#embed-video",
+    "relUrl": "/docs/gettingSetup/devPortal/#embed-video"
+  },"7": {
+    "doc": "Developer Payment Documentation",
+    "title": "Developer Payment Documentation",
+    "content": " ",
+    "url": "http://localhost:4000/docs/importantTopics/paymentFlow/developerPaymentFlow/",
+    "relUrl": "/docs/importantTopics/paymentFlow/developerPaymentFlow/"
+  },"8": {
+    "doc": "Getting Started",
+    "title": "Getting Started",
+    "content": "This section introduces the Pi Browser and all the tasks that are needed to get setup so that you can start building or integrating your app with Pi . ",
+    "url": "http://localhost:4000/docs/gettingStarted/",
+    "relUrl": "/docs/gettingStarted/"
+  },"9": {
+    "doc": "Important Topics",
+    "title": "Important Topics",
+    "content": " ",
+    "url": "http://localhost:4000/docs/importantTopics/",
+    "relUrl": "/docs/importantTopics/"
+  },"10": {
+    "doc": "Welcome",
+    "title": "Pi New Developer Onboarding Guide",
+    "content": "Welcome to Pi’s home to documentation for new developers. We are excited that you are interested in joining our Ecosystem. This guide is intended to introduce you to all the topics relevant to getting started with building on Pi. Get started now View it on GitHub . ",
+    "url": "http://localhost:4000/#pi-new-developer-onboarding-guide",
+    "relUrl": "/#pi-new-developer-onboarding-guide"
+  },"11": {
+    "doc": "Welcome",
+    "title": "Pi’s Mission and Vision",
+    "content": "Pi Network’s vision is to build the world’s most inclusive peer-to-peer ecosystem and online experience, fueled by Pi, the world’s most widely used cryptocurrency. Pi strives to achieve this with a mobile-first approach that can be accessed by a worldwide user base. ",
+    "url": "http://localhost:4000/#pis-mission-and-vision",
+    "relUrl": "/#pis-mission-and-vision"
+  },"12": {
+    "doc": "Welcome",
+    "title": "Pi Apps",
+    "content": "There are two apps which are required to join the ecosystem. The first app is Pi’s original Mining App and it is the home to the unique mining mechanism. Downloading and creating an account allows anyone to participate in the ecosystem and mine Pi. The second app is Pi Browser which is the window through which Pioneers (users and members of the Pi community) experience community developers applications. There is a more detailed explanation on the Pi Browser within the “Getting Started” category. Pi App is available for Android and iOS . Pi Browser is available for Android and iOS . ",
+    "url": "http://localhost:4000/#pi-apps",
+    "relUrl": "/#pi-apps"
+  },"13": {
+    "doc": "Welcome",
+    "title": "Documentation",
+    "content": "There are two approaches to onboarding. First is to use this guide and move through its various categories. It will cover getting set up all the way through to processing payments. Head over to the “Getting Started” category and start with the Pi Browser Introduction. Or if you are looking for a less structured process you can go to our GitHub Repository and jump right into integrations. We advise against the second option because while it’s straightforward to integrate, you will miss out on learning the unique benefits and features that Pi has for developers. You must have GitHub Pages enabled on your repo, one or more Markdown files, and a _config.yml file. See an example repository . ",
+    "url": "http://localhost:4000/#documentation",
+    "relUrl": "/#documentation"
+  },"14": {
+    "doc": "Welcome",
+    "title": "Whitepaper",
+    "content": "We are currently updating the Original Pi Whitepaper to match the current state of the project. While our original vision remains unchanged, we have made large strides in the years since starting. The first released chapters of the Updated Whitepaper detail the token supply and mining mechanism as well as the project’s roadmap. ",
+    "url": "http://localhost:4000/#whitepaper",
+    "relUrl": "/#whitepaper"
+  },"15": {
+    "doc": "Welcome",
+    "title": "Developer Terms of Service",
+    "content": "By accessing or using any part of the Pi Network Developer tools and resources, you agree that you are subject to and will comply with the Pi Network Developer Terms of Use. Follow us on Twitter for announcements . ",
+    "url": "http://localhost:4000/#developer-terms-of-service",
+    "relUrl": "/#developer-terms-of-service"
+  },"16": {
+    "doc": "Welcome",
+    "title": "Welcome",
+    "content": " ",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },"17": {
+    "doc": "Mainnet vs Testnet",
+    "title": "Mainnet vs Testnet",
+    "content": " ",
+    "url": "http://localhost:4000/docs/importantTopics/mainnetVsTestnet/",
+    "relUrl": "/docs/importantTopics/mainnetVsTestnet/"
+  },"18": {
+    "doc": "Pi Payments",
+    "title": "Pi Payments",
+    "content": "This section covers all the relevent topics on creating, receiving, and sending payments of various types utilizing the Pi SDK. Pioneers utilize the Pi Wallet within Pi Browser and all documentation is related to the functionality associated with Pi Wallet. Currently Pioneer to App is the only payment method released. Coming soon will be App to Pioneer payments and Pioneer to Pioneer initaited by an App. ",
+    "url": "http://localhost:4000/docs/importantTopics/paymentFlow/",
+    "relUrl": "/docs/importantTopics/paymentFlow/"
+  },"19": {
+    "doc": "Pi Platform APIs",
+    "title": "Buttons",
+    "content": " ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piAPIs/#buttons",
+    "relUrl": "/docs/gettingSetup/piPlatform/piAPIs/#buttons"
+  },"20": {
+    "doc": "Pi Platform APIs",
+    "title": "Table of contents",
+    "content": ". | Basic button styles . | Links that look like buttons | Button element | . | Using utilities with buttons . | Button size | Spacing between buttons | . | . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piAPIs/#table-of-contents",
+    "relUrl": "/docs/gettingSetup/piPlatform/piAPIs/#table-of-contents"
+  },"21": {
+    "doc": "Pi Platform APIs",
+    "title": "Basic button styles",
+    "content": "Links that look like buttons . Link button . Link button Link button Link button . Link button . [Link button](http://example.com/){: .btn } [Link button](http://example.com/){: .btn .btn-purple } [Link button](http://example.com/){: .btn .btn-blue } [Link button](http://example.com/){: .btn .btn-green } [Link button](http://example.com/){: .btn .btn-outline } . Button element . GitHub Flavored Markdown does not support the button element, so you’ll have to use inline HTML for this: . Button element &lt;button type=\"button\" name=\"button\" class=\"btn\"&gt;Button element&lt;/button&gt; . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piAPIs/#basic-button-styles",
+    "relUrl": "/docs/gettingSetup/piPlatform/piAPIs/#basic-button-styles"
+  },"22": {
+    "doc": "Pi Platform APIs",
+    "title": "Using utilities with buttons",
+    "content": "Button size . Big ass button . Tiny ass button . &lt;span class=\"fs-8\"&gt; [Link button](http://example.com/){: .btn } &lt;/span&gt; &lt;span class=\"fs-3\"&gt; [Tiny ass button](http://example.com/){: .btn } &lt;/span&gt; . Spacing between buttons . Button with space Button . Button with more space Button . [Button with space](http://example.com/){: .btn .btn-purple .mr-2 } [Button ](http://example.com/){: .btn .btn-blue } [Button with more space](http://example.com/){: .btn .btn-green .mr-4 } [Button ](http://example.com/){: .btn .btn-blue } . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piAPIs/#using-utilities-with-buttons",
+    "relUrl": "/docs/gettingSetup/piPlatform/piAPIs/#using-utilities-with-buttons"
+  },"23": {
+    "doc": "Pi Platform APIs",
+    "title": "Pi Platform APIs",
+    "content": " ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piAPIs/",
+    "relUrl": "/docs/gettingSetup/piPlatform/piAPIs/"
+  },"24": {
+    "doc": "Pi Browser Introduction",
+    "title": "Pi Browser Introduction",
+    "content": "What is it . The Pi Browser intends to provide a web experience in a decentralized world. In addition to supporting any Web2.0 applications, as do existing web browsers, the Pi Browser also enables people to browse, interact and transact in decentralized applications — applications that integrate with blockchain technology — for a seamless and friendly user experience. Additionally, the Pi Browser will have a directory of selected Pi Apps and its own DNS system to support a whole new class of .pi domains. Developers are able to host their apps on non-Pi domains if they choose. The Pi Browser is an open Pi Apps platform because it enables developers to test and deploy the applications that integrate with Pi, Pi Wallet and other elements of the Pi tech stack. It is the only browser that can support Pi applications. As a general-purpose browser tool, however, it is still primitive. That is, the browser is currently in its beta version, and more changes and features will be added later. Developers can integrate the Pi platform SDK with the Testnet and conduct Test-Pi transactions for Pi Apps that allow developers to test their Pi apps on Testnet from their own domains. Specs for Developers . The Pi Browser utilizes iFrames to display Apps. This setup allows apps to be displayed on a wide array of devices without the developer needing to create device specific code. Cookies - Because iFrames are used, all apps displayed on iOS devices will be considered Third Party apps. iOS natively disables cookies from all Third Party apps, unless the device owner manually disables this feature. ",
+    "url": "http://localhost:4000/docs/gettingSetup/piBrowserIntroduction/",
+    "relUrl": "/docs/gettingSetup/piBrowserIntroduction/"
+  },"25": {
+    "doc": "Pi Platform",
+    "title": "Pi Platform",
+    "content": " ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/",
+    "relUrl": "/docs/gettingSetup/piPlatform/"
+  },"26": {
+    "doc": "Pi Platform",
+    "title": "Table of contents",
+    "content": ". | Pi Browser Introduction . | What is it | Specs for Developers | . | . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/#table-of-contents",
+    "relUrl": "/docs/gettingSetup/piPlatform/#table-of-contents"
+  },"27": {
+    "doc": "Pi Platform",
+    "title": "Pi Browser Introduction",
+    "content": "What is it . The Pi Browser intends to provide a web experience in a decentralized world. In addition to supporting any Web2.0 applications, as do existing web browsers, the Pi Browser also enables people to browse, interact and transact in decentralized applications — applications that integrate with blockchain technology — for a seamless and friendly user experience. Additionally, the Pi Browser will have a directory of selected Pi Apps and its own DNS system to support a whole new class of .pi domains. Developers are able to host their apps on non-Pi domains if they choose. The Pi Browser is an open Pi Apps platform because it enables developers to test and deploy the applications that integrate with Pi, Pi Wallet and other elements of the Pi tech stack. It is the only browser that can support Pi applications. As a general-purpose browser tool, however, it is still primitive. That is, the browser is currently in its beta version, and more changes and features will be added later. Developers can integrate the Pi platform SDK with the Testnet and conduct Test-Pi transactions for Pi Apps that allow developers to test their Pi apps on Testnet from their own domains. Specs for Developers . The Pi Browser utilizes iFrames to display Apps. This setup allows apps to be displayed on a wide array of devices without the developer needing to create device specific code. Cookies - Because iFrames are used, all apps displayed on iOS devices will be considered Third Party apps. iOS natively disables cookies from all Third Party apps, unless the device owner manually disables this feature. ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/#pi-browser-introduction",
+    "relUrl": "/docs/gettingSetup/piPlatform/#pi-browser-introduction"
+  },"28": {
+    "doc": "Pi Platform SDK",
+    "title": "Pi SDK",
+    "content": " ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piSDK/#pi-sdk",
+    "relUrl": "/docs/gettingSetup/piPlatform/piSDK/#pi-sdk"
+  },"29": {
+    "doc": "Pi Platform SDK",
+    "title": "Table of contents",
+    "content": ". | How it works | How to integrate it | The Sandbox Flag | Important Functions . | Authenticate | Create Payment | . | More In-Depth Step by Step . | Video Guide | Step by Step Guide | . | . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piSDK/#table-of-contents",
+    "relUrl": "/docs/gettingSetup/piPlatform/piSDK/#table-of-contents"
+  },"30": {
+    "doc": "Pi Platform SDK",
+    "title": "How it works",
+    "content": "The SDK is a developer’s method to interact with and obtain information from Pi Network. Developers can request information such as a Pioneer’s Username or create a payment within Pi Browser. ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piSDK/#how-it-works",
+    "relUrl": "/docs/gettingSetup/piPlatform/piSDK/#how-it-works"
+  },"31": {
+    "doc": "Pi Platform SDK",
+    "title": "How to integrate it",
+    "content": "To use Pi SDK, you need to add an SDK script tag to your frontend. Then you need to call the init function to initialize the SDK. You need to specify the version to ensure compatibility with future SDK releases. &lt;script src=\"https://sdk.minepi.com/pi-sdk.js\"&gt;&lt;/script&gt; &lt;script&gt; Pi.init({ version: \"2.0\" }) &lt;/script&gt; . As of June 2022, version 2.0 is the latest . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piSDK/#how-to-integrate-it",
+    "relUrl": "/docs/gettingSetup/piPlatform/piSDK/#how-to-integrate-it"
+  },"32": {
+    "doc": "Pi Platform SDK",
+    "title": "The Sandbox Flag",
+    "content": "If you want to operate the Pi SDK within a local environment there is an optional tag that can be applied titled Sandbox. When testing within the Sandbox the flag should be set to true. In your app’s code it’s handy if you control this variable with the environment variable. &lt;script src=\"https://sdk.minepi.com/pi-sdk.js\"&gt;&lt;/script&gt; &lt;script&gt; Pi.init({ version: \"2.0\", sandbox: true }) &lt;/script&gt; . The SDK has now been integrated and you can call it within your App by using the window variable . const Pi = window.Pi; . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piSDK/#the-sandbox-flag",
+    "relUrl": "/docs/gettingSetup/piPlatform/piSDK/#the-sandbox-flag"
+  },"33": {
+    "doc": "Pi Platform SDK",
+    "title": "Important Functions",
+    "content": "These functions are covered in depth within the Important Topics section. Please head there for a more detailed explination of functionality, integration and use cases. Authenticate . Create Payment . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piSDK/#important-functions",
+    "relUrl": "/docs/gettingSetup/piPlatform/piSDK/#important-functions"
+  },"34": {
+    "doc": "Pi Platform SDK",
+    "title": "More In-Depth Step by Step",
+    "content": "Video Guide . NEED TO EMBED THE VIDEO . Step by Step Guide . ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piSDK/#more-in-depth-step-by-step",
+    "relUrl": "/docs/gettingSetup/piPlatform/piSDK/#more-in-depth-step-by-step"
+  },"35": {
+    "doc": "Pi Platform SDK",
+    "title": "Pi Platform SDK",
+    "content": " ",
+    "url": "http://localhost:4000/docs/gettingSetup/piPlatform/piSDK/",
+    "relUrl": "/docs/gettingSetup/piPlatform/piSDK/"
+  },"36": {
+    "doc": "Pi Wallet Intro",
+    "title": "Pi Wallet Intro",
+    "content": " ",
+    "url": "http://localhost:4000/docs/importantTopics/paymentFlow/piWallet/",
+    "relUrl": "/docs/importantTopics/paymentFlow/piWallet/"
+  },"37": {
+    "doc": "Pioneer to App Payments",
+    "title": "Pioneer to App Payments",
+    "content": " ",
+    "url": "http://localhost:4000/docs/importantTopics/paymentFlow/pioneerToApp/",
+    "relUrl": "/docs/importantTopics/paymentFlow/pioneerToApp/"
+  }
+}

@@ -1,0 +1,39 @@
+I"�<h1 class="fs-9" id="pi-new-developer-onboarding-guide">Pi New Developer Onboarding Guide</h1>
+
+<p class="fs-6 fw-300">Welcome to Pi’s home to documentation for new developers. We are excited that you are interested in joining our Ecosystem. This guide is intended to introduce you to all the topics relevant to getting started with building on Pi.</p>
+
+<p><a href="#getting-started" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Get started now</a> <a href="https://github.com/just-the-docs/just-the-docs" class="btn fs-5 mb-4 mb-md-0">View it on GitHub</a></p>
+
+<hr />
+
+<h2 id="pis-mission-and-vision">Pi’s Mission and Vision</h2>
+<p>Pi Network’s vision is to build the world’s most inclusive peer-to-peer ecosystem and online experience, fueled by Pi, the world’s most widely used cryptocurrency.</p>
+
+<p>Pi strives to achieve this with a mobile-first approach that can be accessed by a worldwide user base.</p>
+
+<h2 id="pi-apps">Pi Apps</h2>
+<p>There are two apps which are required to join the ecosystem. The first app is Pi’s original Mining App and it is the home to the unique mining mechanism. Downloading and creating an account allows anyone to participate in the ecosystem and mine Pi. The second app is Pi Browser which is the window through which Pioneers (users and members of the Pi community) experience community developers applications. There is a more detailed explanation on the Pi Browser within the “Getting Started” category.</p>
+
+<p>Pi App is available for <a href="https://play.google.com/store/apps/details?id=com.blockchainvault">Android</a> and <a href="https://itunes.apple.com/us/app/pi-network/id1445472541">iOS</a></p>
+
+<p>Pi Browser is available for <a href="https://play.google.com/store/apps/details?id=pi.browser">Android</a> and <a href="https://apps.apple.com/us/app/pi-browser/id1560911608">iOS</a></p>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>There are two approaches to onboarding.</p>
+
+<p>First is to use this guide and move through its various categories. It will cover getting set up all the way through to processing payments. Head over to the “Getting Started” category and start with the Pi Browser Introduction.</p>
+
+<p>Or if you are looking for a less structured process you can go to our <a href="https://github.com/pi-apps/pi-platform-docs">GitHub Repository</a> and jump right into integrations. We advise against the second option because while it’s straightforward to integrate, you will miss out on learning the unique benefits and features that Pi has for developers.</p>
+
+<p><small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a <code class="language-plaintext highlighter-rouge">_config.yml</code> file. <a href="https://github.com/pmarsceill/jtd-remote">See an example repository</a></small></p>
+
+<h2 id="whitepaper">Whitepaper</h2>
+<p>We are currently updating the <a href="https://minepi.com/white-paper">Original Pi Whitepaper</a> to match the current state of the project. While our original vision remains unchanged, we have made large strides in the years since starting. The first released chapters of the <a href="https://medium.com/@pinetwork-official/pi-whitepaper-chapters-mainnet-token-model-mining-and-roadmap-19f4a6774e71">Updated Whitepaper</a> detail the token supply and mining mechanism as well as the project’s roadmap.</p>
+
+<h2 id="developer-terms-of-service">Developer Terms of Service</h2>
+<p>By accessing or using any part of the Pi Network Developer tools and resources, you agree that you are subject to and will comply with the <a href="https://socialchain.app/developer_terms">Pi Network Developer Terms of Use</a>.</p>
+
+<p>Follow us on <a href="https://twitter.com/PiCoreTeam">Twitter</a> for announcements</p>
+
+:ET
