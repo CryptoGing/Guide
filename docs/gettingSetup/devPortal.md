@@ -3,6 +3,7 @@ layout: default
 title: Developer Portal
 parent: "Getting Started"
 nav_order: 2
+youtubeId: uIdb88gAWkw
 ---
 
 # Developer Portal
@@ -30,7 +31,7 @@ The only requirement at this stage is that you own the domain of the URL that yo
 
 ## Register & Create API Key    
 ### Step by Step Video Guide
-{% youtube oHg5SJYRHA0 %}
+{% include youtubePlayer.html id=page.youtubeId %
 
 ### 1 — REGISTERING AN APP
 #### 1.A — The basic fields
