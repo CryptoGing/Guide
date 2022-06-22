@@ -1,5 +1,5 @@
-I"� <h1 class="no_toc" id="access-token">Access Token</h1>
-<p class="fs-6 fw-300">It is a long random string which uniquely identifies a Pioneer within an app. The access token is received as a returned object the Authenticate call from the Pi SDK. This page assumes that you’ve read the <a href="/docs/gettingSetup/piPlatform/piSDK/ #piSDK">Pi SDK</a> page and have a working understanding of how the Pi SDK and Authenticate function work.</p>
+I"\ <h1 class="no_toc" id="access-token">Access Token</h1>
+<p class="fs-6 fw-300">It is a long random string which uniquely identifies a Pioneer within an app. The access token is received as a returned object the Authenticate call from the Pi SDK. This page assumes that you’ve read the  page and have a working understanding of how the Pi SDK and Authenticate function work.</p>
 
 <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
