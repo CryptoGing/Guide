@@ -1,4 +1,4 @@
-I"c<h1 class="no_toc" id="pi-sdk">Pi SDK</h1>
+I":c<h1 class="no_toc" id="pi-sdk">Pi SDK</h1>
 <p class="fs-6 fw-300">The SDK is a developer’s method to interact with and obtain information from Pi Network. Developers can request information such as a Pioneer’s username or create a payment within Pi Browser.</p>
 
 <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
@@ -75,7 +75,7 @@
 
 <p><img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="/assets/images/piAppAuthorizeAppCodeScreen.png" style="width:270px;height:550px;" /></p>
 
-<p>The page should now redirect to the home page of your app. You are now able to test the functionality of your app within a local environment. You will need Test-Pi in you Pi Wallet to make any transactions. For more information on payments see the <a href="/docs/importantTopics/paymentFlow/#ImportantTopics">Pi Payments</a> section.</p>
+<p>The page should now redirect to the home page of your app. You are now able to test the functionality of your app within a local environment. You will need Test-Pi in you Pi Wallet to make any transactions. For more information on payments see the <a href="/Guide/Guide/docs/importantTopics/paymentFlow/#ImportantTopics">Pi Payments</a> section.</p>
 
 <h3 id="calling-the-pi-sdk-within-your-app">Calling the Pi SDK within your App</h3>
 <h4 id="windowpi">Window.Pi</h4>
@@ -86,7 +86,7 @@
 <p>You may name the varible whatever you prefer for ease we use <code class="language-plaintext highlighter-rouge">Pi</code>. Now that the window has been initialized it is time to start utilizing the functions offered by the Pi SDK.</p>
 
 <h2 id="functions">Functions</h2>
-<p>The payment function and the acess token received from the Authenticate function are covered in depth within the <a href="/docs/importantTopics/#ImportantTopics">Important Topics</a> section. Please head there for a more detailed explination of functionality, integration and use cases.</p>
+<p>The payment function and the acess token received from the Authenticate function are covered in depth within the <a href="/Guide/Guide/docs/importantTopics/#ImportantTopics">Important Topics</a> section. Please head there for a more detailed explination of functionality, integration and use cases.</p>
 
 <h3 id="authenticate">Authenticate</h3>
 <p>The Authenicate funcation will request the Pioneer’s scope and retun them to the App in the form of a promise.</p>
@@ -125,7 +125,7 @@
   <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>Security Note: The Pioneer information obtained with this method, <code class="language-plaintext highlighter-rouge">uid</code> and <code class="language-plaintext highlighter-rouge">accessToken</code>, should not be saved to your backend and should only be used for presentation logic (e.g displaying the Pioneer’s username). Send them to your backend and then verify the Pioneer’s identity by requesting the /me endpoint from your backend, using the <code class="language-plaintext highlighter-rouge">accessToken</code> obtained with this method. The return from the /me endpoint will contain the <code class="language-plaintext highlighter-rouge">uid</code> for the Pioneer or will result in an error code if the Access Token is not found. Pi Platform APIs are covered in depth on the <a href="/docs/gettingSetup/piPlatform/piAPIs/#PiAPIs">Pi Platform APIs</a> page of this guide.</p>
+<p>Security Note: The Pioneer information obtained with this method, <code class="language-plaintext highlighter-rouge">uid</code> and <code class="language-plaintext highlighter-rouge">accessToken</code>, should not be saved to your backend and should only be used for presentation logic (e.g displaying the Pioneer’s username). Send them to your backend and then verify the Pioneer’s identity by requesting the /me endpoint from your backend, using the <code class="language-plaintext highlighter-rouge">accessToken</code> obtained with this method. The return from the /me endpoint will contain the <code class="language-plaintext highlighter-rouge">uid</code> for the Pioneer or will result in an error code if the Access Token is not found. Pi Platform APIs are covered in depth on the <a href="/Guide/Guide/docs/gettingSetup/piPlatform/piAPIs/#PiAPIs">Pi Platform APIs</a> page of this guide.</p>
 
 <h4 id="pioneer-approval">Pioneer Approval</h4>
 <p>When a Pioneer visits the app for the first time they will be presented a popup asking for permission to share their information with the app. Each scope requested will appear to the Pioneer and the Pioneer can choose to “Allow” or “Cancel” the request. When deciding what scopes to request its best to limit to only the needed scopes for core functionality of the app. Asking for too much information could result in Pioneers declining the request to share information with your app.</p>

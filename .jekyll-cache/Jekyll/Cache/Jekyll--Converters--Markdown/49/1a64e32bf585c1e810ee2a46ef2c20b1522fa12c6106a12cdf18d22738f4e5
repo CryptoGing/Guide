@@ -1,4 +1,4 @@
-I"±<h1 class="no_toc" id="developer-portal">Developer Portal</h1>
+I"½<h1 class="no_toc" id="developer-portal">Developer Portal</h1>
 
 <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
@@ -29,7 +29,7 @@
 
 <p>To access this feature either head to develop.pi or open the Pi Browser and click on the develop tile.</p>
 
-<p>Currently, all APIs are aimed the Pi Testnet, so only Test-Pi will be involved. This will allow developers to build apps ahead of the release of the Mainnet SDK. Check out the section <a href="/docs/importantTopics/mainnetVsTestnet/#mainnetVsTestnet">Mainnet vs Testnet</a></p>
+<p>Currently, all APIs are aimed the Pi Testnet, so only Test-Pi will be involved. This will allow developers to build apps ahead of the release of the Mainnet SDK. Check out the section <a href="/Guide/Guide/docs/importantTopics/mainnetVsTestnet/#mainnetVsTestnet">Mainnet vs Testnet</a></p>
 
 <p>The only requirement at this stage is that you own the domain of the URL that you provide! You will be asked to verify its ownership.</p>
 

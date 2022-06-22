@@ -1,4 +1,4 @@
-I"<h1 class="no_toc" id="pi-mainnet-vs-pi-testnet">Pi Mainnet vs Pi Testnet</h1>
+I"7<h1 class="no_toc" id="pi-mainnet-vs-pi-testnet">Pi Mainnet vs Pi Testnet</h1>
 
 <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
@@ -66,8 +66,8 @@ There will only be Core Team Nodes on the Mainnet to ensure that the firewall is
 <h3 id="sandbox-local-environment">Sandbox (Local Environment)</h3>
 <p>The Sandbox is a local testing environment that utilizes the Pi Testnet and a local instance of your app. This is for testing purposes only and should only be used during development. In order to use this feature you must have a URL registered within the Developer Portal page of your app.</p>
 
-<p>To learn how to utilize the Sandbox and get it setup go to the <a href="/docs/gettingSetup/piPlatform/piSDK/#ImportantTopics">Pi SDK</a> page and see the section titled “The Sandbox Flag.”</p>
+<p>To learn how to utilize the Sandbox and get it setup go to the <a href="/Guide/Guide/docs/gettingSetup/piPlatform/piSDK/#ImportantTopics">Pi SDK</a> page and see the section titled “The Sandbox Flag.”</p>
 
 <h2 id="pi-wallet">Pi Wallet</h2>
-<p>The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the <a href="/docs/importantTopics/paymentFlow/piWallet/#Pi_Wallet">Pi Wallet</a> page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page.</p>
+<p>The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the <a href="/Guide/Guide/docs/importantTopics/paymentFlow/piWallet/#Pi_Wallet">Pi Wallet</a> page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page.</p>
 :ET
