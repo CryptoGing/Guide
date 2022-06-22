@@ -16,7 +16,7 @@
 title: Pi Developer Guide
 description: A guide for developers to build on Pi 
 baseurl: "/Guide" # the subpath of your site, e.g. /blog
-url: "https://minepi.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cryptoging.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
