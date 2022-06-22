@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Access Token
 {: .no_toc }
-It is a long random string which uniquely identifies a Pioneer within an app. The access token is received as a returned object the Authenticate call from the Pi SDK. This page assumes that you've read the [Pi SDK]({{ site.baseurl }}{% link ../gettingSetup/piPlatform/piSDK.md %}#piSDK) page and have a working understanding of how the Pi SDK and Authenticate function work. 
+It is a long random string which uniquely identifies a Pioneer within an app. The access token is received as a returned object the Authenticate call from the Pi SDK. This page assumes that you've read the [Pi SDK]({{ site.baseurl }}{% link docs/gettingSetup/piPlatform/piSDK.md %} #piSDK) page and have a working understanding of how the Pi SDK and Authenticate function work. 
 {: .fs-6 .fw-300 }
 
 ## Table of contents
