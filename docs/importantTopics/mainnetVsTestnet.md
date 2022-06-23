@@ -14,7 +14,7 @@ nav_order: 1
 {:toc}
 
 ## Pi Mainnet
-The Pi Mainnet is the native blockchain centered around Pi. The mining mechanism that distributes Pi to Pioneers requires all Pioneers to migrate from the Pi App to the Pi Mainnet. The migration of Pioneer balances from their phone account to the Mainnet started during in early 2022 with the launch the Pi KYC App. KYC authentication of a Pioneer precedes their balance migration to the Mainnet. In order to allow for sufficient time for millions of Pioneers to successfully complete their KYC verification, create utilities in the Pi ecosystem, and our continued efforts to iterate on our technology and ecosystem design, the Mainnet will have two periods: 
+The Pi Mainnet is the native blockchain centered around Pi. The mining mechanism that distributes Pi to Pioneers requires all Pioneers to migrate from the Pi App to the Pi Mainnet. The migration of Pioneer balances from their phone account to the Mainnet started in early 2022 with the launch of the Pi KYC App. KYC authentication of a Pioneer precedes their balance migration to the Mainnet. In order to allow for sufficient time for millions of Pioneers to successfully complete their KYC verification, create utilities in the Pi ecosystem, and our continued efforts to iterate on our technology and ecosystem design, the Mainnet will have two periods: 
 
 <ol>
 <li>Firewalled Mainnet (i.e., the Enclosed Network),</li> 

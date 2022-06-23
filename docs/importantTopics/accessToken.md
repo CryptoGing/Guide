@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Access Token
 {: .no_toc }
-It is a long random string which uniquely identifies a Pioneer within an app. This page assumes that you've read the <a href="../../gettingSetup/PiAppPlatform/piSDK">Pi SDK</a> page and have a working understanding of how the Pi SDK and Authenticate function work. 
+A long random string which uniquely identifies a Pioneer within an app. This page assumes that you've read the <a href="../../gettingSetup/PiAppPlatform/piSDK">Pi SDK</a> page and have an understanding of how the Pi SDK and Authenticate function work. 
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -17,7 +17,7 @@ It is a long random string which uniquely identifies a Pioneer within an app. Th
 
 
 ## Obtaining the Access Token
-The Access Token is obtained by calling the Authenticate function of the Pi SDK. No scope must be passed to obtain an Access Token as it will come included in all calls to the Authenticate Function. 
+The Access Token is received by calling the Authenticate function of the Pi SDK. No scope must be passed to obtain an Access Token as it will come included in all calls to the Authenticate Function. 
 
 The Authenticate Function call will return a Access Token as a promise object in the below format:
 {% highlight javascript %}
