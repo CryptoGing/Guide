@@ -1,0 +1,115 @@
+I"<<<h1 class="no_toc" id="pioneer-to-app-payments">Pioneer to App Payments</h1>
+<p class="fs-6 fw-300">This payment method creates a payment which will be sent from the wallet of the Pioneer to the wallet of the App.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#payment-flow" id="markdown-toc-payment-flow">Payment Flow</a></li>
+  <li><a href="#create-payment" id="markdown-toc-create-payment">Create Payment</a></li>
+  <li><a href="#callback-functions" id="markdown-toc-callback-functions">Callback Functions</a>    <ol>
+      <li><a href="#security-note-on-completing-payments" id="markdown-toc-security-note-on-completing-payments">Security Note on Completing Payments</a></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="payment-flow">Payment Flow</h2>
+<p>One way transfer from the wallet of a Pioneer, who initates the payment within the app, to the wallet of the App in use. A different method is used to transfer from the wallet of the App to the wallet of a Pioneer.</p>
+
+<p>This page will not cover how to integrate the Pi SDK or Pi APIs and assumes you’ve read the following pages of this guide:</p>
+
+<ul>
+<li> <a href="../../../gettingSetup/piPlatform/piSDK"> Pi SDK </a> </li>
+<li> <a href="../../../gettingSetup/piPlatform/piAPIs"> Pi APIs </a> </li>
+<li> <a href="../developerPaymentFlow"> Pi Payment Flow </a> </li>
+</ul>
+
+<p>If you haven’t read these pages then please do so ahead of trying to implement a payment.</p>
+
+<h2 id="create-payment">Create Payment</h2>
+
+<p>This payment is initiated with the <code class="language-plaintext highlighter-rouge">Pi.CreatePayment</code> function of the Pi SDK. It takes two arguments <code class="language-plaintext highlighter-rouge">PaymentData</code> and <code class="language-plaintext highlighter-rouge">PaymentCallbacks</code>. Example code in Javascript for a 1 Pi payment is as follows:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">    <span class="c1">// All fields can be replaced with variables to make them useable within your app</span>
+    <span class="c1">// amount: number,</span>
+    <span class="c1">// memo: string,</span>
+    <span class="c1">// metadata: object { },</span>
+    <span class="kd">const</span> <span class="nx">paymentData</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">amount</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="na">memo</span><span class="p">:</span> <span class="dl">'</span><span class="s1">This is a Test Payment</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">metadata</span><span class="p">:</span> <span class="p">{</span> <span class="na">InternalPaymentID</span><span class="p">:</span> <span class="mi">1234</span> <span class="p">},</span>
+    <span class="p">};</span>
+
+    <span class="kd">const</span> <span class="nx">paymentCallbacks</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="c1">// Callbacks you need to implement - read more about these on the Pi SDK Page:</span>
+        <span class="na">onReadyForServerApproval</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">paymentId</span><span class="p">)</span> <span class="p">{</span>                 
+            <span class="kd">const</span> <span class="nx">body</span> <span class="o">=</span> <span class="p">{</span> <span class="dl">"</span><span class="s2">payment_Id</span><span class="dl">"</span><span class="p">:</span> <span class="nx">paymentId</span> <span class="p">}</span>
+            <span class="nx">axios</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">ServerSide_onReadyForServerApprovalURL</span><span class="p">,</span> <span class="nx">body</span> <span class="p">)</span>  <span class="p">},</span>
+        <span class="na">onReadyForServerCompletion</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">paymentId</span><span class="p">,</span> <span class="nx">txid</span><span class="p">)</span> <span class="p">{</span> 
+            <span class="kd">const</span> <span class="nx">body</span> <span class="o">=</span> <span class="p">{</span> <span class="dl">"</span><span class="s2">payment_Id</span><span class="dl">"</span><span class="p">:</span> <span class="nx">paymentId</span><span class="p">,</span> <span class="dl">"</span><span class="s2">tx_id</span><span class="dl">"</span><span class="p">:</span> <span class="nx">txid</span> <span class="p">}</span>
+            <span class="nx">axios</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">ServerSide_onReadyForServerCompletionURL</span><span class="p">,</span> <span class="nx">body</span> <span class="p">)</span> 
+        <span class="p">},</span>
+        <span class="na">onCancel</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">paymentId</span><span class="p">)</span> <span class="p">{</span> 
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">paymentId</span><span class="p">)</span>
+        <span class="p">},</span>
+        <span class="na">onError</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">payment</span><span class="p">)</span> <span class="p">{</span> 
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> 
+        <span class="p">}</span>
+    <span class="p">};</span></code></pre></figure>
+
+<p>The createPayment function is then called using the <code class="language-plaintext highlighter-rouge">window.Pi</code> variable that was created when integrating 
+the Pi SDK in the “Getting Started” Section. The two previously created payment variables are passed as arguments.
+We used a <code class="language-plaintext highlighter-rouge">.then</code> function to handle any return and <code class="language-plaintext highlighter-rouge">console.log</code> to print it within the development console.
+A <code class="language-plaintext highlighter-rouge">.catch</code> function was used to handle any error that might be thrown and to <code class="language-plaintext highlighter-rouge">console.error</code> or print it in the development console.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">Pi</span><span class="p">.</span><span class="nx">createPayment</span><span class="p">(</span><span class="nx">paymentData</span><span class="p">,</span> <span class="nx">paymentCallbacks</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">payment</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">payment</span><span class="p">)</span>
+  <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+  <span class="p">});</span></code></pre></figure>
+
+<h2 id="callback-functions">Callback Functions</h2>
+<p>The Pi App Platform will start the payment and return the <code class="language-plaintext highlighter-rouge">PaymentID</code>. The <code class="language-plaintext highlighter-rouge">onReadyForServerApproval</code> function that was implemented by the developer within the <code class="language-plaintext highlighter-rouge">paymentCallbacks</code> will begin.
+At this point within in the App the Payment Dialog will open to the Pioneer but it is non-interactive until the <code class="language-plaintext highlighter-rouge">onReadyForServerApproval</code> callback is finished.
+The <code class="language-plaintext highlighter-rouge">PaymentID</code> should be passed to your app’s server side for the approval call to the Pi Platform API. Once the <code class="language-plaintext highlighter-rouge">PaymentID</code> is on your server side the <code class="language-plaintext highlighter-rouge">/payment/{ PaymentID }/approve</code> endpoint should be called, passing the <code class="language-plaintext highlighter-rouge">PaymentID</code> for this payment.
+A successful call to the approve endpoint will return the <code class="language-plaintext highlighter-rouge">PaymentDTO</code> resource as seen below:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+  <span class="c1">// Payment data:</span>
+  <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The payment identifier</span>
+  <span class="dl">"</span><span class="s2">Pioneer_uid</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The Pioneer's app-specific ID</span>
+  <span class="dl">"</span><span class="s2">amount</span><span class="dl">"</span><span class="p">:</span> <span class="nx">number</span><span class="p">,</span> <span class="c1">// The payment amount</span>
+  <span class="dl">"</span><span class="s2">memo</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// A string provided by the developer, shown to the Pioneer</span>
+  <span class="dl">"</span><span class="s2">metadata</span><span class="dl">"</span><span class="p">:</span> <span class="nb">Object</span><span class="p">,</span> <span class="c1">// An object provided by the developer for their own usage</span>
+  <span class="dl">"</span><span class="s2">to_address</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The recipient address of the blockchain transaction</span>
+  <span class="dl">"</span><span class="s2">created_at</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The payment's creation timestamp</span>
+  
+  <span class="c1">// Status flags representing the current state of this payment</span>
+  <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">developer_approved</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Server-Side Approval</span>
+    <span class="dl">"</span><span class="s2">transaction_verified</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Blockchain transaction verified</span>
+    <span class="dl">"</span><span class="s2">developer_completed</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Server-Side Completion</span>
+    <span class="dl">"</span><span class="s2">cancelled</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Cancelled by the developer or by Pi Network</span>
+    <span class="dl">"</span><span class="s2">Pioneer_cancelled</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Cancelled by the Pioneer</span>
+  <span class="p">},</span>
+  
+  <span class="c1">// Blockchain transaction data:</span>
+  <span class="dl">"</span><span class="s2">transaction</span><span class="dl">"</span><span class="p">:</span> <span class="kc">null</span> <span class="o">|</span> <span class="p">{</span> <span class="c1">// This is null if no transaction has been made yet</span>
+    <span class="dl">"</span><span class="s2">txid</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The id of the blockchain transaction</span>
+    <span class="dl">"</span><span class="s2">verified</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// True if the transaction matches the payment, false otherwise</span>
+    <span class="dl">"</span><span class="s2">_link</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// A link to the operation on the Blockchain API</span>
+  <span class="p">},</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>At this point the Payment Dialog displayed to the Pioneer will become interactive. The Pioneer will need to input their passphrase and approve the transaction. Once the Pioneer approves the transaction the Payment Dialog will again become non-interactive.</p>
+
+<p>After the Pioneer approves the payment then the Pi App Platforms will send the transaction to the blockchain. That will return the TransactionID (txID) to the Pi App Platform.</p>
+
+<p>The Pi App Platform invokes the callback function <code class="language-plaintext highlighter-rouge">onReadyForServerCompletion</code> passing the <code class="language-plaintext highlighter-rouge">PaymentID</code> and the <code class="language-plaintext highlighter-rouge">txID</code> to the App. The App should pass the <code class="language-plaintext highlighter-rouge">txID</code> the server side and call the Pi API endpoint <code class="language-plaintext highlighter-rouge">/payment/{ txID }/complete</code> using the txID to complete the payment.</p>
+
+<p>A successful call to the <code class="language-plaintext highlighter-rouge">/complete</code> endpoint will return the <code class="language-plaintext highlighter-rouge">PaymentDTO</code> resource with the updated values. An unsuccessful call will return a non-200 error code</p>
+
+<p>The Payment Dialog will now close and the Pioneer will be able to interact with the app again. Your app’s server and your app’s frontend can exchange data, and update the app interface to show a confirmation screen to the Pioneer.</p>
+
+<h3 id="security-note-on-completing-payments">Security Note on Completing Payments</h3>
+<p>Do not complete any payment within your app until the payment has completed and had a paymentDTO returned from the /complete API endpoint of the Server-Side Completion. The Pioneer might be lying to your app, by running a hacked version of the SDK the Pioneer could pretend they have made a payment. If the API call to /payment/{ transaction_id }/complete returns a non-200 error code, do not mark the payment complete or paid with your app.</p>
+:ET
