@@ -187,7 +187,7 @@
   },"31": {
     "doc": "Pi Mainnet vs Pi Testnet",
     "title": "Pi Wallet",
-    "content": "The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the [Pi Wallet page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page. ",
+    "content": "The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the Pi Wallet page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/mainnetVsTestnet/#pi-wallet",
     "relUrl": "/docs/importantTopics/mainnetVsTestnet/#pi-wallet"
   },"32": {

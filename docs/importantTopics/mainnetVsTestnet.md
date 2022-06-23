@@ -64,4 +64,4 @@ The Sandbox is a local testing environment that utilizes the Pi Testnet and a lo
 To learn how to utilize the Sandbox and get it setup go to the <a href="../../gettingSetup/piPlatform/piSDK">Pi SDK</a> page and see the section titled "The Sandbox Flag."
 
 ## Pi Wallet
-The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the [<a href="../paymentFlow/piWallet">Pi Wallet</a> page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page.
+The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the <a href="../paymentFlow/piWallet">Pi Wallet</a> page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page.
