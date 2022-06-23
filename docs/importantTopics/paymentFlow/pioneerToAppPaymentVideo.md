@@ -4,7 +4,6 @@ title: Video Integration - Pioneer to App Payments
 parent: "Pi Payments"
 grand_parent: "Important Topics"
 nav_order: 4
-youtubeId: rvrmaDu61Tc
 ---
 # Video Integration of Pioneer to App Payments
 {: .no_toc }
@@ -15,7 +14,7 @@ youtubeId: rvrmaDu61Tc
 1. TOC
 {:toc}
 
-{% include youtubePlayer.html id=page.youtubeId %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rvrmaDu61Tc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 Captions for the video can also be found on our [Medium Blog Post](https://pinetwork-official.medium.com/hackathon-workshop-transcripts-86367175ebb3)
 
 ## Captions 

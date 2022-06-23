@@ -4,7 +4,6 @@ title: Video Ingtegration Pi SDK
 parent: "Pi Platform"
 grand_parent: "Getting Started"
 nav_order: 2
-youtubeId: 7wsIYOFtSZ4
 ---
 
 # Pi SDK Video Tutorial
@@ -18,7 +17,7 @@ youtubeId: 7wsIYOFtSZ4
 
 ---
 ## Video Guide to Integrating the Pi SDK
-{% include youtubePlayer.html id=page.youtubeId %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7wsIYOFtSZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 Captions for the video can also be found on our [Medium Blog Post](https://pinetwork-official.medium.com/hackathon-workshop-transcripts-86367175ebb3)
 
 ## Captions
