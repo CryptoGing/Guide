@@ -1,0 +1,70 @@
+I"Á <h1 class="no_toc" id="access-token">Access Token</h1>
+<p class="fs-6 fw-300">It is a long random string which uniquely identifies a Pioneer within an app. The access token is received as a returned object the Authenticate call from the Pi SDK. This page assumes that youâ€™ve read the [<a href="docs/gettingSetup/piPlatform/piSDK">Pi SDK](/Guide/docs/gettingSetup/piPlatform/piSDK/) page and have a working understanding of how the Pi SDK and Authenticate function work.</a></p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#code-to-obtain-access-token" id="markdown-toc-code-to-obtain-access-token">Code to Obtain Access Token</a>    <ol>
+      <li><a href="#verifying-the-access-token" id="markdown-toc-verifying-the-access-token">Verifying the Access Token</a></li>
+    </ol>
+  </li>
+  <li><a href="#using-the-uid-within-your-app" id="markdown-toc-using-the-uid-within-your-app">Using the <code class="language-plaintext highlighter-rouge">uid</code> within your App</a></li>
+</ol>
+
+<h2 id="code-to-obtain-access-token">Code to Obtain Access Token</h2>
+<p>The Access Token is obtained by calling the Authenticate function of the Pi SDK. No scope must be passed to obtain an Access Token as it will come included in all calls to the Authenticate Function. The token will be returned as a promise.</p>
+
+<p>Sample code to call the Authenticate function to obtain the Access Token:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">Pi</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">Pi</span><span class="p">;</span>
+
+<span class="c1">// Empty array for testing purposes:</span>
+<span class="kd">const</span> <span class="nx">scopes</span> <span class="o">=</span> <span class="p">[</span> <span class="p">];</span>
+
+<span class="c1">//Empty function that will log an incomplete payment if found</span>
+<span class="c1">//Developer needs to code this callback function</span>
+<span class="kd">function</span> <span class="nx">onIncompletePaymentFound</span><span class="p">(</span><span class="nx">payment</span><span class="p">)</span> <span class="p">{</span> 
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">payment</span><span class="p">);</span>
+  <span class="p">};</span>
+
+<span class="nx">Pi</span><span class="p">.</span><span class="nx">authenticate</span><span class="p">(</span><span class="nx">scopes</span><span class="p">,</span> <span class="nx">onIncompletePaymentFound</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">auth</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">auth</span><span class="p">)</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span></code></pre></figure>
+
+<p>That call will return an Access Token in the below format:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nb">Object</span><span class="p">{</span>
+  <span class="nl">accessToken</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span>
+  <span class="nx">user</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nl">uid</span><span class="p">:</span> <span class="nx">string</span> <span class="p">}}</span></code></pre></figure>
+
+<p>Security Note: Do not save or use the <code class="language-plaintext highlighter-rouge">accessToken</code> or <code class="language-plaintext highlighter-rouge">uid</code> obtained in the Authentication call for purposes other than display. A malicious actor could pass a forged or expired access token. Instead pass the <code class="language-plaintext highlighter-rouge">accessToken</code> to your server side and verify it with the /me endpoint of the Pi APIs. Calling that API will be detailed later on.</p>
+
+<p>The Access Token is dynamic and will change at preset time intervals. Apps should not use the access token to create records or store information about a Pioneer. Instead, Apps should verify the access token which returns a static ID. 
+To authenticate an access token, the App should pass the access token from its Frontend to its server side, then call the Pi API <code class="language-plaintext highlighter-rouge">/me</code> endpoint.</p>
+
+<h3 id="verifying-the-access-token">Verifying the Access Token</h3>
+<p>Once the App has the Access token in its backend, then it should call the <code class="language-plaintext highlighter-rouge">/me</code> endpoint of the Platform APIs. This call will return the PioneerDTO with the <code class="language-plaintext highlighter-rouge">uid</code> and the <code class="language-plaintext highlighter-rouge">username</code>. If the access token is not valid, for any reason, the call will return a 401 error.</p>
+
+<p>The first step to call the Pi API is to create the Authorization Header that is needed. A Bearer header is combined with the Access Token to validate the call.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">Authorization: Bearer <span class="nt">&lt;Pioneer</span><span class="err">'</span><span class="na">s</span> <span class="na">access</span> <span class="na">token</span> <span class="na">obtained</span> <span class="na">from</span> <span class="na">App</span> <span class="na">Frontend</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>An example with the required Header using Axios:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">PioneerAccessToken</span> <span class="o">=</span> <span class="nx">accessToken_Obtained_from_App_Frontend</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">header</span> <span class="o">=</span> <span class="p">{</span> <span class="na">headers</span><span class="p">:</span> <span class="p">{</span> <span class="na">authorization</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Bearer </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">PioneerAccessToken</span> <span class="p">}};</span>
+<span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://api.minepi.com/v2/me</span><span class="dl">"</span><span class="p">,</span> <span class="nx">header</span><span class="p">);</span></code></pre></figure>
+
+<p>The <code class="language-plaintext highlighter-rouge">/me</code> endpoint will return either the PioneerDTO, if the Access Token was valid, or a 401 Error Code if the token was fake or invalid. The returned PioneerDTO will look as follows:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nb">Object</span><span class="p">{</span>
+  <span class="nl">user</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">uid</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span>
+    <span class="na">username</span><span class="p">:</span> <span class="nx">string</span> <span class="p">}}</span></code></pre></figure>
+
+<p>The returned <code class="language-plaintext highlighter-rouge">uid</code> is static and since it comes from the <code class="language-plaintext highlighter-rouge">/me</code> endpoint it is the correct <code class="language-plaintext highlighter-rouge">uid</code> for the Pioneer and your App. Check out the next section for potential uses of the <code class="language-plaintext highlighter-rouge">uid</code>.</p>
+
+<h2 id="using-the-uid-within-your-app">Using the <code class="language-plaintext highlighter-rouge">uid</code> within your App</h2>
+:ET
