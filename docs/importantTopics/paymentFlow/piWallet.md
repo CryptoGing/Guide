@@ -31,7 +31,7 @@ To change between the Pi Mainnet and Pi Testnet utilize the dropdown menu within
 Press on the down arrow that is inside the red box on the left image below, and select the corresponding blockchain that you wish to interact on as seen on right image:
 
 <br>
-<img title="Pi Wallet Mainnet" alt="Pi Wallet showing the Pi Mainnet is selected" src="/assets/images/mainnetWallet.png" style="width:270px;height:550px;"> <img title="Pi Wallet Network Selection" alt="Pi Wallet showing the dropdown network selection feature" src="/assets/images/mainnet_v_testnet_wallet.png" style="width:270px;height:550px;">
+<img title="Pi Wallet Mainnet" alt="Pi Wallet showing the Pi Mainnet is selected" src="../../../../assets/images/mainnetWallet.png" style="width:270px;height:550px;"> <img title="Pi Wallet Network Selection" alt="Pi Wallet showing the dropdown network selection feature" src="../../../../assets/images/mainnet_v_testnet_wallet.png" style="width:270px;height:550px;">
 
 ### Testnet Faucet
 On the Pi Testnet Blockchain anyone can take advantage of the test Pi faucet. The purpose of a faucet is to supply, free of charge, imitation tokens which function same as the real Pi tokens. This allows anyone to test interactions and transactions in a risk free environment. Test Pi cannot be transfered to Mainnet and holds no value. 

@@ -40,7 +40,7 @@ axios.get("https://api.minepi.com/v2/me", headers);
 {% endhighlight %}
 
 #### Server API Key (Authorization Key)
-For various reasons, some API calls must be made from the backend or server of your app. To obtain an authorization key for API requests, please see the section of this guide on the [Developer Portal]({{ site.baseurl }}{% link docs/gettingSetup/devPortal.md %}#devPortal). 
+For various reasons, some API calls must be made from the backend or server of your app. To obtain an authorization key for API requests, please see the section of this guide on the <a href="../../devPortal">Developer Portal</a>. 
 
 Those endpoints can be accessed using the following Authorization header:
 Format:
@@ -70,7 +70,7 @@ Response type: PioneerDTO
 The request will fail (401 HTTP error code) if the token has been tampered with as a tampered Access token would not belong to any Pioneer.
 
 #### /payments
-Payments are covered in greater detail in the [Pi Payments]({{ site.baseurl }}{% link docs/importantTopics.md %}#importantTopics) section of this guide. If this is your first implentation of a Pi payment its highly recommended to read that section. It covers how Pi Paymemts are initaited and completed. This section covers the API calls portion only. 
+Payments are covered in greater detail in the <a href="../../../importantTopics/paymentFlow">Pi Payment Flow</a> section of this guide. If this is your first implentation of a Pi payment its highly recommended to read that section. It covers how Pi Paymemts are initaited and completed. This section covers the API calls portion only. 
 
 The APIs for payments all have the base route /payments. It is important to note do not create payments using the Platform API. Use the client-side Javascript SDK for this purpose.
 

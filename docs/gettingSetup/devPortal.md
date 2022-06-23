@@ -25,7 +25,7 @@ Your app will be accessible directly from your own URL through the Pi Browser. Y
 
 To access this feature either head to develop.pi or open the Pi Browser and click on the develop tile.
 
-Currently, all APIs are aimed the Pi Testnet, so only Test-Pi will be involved. This will allow developers to build apps ahead of the release of the Mainnet SDK. Check out the section [Mainnet vs Testnet]({{ site.baseurl }}{% link docs/importantTopics/mainnetVsTestnet.md %}#mainnetVsTestnet)
+Currently, all APIs are aimed the Pi Testnet, so only Test-Pi will be involved. This will allow developers to build apps ahead of the release of the Mainnet SDK. Check out the section <a href="../../importantTopics/mainnetVsTestnet">Mainnet vs. Testnet</a>
 
 The only requirement at this stage is that you own the domain of the URL that you provide! You will be asked to verify its ownership.
 

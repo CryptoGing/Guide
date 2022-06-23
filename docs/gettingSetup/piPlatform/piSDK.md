@@ -53,18 +53,18 @@ To obtain the URL for your app within the Sandbox open the Pi Browser and naviga
 
 You will be redirected to a page that looks similar to the below image and says "Sign-in required" and has a random string of letters and numbers on it.
 
-<img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="/assets/images/authorizeAppSandbox.png" style="width:270px;height:550px;">
+<img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="../../../../assets/images/authorizeAppSandbox.png" style="width:270px;height:550px;">
 
 ##### Authorize Sandbox
 You now need to authorize the sandbox to access the Pi SDK. To do this on your mobile phone open the Pi App. Within the sidebar menu click on the "Pi Utilities" option. You will be presented the screen below, and you need to click the link for "Authorize Sandbox" at the bottom of the page.
 
-<img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="/assets/images/piAppAuthorizeSandbox.png" style="width:270px;height:550px;">
+<img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="../../../../assets/images/piAppAuthorizeSandbox.png" style="width:270px;height:550px;">
 
 After clicking on the "Authorize Sandbox" link you will be brought to the below page. Using the code displayed on the page within the desktop browser enter it into the "Sign-in code" field and click "confirm." 
 
-<img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="/assets/images/piAppAuthorizeAppCodeScreen.png" style="width:270px;height:550px;">
+<img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="../../../../assets/images/piAppAuthorizeAppCodeScreen.png" style="width:270px;height:550px;">
 
-The page should now redirect to the home page of your app. You are now able to test the functionality of your app within a local environment. You will need Test-Pi in you Pi Wallet to make any transactions. For more information on payments see the [Pi Payments]({{ site.baseurl }}{% link docs/importantTopics/paymentFlow.md %}#ImportantTopics) section.
+The page should now redirect to the home page of your app. You are now able to test the functionality of your app within a local environment. You will need Test-Pi in you Pi Wallet to make any transactions. For more information on payments see the <a href="../../../importantTopics/paymentFlow">Pi Payments</a> section.
 
 ### Calling the Pi SDK within your App
 #### Window.Pi
@@ -77,7 +77,7 @@ const Pi = window.Pi;
 You may name the varible whatever you prefer for ease we use `Pi`. Now that the window has been initialized it is time to start utilizing the functions offered by the Pi SDK. 
 
 ## Functions
-The payment function and the acess token received from the Authenticate function are covered in depth within the [Important Topics]({{ site.baseurl }}{% link docs/importantTopics.md %}#ImportantTopics) section. Please head there for a more detailed explination of functionality, integration and use cases. 
+The payment function and the acess token received from the Authenticate function are covered in depth within the <a href="../../../importantTopics">Important Topics</a> section. Please head there for a more detailed explination of functionality, integration and use cases. 
 
 ### Authenticate
 The Authenicate funcation will request the Pioneer's scope and retun them to the App in the form of a promise. 
@@ -118,12 +118,12 @@ Object{
 }
 {% endhighlight %}
 
-Security Note: The Pioneer information obtained with this method, `uid` and `accessToken`, should not be saved to your backend and should only be used for presentation logic (e.g displaying the Pioneer’s username). Send them to your backend and then verify the Pioneer's identity by requesting the /me endpoint from your backend, using the `accessToken` obtained with this method. The return from the /me endpoint will contain the `uid` for the Pioneer or will result in an error code if the Access Token is not found. Pi Platform APIs are covered in depth on the [Pi Platform APIs]({{ site.baseurl }}{% link docs/gettingSetup/piPlatform/piAPIs.md %}#PiAPIs) page of this guide. 
+Security Note: The Pioneer information obtained with this method, `uid` and `accessToken`, should not be saved to your backend and should only be used for presentation logic (e.g displaying the Pioneer’s username). Send them to your backend and then verify the Pioneer's identity by requesting the /me endpoint from your backend, using the `accessToken` obtained with this method. The return from the /me endpoint will contain the `uid` for the Pioneer or will result in an error code if the Access Token is not found. Pi Platform APIs are covered in depth on the <a href="../piAPIs">Pi Platform APIs</a> page of this guide. 
 
 #### Pioneer Approval
 When a Pioneer visits the app for the first time they will be presented a popup asking for permission to share their information with the app. Each scope requested will appear to the Pioneer and the Pioneer can choose to "Allow" or "Cancel" the request. When deciding what scopes to request its best to limit to only the needed scopes for core functionality of the app. Asking for too much information could result in Pioneers declining the request to share information with your app. 
 
-<img title="Pioneer Authenticate Request" alt="Popup request to share a Pioneer's information with an App" src="/assets/images/authenticateRequestPermission.png" style="width:270px;height:550px;">
+<img title="Pioneer Authenticate Request" alt="Popup request to share a Pioneer's information with an App" src="../../../../assets/images/authenticateRequestPermission.png" style="width:250px;height:300px;">
 
 The app will not receive any information from Pi until the Pioneer approves this request. If the Pioneer fails to respond to the request then it will time out and the app will not be sent the requested information. The Pioneer will need to reload the page and then confirm their decision. 
 

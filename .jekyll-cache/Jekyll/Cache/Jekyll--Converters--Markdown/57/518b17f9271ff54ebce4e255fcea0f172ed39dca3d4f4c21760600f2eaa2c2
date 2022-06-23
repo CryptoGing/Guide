@@ -1,0 +1,73 @@
+I"�<h1 class="no_toc" id="pi-mainnet-vs-pi-testnet">Pi Mainnet vs Pi Testnet</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#pi-mainnet" id="markdown-toc-pi-mainnet">Pi Mainnet</a>    <ol>
+      <li><a href="#enclosed-network-period" id="markdown-toc-enclosed-network-period">Enclosed Network Period</a>        <ol>
+          <li><a href="#restrictions-in-the-enclosed-network" id="markdown-toc-restrictions-in-the-enclosed-network">Restrictions in the Enclosed Network</a></li>
+        </ol>
+      </li>
+      <li><a href="#the-open-network-period" id="markdown-toc-the-open-network-period">The Open Network Period</a></li>
+    </ol>
+  </li>
+  <li><a href="#pi-testnet" id="markdown-toc-pi-testnet">Pi Testnet</a>    <ol>
+      <li><a href="#sandbox-local-environment" id="markdown-toc-sandbox-local-environment">Sandbox (Local Environment)</a></li>
+    </ol>
+  </li>
+  <li><a href="#pi-wallet" id="markdown-toc-pi-wallet">Pi Wallet</a></li>
+</ol>
+
+<h2 id="pi-mainnet">Pi Mainnet</h2>
+<p>The Pi Mainnet is the native blockchain centered around Pi. The mining mechanism that distributes Pi to Pioneers requires all Pioneers to migrate from the Pi App to the Pi Mainnet. The migration of Pioneer balances from their phone account to the Mainnet started during in early 2022 with the launch the Pi KYC App. KYC authentication of a Pioneer precedes their balance migration to the Mainnet. In order to allow for sufficient time for millions of Pioneers to successfully complete their KYC verification, create utilities in the Pi ecosystem, and our continued efforts to iterate on our technology and ecosystem design, the Mainnet will have two periods:</p>
+
+<ol>
+<li>Firewalled Mainnet (i.e., the Enclosed Network),</li> 
+<li>Open Mainnet (i.e., the Open Network).</li> 
+</ol>
+
+<h3 id="enclosed-network-period">Enclosed Network Period</h3>
+<p>This period began in December 2021. The Enclosed Network period means that the Mainnet is live but with a firewall that prevents any unwanted external connectivity. KYC’ed Pioneers will be able to use their Pi on the Mainnet freely in an enclosed environment within Pi Network. Pi apps will be able to switch from Testnet to Mainnet—to production mode for real Pi transactions. However, this period will not allow connectivity between the Pi blockchain and other blockchains.</p>
+
+<p>Moreover, the Enclosed Network will allow the Mainnet to run with production data and real Pi, which differs from Testnet. Data gathered during the Enclosed Network will help calibrate and tweak any configurations and formulae, if necessary, to ensure a stable and successful Open Network.</p>
+
+<h4 id="restrictions-in-the-enclosed-network">Restrictions in the Enclosed Network</h4>
+<p>While transactions between Pi apps and Pioneers and Pioneer-to-Pioneer transactions are allowed within Pi Network, the Enclosed Network will have in place the restrictions as listed below. These restrictions at this stage help enforce the enclosed nature of the network:</p>
+
+<p>There will be no connectivity between Pi and other blockchains or crypto exchanges.
+Mainnet can only be accessed through the Pi Wallet and Pi apps on the Pi Browser.
+The Mainnet blockchain will be accessible to any computer on the internet but only through a firewall to enforce the above rules.
+There will only be Core Team Nodes on the Mainnet to ensure that the firewall is in place at all times.</p>
+
+<p>The Enclosed Network will support the growth of the Pi ecosystem. Thus, Pioneer-to-Pioneer transactions are possible through the Pi Wallet as KYC’ed Pioneers will be able to use the Pi Wallet to transact in Pi. Pioneers can also spend Pi in Pi apps on the Pi Browser, which can access the Mainnet through the Pi Apps SDK and the Pi Blockchain API. During the Enclosed Network period, an app on the Pi Browser can only use the Pi blockchain APIs whitelisted by the firewall to interact with the Mainnet.</p>
+
+<p>The following uses of Pioneer-to-Pioneer, Pioneer-to-App, and App-to-Pioneer transactions will be allowed:</p>
+<ul>
+<li>Exchange of Pi for goods and services through Pi Apps</li>
+<li>Transfer of Pi between Pioneers for goods and services</li>
+</ul>
+<p>The following uses will be prohibited:</p>
+<ul>
+<li>Exchange of Pi for fiat currency</li>
+<li>Exchange of Pi for other cryptocurrencies</li>
+<li>Transfer for Pi for a future promise of fiat or other cryptocurrencies</li>
+</ul>
+
+<p>We will enforce the above restrictions by adding a firewall to the Mainnet and by exclusively running the Mainnet Nodes for this interim period. Community Nodes will continue to run on the Testnet in the Enclosed Network period. We will continue to implement interface and other changes to the Nodes in preparation for the Open Network period where the Community Nodes will be able to run on the Mainnet. The restrictions of the Network to keep it enclosed will be relaxed as it reaches the next period—Open Network.</p>
+
+<h3 id="the-open-network-period">The Open Network Period</h3>
+<p>The launch of the Open Network Period depends on the maturity of the Enclosed Network ecosystem and the progress of KYC. The Open Network period means that the firewall in the Enclosed Network period will be removed, allowing any external connectivity, e.g., to other networks, wallets, and anyone who wants to connect to Pi Mainnet. API calls will not be firewalled, and Pioneers will be able to run their own Pi Nodes and API services. Pioneers will have connectivity with other blockchains. Community Nodes can also run the Mainnet.</p>
+
+<h2 id="pi-testnet">Pi Testnet</h2>
+<p>Pi Testnet allows for the testing of connectivity, performance, security, and scalability of the blockchain, and allows Pi app developers to develop the Pi apps before they deploy their app on the Pi Mainnet. The Pi Testnet is meant to mimic but is not a fork of the Pi Mainnet. Blockchain transactions are irreversable and cannot be refunded so its important to have a place for developers and Pioneers to test transcations in a risk free environment. Most parameters of the Pi Testnet match that of the Pi Network.</p>
+
+<p>The Pi Testnet uses Test Pi (or test-π) which is NOT REAL Pi. Test Pi is solely for the purpose of testing transactions on the Pi Testnet and contains NO VALUE. There is a faucet on the Pi Testnet which distributes Test Pi, if your wallet is running low on Test Pi more can be requested. The Test-Pi balance in the wallet may be reset because Testnet will be periodically reset as part of the testing.</p>
+
+<h3 id="sandbox-local-environment">Sandbox (Local Environment)</h3>
+<p>The Sandbox is a local testing environment that utilizes the Pi Testnet and a local instance of your app. This is for testing purposes only and should only be used during development. In order to use this feature you must have a URL registered within the Developer Portal page of your app.</p>
+
+<p>To learn how to utilize the Sandbox and get it setup go to the <a href="../../gettingSetup/piPlatform/piSDK">Pi SDK</a> page and see the section titled “The Sandbox Flag.”</p>
+
+<h2 id="pi-wallet">Pi Wallet</h2>
+<p>The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the [<a href="../paymentFlow/piWallet">Pi Wallet</a> page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page.</p>
+:ET

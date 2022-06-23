@@ -1,0 +1,52 @@
+I"@<h1 class="no_toc" id="pi-wallet-introduction">Pi Wallet Introduction</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#what-is-the-pi-wallet" id="markdown-toc-what-is-the-pi-wallet">What is the Pi Wallet</a></li>
+  <li><a href="#switch-between-pi-mainnet-and-pi-testnet" id="markdown-toc-switch-between-pi-mainnet-and-pi-testnet">Switch between Pi Mainnet and Pi Testnet</a>    <ol>
+      <li><a href="#testnet-faucet" id="markdown-toc-testnet-faucet">Testnet Faucet</a></li>
+    </ol>
+  </li>
+  <li><a href="#creating-a-pi-wallet" id="markdown-toc-creating-a-pi-wallet">Creating a Pi Wallet</a>    <ol>
+      <li><a href="#personal-wallet" id="markdown-toc-personal-wallet">Personal Wallet</a>        <ol>
+          <li><a href="#testnet" id="markdown-toc-testnet">Testnet</a></li>
+        </ol>
+      </li>
+      <li><a href="#developer-wallet" id="markdown-toc-developer-wallet">Developer Wallet</a></li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="what-is-the-pi-wallet">What is the Pi Wallet</h2>
+<p>To introduce the Pi Wallet, it’s worth briefly going over what a crypto wallet is. A crypto wallet is essentially a pair of “keys”: a public Address and a secret Passphrase (or a secret key). While the wallet address must be shared with others to transact on the blockchain, the passphrase must be kept secret as it is like a password to your bank account required to move any assets. In general, crypto wallets are categorized into custodial and non-custodial wallets with a difference in whether there is someone else helping you manage your passphrase/secret key or assets in the wallet.</p>
+
+<p>The Pi Wallet is a non-custodial wallet because the Pi servers never have access to your secret key or passphrase. To be more user-friendly and based on feedback from early testing Pioneers, the Pi Wallet secret key is represented by a list of more legible words called a ‘Passphrase’.  The secret key can be dynamically derived from the passphrase so people only need to store a passphrase without actually saving a secret key. Using passphrases instead of the derived secret key for safekeeping reduces the chance of human mistakes in recording, and at the same time, achieves the same level of security as the secret key itself. In the mobile version of the Pi Wallet, if your phone has biometric authentication (fingerprint or face recognition), the passphrases are safely stored on your phone and can be retrieved through fingerprint or FaceID.</p>
+
+<p>The Pi Wallet can generate wallet addresses on multiple blockchains and hold different crypto assets on such blockchains using the same passphrase, but initially we are focusing on Pi assets only.</p>
+
+<h2 id="switch-between-pi-mainnet-and-pi-testnet">Switch between Pi Mainnet and Pi Testnet</h2>
+<p>The Pi Wallet has a feature to switch between the Pi Testnet and Mainnet Blockchains. Only one wallet will be needed for testing an app on Testnet and interacting on the Pi Mainnet. This limits the wallets needed reducing the number of Passphrases which must be secured.</p>
+
+<p>To change between the Pi Mainnet and Pi Testnet utilize the dropdown menu within the Pi Wallet.</p>
+
+<p>Press on the down arrow that is inside the red box on the left image below, and select the corresponding blockchain that you wish to interact on as seen on right image:</p>
+
+<p><br />
+<img title="Pi Wallet Mainnet" alt="Pi Wallet showing the Pi Mainnet is selected" src="../../../../assets/images/mainnetWallet.png" style="width:270px;height:550px;" /> <img title="Pi Wallet Network Selection" alt="Pi Wallet showing the dropdown network selection feature" src="../../../../assets/images/mainnet_v_testnet_wallet.png" style="width:270px;height:550px;" /></p>
+
+<h3 id="testnet-faucet">Testnet Faucet</h3>
+<p>On the Pi Testnet Blockchain anyone can take advantage of the test Pi faucet. The purpose of a faucet is to supply, free of charge, imitation tokens which function same as the real Pi tokens. This allows anyone to test interactions and transactions in a risk free environment. Test Pi cannot be transfered to Mainnet and holds no value.</p>
+
+<h2 id="creating-a-pi-wallet">Creating a Pi Wallet</h2>
+<h3 id="personal-wallet">Personal Wallet</h3>
+<p>To create a Pi Wallet, open the Pi Browser and click on the Pi Wallet tile to open the app. Once on the main page of the app, follow the steps to create a Pi Wallet. When creating a wallet there is a minimal balance which must be maintained in order for the wallet to be valid. In addition because there is a KYC component to the Pi Mainnet you will need to apply for Pi KYC before a Mainnet wallet can be created for you. In order to apply for Pi KYC you must continue to mine and an invitation will be sent to you.</p>
+
+<h4 id="testnet">Testnet</h4>
+<p>The Pi Testnet faucet will initiate the wallet on the Pi Testnet with 100 Test Pi for you to test transactions with. We want to emphasize that Test Pi (or test π) is NOT REAL Pi! Test Pi is solely for the purpose of testing transactions on the Pi Testnet and contains NO VALUE. The Test Pi balance in the wallet may be reset because Testnet will be periodically reset as part of the testing. You can also request additional Test Pi from the faucet when your balance gets low.</p>
+
+<h3 id="developer-wallet">Developer Wallet</h3>
+<p>This feature is coming soon and will be updated once its available.</p>
+:ET
