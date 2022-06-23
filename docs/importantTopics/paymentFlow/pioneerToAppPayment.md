@@ -19,12 +19,12 @@ This payment method creates a payment which will be sent from the wallet of the 
 ## Payment Flow
 One way transfer from the wallet of a Pioneer, who initates the payment within the app, to the wallet of the App in use. A different method is used to transfer from the wallet of the App to the wallet of a Pioneer. 
 
-This page will not cover how to integrate the Pi SDK or Pi APIs and assumes you've read the following pages of this guide:
+This page will not cover how to integrate the Pi SDK or Pi App Platform APIs and assumes you've read the following pages of this guide:
 
 <ul>
-<li> <a href="../../../gettingSetup/piPlatform/piSDK"> Pi SDK </a> </li>
-<li> <a href="../../../gettingSetup/piPlatform/piAPIs"> Pi APIs </a> </li>
-<li> <a href="../developerPaymentFlow"> Pi Payment Flow </a> </li>
+<li> <a href="../../../gettingSetup/PiAppPlatform/piSDK"> Pi SDK </a> </li>
+<li> <a href="../../../gettingSetup/PiAppPlatform/PiAppPlatformAPIs"> Pi App Platform APIs </a> </li>
+<li> <a href="../piPaymentFlow"> Pi Payment Flow </a> </li>
 </ul>
 
 If you haven't read these pages then please do so ahead of trying to implement a payment. 

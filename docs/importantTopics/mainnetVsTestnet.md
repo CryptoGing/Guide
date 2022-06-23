@@ -61,7 +61,7 @@ The Pi Testnet uses Test Pi (or test-π) which is NOT REAL Pi. Test Pi is solely
 ### Sandbox (Local Environment)
 The Sandbox is a local testing environment that utilizes the Pi Testnet and a local instance of your app. This is for testing purposes only and should only be used during development. In order to use this feature you must have a URL registered within the Developer Portal page of your app. 
 
-To learn how to utilize the Sandbox and get it setup go to the <a href="../../gettingSetup/piPlatform/piSDK">Pi SDK</a> page and see the section titled "The Sandbox Flag."
+To learn how to utilize the Sandbox and get it setup go to the <a href="../../gettingSetup/PiAppPlatform/piSDK">Pi SDK</a> page and see the section titled "The Sandbox Flag."
 
 ## Pi Wallet
 The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the <a href="../paymentFlow/piWallet">Pi Wallet</a> page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page.

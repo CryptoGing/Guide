@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Access Token
 {: .no_toc }
-It is a long random string which uniquely identifies a Pioneer within an app. The access token is received as a returned object the Authenticate call from the Pi SDK. This page assumes that you've read the <a href="../../gettingSetup/piPlatform/piSDK">Pi SDK</a> page and have a working understanding of how the Pi SDK and Authenticate function work. 
+It is a long random string which uniquely identifies a Pioneer within an app. This page assumes that you've read the <a href="../../gettingSetup/PiAppPlatform/piSDK">Pi SDK</a> page and have a working understanding of how the Pi SDK and Authenticate function work. 
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -16,29 +16,10 @@ It is a long random string which uniquely identifies a Pioneer within an app. Th
 {:toc}
 
 
-## Code to Obtain Access Token
-The Access Token is obtained by calling the Authenticate function of the Pi SDK. No scope must be passed to obtain an Access Token as it will come included in all calls to the Authenticate Function. The token will be returned as a promise. 
+## Obtaining the Access Token
+The Access Token is obtained by calling the Authenticate function of the Pi SDK. No scope must be passed to obtain an Access Token as it will come included in all calls to the Authenticate Function. 
 
-Sample code to call the Authenticate function to obtain the Access Token:
-{% highlight javascript %}
-const Pi = window.Pi;
-
-// Empty array for testing purposes:
-const scopes = [ ];
-
-//Empty function that will log an incomplete payment if found
-//Developer needs to code this callback function
-function onIncompletePaymentFound(payment) { 
-  console.log(payment);
-  };
-
-Pi.authenticate(scopes, onIncompletePaymentFound).then(function(auth){
-    console.log(auth)
-}).catch(function(error) {
-  console.error(error);
-{% endhighlight %}
-
-That call will return an Access Token in the below format:
+The Authenticate Function call will return a Access Token as a promise object in the below format:
 {% highlight javascript %}
 Object{
   accessToken: string,
@@ -46,7 +27,7 @@ Object{
     uid: string }}
 {% endhighlight %}
 
-Security Note: Do not save or use the `accessToken` or `uid` obtained in the Authentication call for purposes other than display. A malicious actor could pass a forged or expired access token. Instead pass the `accessToken` to your server side and verify it with the /me endpoint of the Pi APIs. Calling that API will be detailed later on. 
+Security Note: Do not save or use the `accessToken` or `uid` obtained in the Authentication call for purposes other than display. A malicious actor could pass a forged or corrupt access token. Instead pass the `accessToken` to your server side and verify it with the `/me` endpoint of the Pi App Platform APIs. Calling that API will be detailed later on. 
 
 The Access Token is dynamic and will change at preset time intervals. Apps should not use the access token to create records or store information about a Pioneer. Instead, Apps should verify the access token which returns a static ID. 
 To authenticate an access token, the App should pass the access token from its Frontend to its server side, then call the Pi API `/me` endpoint.

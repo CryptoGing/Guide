@@ -18,11 +18,11 @@ nav_order: 2
 
 ## What is it
 
-The app is where you register as a developer and get developer credentials to create third-party Pi Apps – web-apps that can be accessed through the Pi Browser.  By declaring your app’s URL here, your app will be able to access the Pi APIs and communicate with the Pi servers and the Pi Blockchain.
+The app is where you register as a developer and get developer credentials to create third-party Pi Apps – web-apps that can be accessed through the Pi Browser.  By declaring your app’s URL here, your app will be able to access the Pi App Platform APIs and communicate with the Pi servers and the Pi Blockchain.
 
 Your app will be accessible directly from your own URL through the Pi Browser. You can put your app on any domain you want and still have a fully functional Pi app.
 
-To access this feature either head to develop.pi or open the Pi Browser and click on the develop tile.
+To access this feature either head to develop.pi within the Pi Browser or open the Pi Browser and click on the develop tile.
 
 Currently, all APIs are aimed the Pi Testnet, so only Test-Pi will be involved. This will allow developers to build apps ahead of the release of the Mainnet SDK. Check out the section <a href="../../importantTopics/mainnetVsTestnet">Mainnet vs. Testnet</a>
 

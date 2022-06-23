@@ -74,20 +74,20 @@ In order to call the PI SDK you must first initalize a new window directed towar
 const Pi = window.Pi;
 {% endhighlight %}
 
-You may name the varible whatever you prefer for ease we use `Pi`. Now that the window has been initialized it is time to start utilizing the functions offered by the Pi SDK. 
+You may name the varible whatever you prefer in this guide we use `Pi`. Now that the window has been initialized it is time to start utilizing the functions offered by the Pi SDK. 
 
 ## Functions
-The payment function and the acess token received from the Authenticate function are covered in depth within the <a href="../../../importantTopics">Important Topics</a> section. Please head there for a more detailed explination of functionality, integration and use cases. 
+The payment function and the access token received from the Authenticate function are covered in depth within the <a href="../../../importantTopics">Important Topics</a> section. Please head there to get a more detailed explination of functionality and use cases. 
 
 ### Authenticate
 The Authenicate funcation will request the Pioneer's scope and retun them to the App in the form of a promise. 
 
-Scopes, are aspects of a Pioneer's information which can be requested by an application. The information is obscured when possible to protect the Pioneer. The Authenticate function will always return the `uid` and `accessToken` irregardless of what scopes are requested. 
+Scopes, are aspects of a Pioneer's information which can be requested by an application. The information is obscured when possible to protect the Pioneer. The Authenticate function will always return the `uid` and `accessToken` even when an empty array is passed for scopes requested. 
 
-The Access Token is a dynamic identifier which can be used inconjuction with the Pi APIs to verify a Pioneer. The Access Token will change at set time intervals. The Access Token should not be used to create a unique record for a Pioneer. The `uid` is an app-local identifier for the Pioneer. This is specific to this Pioneer, and the app. 
+The Access Token is a dynamic identifier which can be used inconjuction with the Pi App Platform APIs to verify a Pioneer. The Access Token will change at set time intervals and should not be used to create a unique record for a Pioneer. The `uid` is an app-local identifier for the Pioneer, in that the `uid` is specific to that Pioneer, and the app. 
 
 #### Calling Authenticate
-To Authenticate function takes two arguements, `scopes` and `onIncompletePaymentFound`. Scopes is an Array of strings and onIncompletePaymentFound is a callback function. Both arguments are implemented by the developer and explinations on each are below. 
+To Authenticate function takes two arguements, `scopes` and `onIncompletePaymentFound`. Scopes is an array of strings and `onIncompletePaymentFound` is a pre-coded callback function. Both arguments are implemented by the developer and explinations are below. 
 
 Javascript code example that will call the authenticate function and log the return in the console:
 {% highlight javascript %}
@@ -97,7 +97,7 @@ const Pi = window.Pi;
 const scopes = [ ];
 
 //Empty function that will log an incomplete payment if found
-//Developer needs to code this callback function
+//Developer needs to implement this callback function
 function onIncompletePaymentFound(payment) { 
   console.log(payment);
   };
@@ -118,11 +118,12 @@ Object{
 }
 {% endhighlight %}
 
-Security Note: The Pioneer information obtained with this method, `uid` and `accessToken`, should not be saved to your backend and should only be used for presentation logic (e.g displaying the Pioneer’s username). Send them to your backend and then verify the Pioneer's identity by requesting the /me endpoint from your backend, using the `accessToken` obtained with this method. The return from the /me endpoint will contain the `uid` for the Pioneer or will result in an error code if the Access Token is not found. Pi Platform APIs are covered in depth on the <a href="../piAPIs">Pi Platform APIs</a> page of this guide. 
+Security Note: The Pioneer information obtained with this method, `uid` and `accessToken`, should not be saved to your database and should only be used for presentation logic (e.g displaying the Pioneer’s username). Pass them to your backend and then verify the Pioneer's identity by requesting the `/me` endpoint of the Pi Platform APIs, using the `accessToken` obtained with this method. The return from the `/me` endpoint will contain the `uid` for the Pioneer or will result in an error code if the Access Token is not found or valid. Pi Platform APIs are covered in depth on the <a href="../PiAppPlatformAPIs">Pi App Platform APIs</a> page of this guide. 
 
 #### Pioneer Approval
 When a Pioneer visits the app for the first time they will be presented a popup asking for permission to share their information with the app. Each scope requested will appear to the Pioneer and the Pioneer can choose to "Allow" or "Cancel" the request. When deciding what scopes to request its best to limit to only the needed scopes for core functionality of the app. Asking for too much information could result in Pioneers declining the request to share information with your app. 
 
+The screen presented to Pioneers when visiting an app for the first time:
 <img title="Pioneer Authenticate Request" alt="Popup request to share a Pioneer's information with an App" src="../../../../assets/images/authenticateRequestPermission.png" style="width:250px;height:300px;">
 
 The app will not receive any information from Pi until the Pioneer approves this request. If the Pioneer fails to respond to the request then it will time out and the app will not be sent the requested information. The Pioneer will need to reload the page and then confirm their decision. 
@@ -152,11 +153,11 @@ Object{
 
 
 ##### Payments
-The `payments` string is needed to initialize Pi payments. It does not return any information within the authenticate promise. To include it see the below code example:
+The `payments` string is needed to initialize Pi payments. It does not return any information within then returned promise object from the Authenticate function. To include it see the below code example:
 
 #### Code Exapmle 
-// Requesting payment scope from the Pi SDK:
 {% highlight javascript %}
+// Requesting payment scope from the Pi SDK:
 const scopes = ['payments'];
 
 //Empty function that will log an incomplete payment if found
@@ -174,23 +175,23 @@ Pi.authenticate(scopes, onIncompletePaymentFound).then(function(auth){
 Now that you have implemented the payment scope you can create payments.
 
 ### Create Payment
-The Pi SDK function to create a payment takes two arguments `PaymentData` and `PaymentCallback`. 
+The Pi SDK function to create a payment takes two arguments `paymentData` and `paymentCallback`. 
 
 Payment Data is the variables of the payment and in Javascript it should be constructed using a `Object {}`. The format for the object is as follow, you can name the object as you prefer:
 
 {% highlight javascript %}
-const PaymentData = {
+const paymentData = {
     amount: number,  /* Pi Amount being Transacted */
     memo: string, /* "Any information that you want to add to payment" */
     metadata: object {}, /* { Special Information: 1234, ... } */
 };
 {% endhighlight %}
 
-The PaymentCallbacks are a groupd of callback functions that will be utilized at points throughout the payment flow. The callback will come from the Pi SDK and each function is prefilled with the arguments it should take. When implementing these functions the information should be passed to your server side to utilize the PI APIs. Its important to have them all implemented so the app can handle errors. 
+The paymentCallbacks are a group of callback functions that will be utilized at points throughout the payment flow. The callback will come from the Pi SDK and each function is prefilled with the arguments it will receive. When implementing these functions the information should be passed to your server side to utilize the Pi App Platform APIs. Its important to have them all implemented so the app can handle errors. 
 
 {% highlight javascript %}
 // Callbacks the developer needs to implement:
-const PaymentCallbacks = {
+const paymentCallbacks = {
     onReadyForServerApproval: function(paymentId) { /* ... */ },
     onReadyForServerCompletion: function(paymentId, txid) { /* ... */ },
     onCancel: function(paymentId) { /* ... */ },
@@ -198,24 +199,24 @@ const PaymentCallbacks = {
     };
 {% endhighlight %}
 
-Here is a sample payment for 1 Pi using Javascript code and combining the variables from above: 
+Here is a sample payment for 1 Pi using Javascript code and combining the variables from above. A `.then` function is used after the `createPayment` function to get the returned information and print it to the console and the `.catch` function receives any errors and prints them to the console.
 
 {% highlight javascript %}
-const PaymentData = {
+const paymentData = {
     amount: 1,
     memo: 'This is a Test Payment',
     metadata: { InternalPaymentID: 1234 },
 };
 
 // Callbacks the developer needs to implement:
-const PaymentCallbacks = {
+const paymentCallbacks = {
     onReadyForServerApproval: function(paymentId) { /* ... */ },
     onReadyForServerCompletion: function(paymentId, txid) { /* ... */ },
     onCancel: function(paymentId) { /* ... */ },
     onError: function(error, payment) { /* ... */ }
     };
   
-    Pi.createPayment(PaymentData, PaymentCallbacks).then(function(payment) {
+    Pi.createPayment(paymentData, paymentCallbacks).then(function(payment) {
     console.log(payment)
   }).catch(function(error) {
     console.error(error);
