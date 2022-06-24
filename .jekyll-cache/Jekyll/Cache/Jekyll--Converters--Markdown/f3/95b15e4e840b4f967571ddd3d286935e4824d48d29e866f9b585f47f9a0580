@@ -1,4 +1,4 @@
-I" f<h1 class="no_toc" id="pi-sdk">Pi SDK</h1>
+I"�f<h1 class="no_toc" id="pi-app-platform-sdk">Pi App Platform SDK</h1>
 <p class="fs-6 fw-300">The SDK is a developer’s method to interact with and obtain information from Pi Network. Developers can request information such as a Pioneer’s username or create a payment within Pi Browser.</p>
 
 <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
@@ -11,7 +11,7 @@
           <li><a href="#authorize-sandbox" id="markdown-toc-authorize-sandbox">Authorize Sandbox</a></li>
         </ol>
       </li>
-      <li><a href="#calling-the-pi-sdk-within-your-app" id="markdown-toc-calling-the-pi-sdk-within-your-app">Calling the Pi SDK within your App</a>        <ol>
+      <li><a href="#calling-the-pi-app-platform-sdk-within-your-app" id="markdown-toc-calling-the-pi-app-platform-sdk-within-your-app">Calling the Pi App Platform SDK within your App</a>        <ol>
           <li><a href="#windowpi" id="markdown-toc-windowpi">Window.Pi</a></li>
         </ol>
       </li>
@@ -38,9 +38,9 @@
 
 <h2 id="how-to-integrate-it">How to integrate it</h2>
 <h3 id="html-code">HTML Code</h3>
-<p>To use Pi SDK, you need to add an SDK script tag to the frontend HTML code of the app’s home page. For most developers this will be the index.html file that is used as the “/” route or home page. Next you need to call the init function to initialize the SDK. You need to specify the version to ensure compatibility with future SDK releases.</p>
+<p>To use the Pi App Platform SDK, you need to add the SDK script tag to the frontend HTML code of your app’s home page. For most developers this will be the index.html file that is used as the “/” route or home page. Next you need to call the init function to initialize the SDK. You need to specify the version to ensure compatibility with future SDK releases.</p>
 
-<p>In the below code example the first script tag calls the Pi SDK while the second script tag calls the init function and declares the version the Pi SDK.</p>
+<p>In the below code example the first script tag calls the SDK while the second script tag calls the init function and declares the version the SDK.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://sdk.minepi.com/pi-sdk.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script&gt;</span> <span class="nx">Pi</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span> <span class="na">version</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span> <span class="p">})</span> <span class="nt">&lt;/script&gt;</span></code></pre></figure>
@@ -48,7 +48,7 @@
 <p>As of June 2022, version 2.0 is the latest.</p>
 
 <h3 id="the-sandbox-flag">The Sandbox Flag</h3>
-<p>If you want to operate the Pi SDK within a local environment there is an optional tag that can be applied titled sandbox. You must have configured a development URL in the developer portal to use this feature. When testing within the Sandbox the flag should be set to true.</p>
+<p>If you want to operate the Pi App Platform SDK within a local environment there is an optional tag that can be applied titled sandbox. You must have configured a development URL in the developer portal to use this feature. When testing within the Sandbox the flag should be set to true.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://sdk.minepi.com/pi-sdk.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script&gt;</span> <span class="nx">Pi</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span> <span class="na">version</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span> <span class="na">sandbox</span><span class="p">:</span> <span class="kc">true</span> <span class="p">})</span> <span class="nt">&lt;/script&gt;</span></code></pre></figure>
@@ -57,17 +57,17 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span> <span class="nx">Pi</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span> <span class="na">version</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span> <span class="na">sandbox</span><span class="p">:</span> <span class="o">&lt;%=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">NODE_ENV</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">production</span><span class="dl">'</span> <span class="o">%&gt;</span> <span class="p">})</span>  <span class="nt">&lt;/script&gt;</span> </code></pre></figure>
 
-<p>This depends on your setup, but running the Pi SDK in sandbox mode will generally happen whenever your app is running in development.</p>
+<p>This depends on your setup, but running the Pi App Platform SDK in sandbox mode will generally happen whenever your app is running in development.</p>
 
-<h5 id="sandbox-url">Sandbox URL</h5>
+<h4 id="sandbox-url">Sandbox URL</h4>
 <p>To obtain the URL for your app within the Sandbox open the Pi Browser and navigate to your app’s Developer Portal Page. Scroll to the bottom of the page and look for a section titled “Development URL.” Copy and paste the URL found in that section into your prefered desktop browser and hit enter.</p>
 
 <p>You will be redirected to a page that looks similar to the below image and says “Sign-in required” and has a random string of letters and numbers on it.</p>
 
 <p><img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="../../../../assets/images/authorizeAppSandbox.png" style="width:270px;height:550px;" /></p>
 
-<h5 id="authorize-sandbox">Authorize Sandbox</h5>
-<p>You now need to authorize the sandbox to access the Pi SDK. To do this on your mobile phone open the Pi App. Within the sidebar menu click on the “Pi Utilities” option. You will be presented the screen below, and you need to click the link for “Authorize Sandbox” at the bottom of the page.</p>
+<h4 id="authorize-sandbox">Authorize Sandbox</h4>
+<p>You now need to authorize the sandbox to access the Pi App Platform SDK. To do this on your mobile phone open the Pi App. Within the sidebar menu click on the “Pi Utilities” option. You will be presented the screen below, and you need to click the link for “Authorize Sandbox” at the bottom of the page.</p>
 
 <p><img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="../../../../assets/images/piAppAuthorizeSandbox.png" style="width:270px;height:550px;" /></p>
 
@@ -77,13 +77,13 @@
 
 <p>The page should now redirect to the home page of your app. You are now able to test the functionality of your app within a local environment. You will need Test-Pi in you Pi Wallet to make any transactions. For more information on payments see the <a href="../../../importantTopics/paymentFlow">Pi Payments</a> section.</p>
 
-<h3 id="calling-the-pi-sdk-within-your-app">Calling the Pi SDK within your App</h3>
+<h3 id="calling-the-pi-app-platform-sdk-within-your-app">Calling the Pi App Platform SDK within your App</h3>
 <h4 id="windowpi">Window.Pi</h4>
-<p>In order to call the PI SDK you must first initalize a new window directed towards Pi. This can be done using the follow code:</p>
+<p>In order to call the Pi App Platform SDK you must first initalize a new window directed towards Pi. This can be done using the follow code:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">Pi</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">Pi</span><span class="p">;</span></code></pre></figure>
 
-<p>You may name the varible whatever you prefer in this guide we use <code class="language-plaintext highlighter-rouge">Pi</code>. Now that the window has been initialized it is time to start utilizing the functions offered by the Pi SDK.</p>
+<p>You may name the varible whatever you prefer in this guide we use <code class="language-plaintext highlighter-rouge">Pi</code>. Now that the window has been initialized it is time to start utilizing the functions offered by the Pi App Platform SDK.</p>
 
 <h2 id="functions">Functions</h2>
 <p>The payment function and the access token received from the Authenticate function are covered in depth within the <a href="../../../importantTopics">Important Topics</a> section. Please head there to get a more detailed explination of functionality and use cases.</p>
@@ -130,8 +130,9 @@
 <h4 id="pioneer-approval">Pioneer Approval</h4>
 <p>When a Pioneer visits the app for the first time they will be presented a popup asking for permission to share their information with the app. Each scope requested will appear to the Pioneer and the Pioneer can choose to “Allow” or “Cancel” the request. When deciding what scopes to request its best to limit to only the needed scopes for core functionality of the app. Asking for too much information could result in Pioneers declining the request to share information with your app.</p>
 
-<p>The screen presented to Pioneers when visiting an app for the first time:
-<img title="Pioneer Authenticate Request" alt="Popup request to share a Pioneer's information with an App" src="../../../../assets/images/authenticateRequestPermission.png" style="width:250px;height:300px;" /></p>
+<p>The screen presented to Pioneers when visiting an app for the first time:</p>
+
+<p><img title="Pioneer Authenticate Request" alt="Popup request to share a Pioneer's information with an App" src="../../../../assets/images/authenticateRequestPermission.png" style="width:250px;height:300px;" /></p>
 
 <p>The app will not receive any information from Pi until the Pioneer approves this request. If the Pioneer fails to respond to the request then it will time out and the app will not be sent the requested information. The Pioneer will need to reload the page and then confirm their decision.</p>
 
@@ -159,7 +160,7 @@
 
 <h4 id="code-exapmle">Code Exapmle</h4>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Requesting payment scope from the Pi SDK:</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Requesting payment scope from the Pi App Platform SDK:</span>
 <span class="kd">const</span> <span class="nx">scopes</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">payments</span><span class="dl">'</span><span class="p">];</span>
 
 <span class="c1">//Empty function that will log an incomplete payment if found</span>
@@ -176,7 +177,7 @@
 <p>Now that you have implemented the payment scope you can create payments.</p>
 
 <h3 id="create-payment">Create Payment</h3>
-<p>The Pi SDK function to create a payment takes two arguments <code class="language-plaintext highlighter-rouge">paymentData</code> and <code class="language-plaintext highlighter-rouge">paymentCallback</code>.</p>
+<p>The Pi App Platform SDK function to create a payment takes two arguments <code class="language-plaintext highlighter-rouge">paymentData</code> and <code class="language-plaintext highlighter-rouge">paymentCallback</code>.</p>
 
 <p>Payment Data is the variables of the payment and in Javascript it should be constructed using a <code class="language-plaintext highlighter-rouge">Object {}</code>. The format for the object is as follow, you can name the object as you prefer:</p>
 
@@ -186,7 +187,7 @@
     <span class="na">metadata</span><span class="p">:</span> <span class="nx">object</span> <span class="p">{},</span> <span class="cm">/* { Special Information: 1234, ... } */</span>
 <span class="p">};</span></code></pre></figure>
 
-<p>The paymentCallbacks are a group of callback functions that will be utilized at points throughout the payment flow. The callback will come from the Pi SDK and each function is prefilled with the arguments it will receive. When implementing these functions the information should be passed to your server side to utilize the Pi App Platform APIs. Its important to have them all implemented so the app can handle errors.</p>
+<p>The paymentCallbacks are a group of callback functions that will be utilized at points throughout the payment flow. The callback will come from the Pi App Platform SDK and each function is prefilled with the arguments it will receive. When implementing these functions the information should be passed to your server side to utilize the Pi App Platform APIs. Its important to have them all implemented so the app can handle errors.</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Callbacks the developer needs to implement:</span>
 <span class="kd">const</span> <span class="nx">paymentCallbacks</span> <span class="o">=</span> <span class="p">{</span>

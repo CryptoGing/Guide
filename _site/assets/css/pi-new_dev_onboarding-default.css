@@ -362,9 +362,9 @@ h2, .text-beta { font-size: 18px !important; }
 
 @media (min-width: 31.25rem) { h2, .text-beta { font-size: 24px !important; line-height: 1.25; } }
 
-h3, .text-gamma { font-size: 16px !important; }
+h3, .text-gamma { font-size: 18px !important; }
 
-@media (min-width: 31.25rem) { h3, .text-gamma { font-size: 18px !important; } }
+@media (min-width: 31.25rem) { h3, .text-gamma { font-size: 24px !important; line-height: 1.25; } }
 
 h4, .text-delta { font-size: 14px !important; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
 

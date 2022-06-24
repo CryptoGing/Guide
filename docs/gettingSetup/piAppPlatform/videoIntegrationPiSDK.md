@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Video Ingtegration Pi SDK
-parent: "Pi Platform"
+parent: "Pi App Platform"
 grand_parent: "Getting Started"
 nav_order: 2
 ---

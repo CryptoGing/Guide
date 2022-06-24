@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Pi Platform APIs
-parent: "Pi Platform"
+title: Pi App Platform APIs
+parent: "Pi App Platform"
 grand_parent: "Getting Started"
 nav_order: 3
 ---
