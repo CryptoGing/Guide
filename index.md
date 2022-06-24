@@ -12,8 +12,6 @@ permalink: /
 Welcome to Pi’s home to documentation for new developers. We are excited that you are interested in joining our Ecosystem. This guide is intended to introduce you to all the topics relevant to getting started with building on Pi.
 {: .fs-6 .fw-300 }
 
-[View this on GitHub](https://github.com/pi-apps/pi-platform-docs){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-
 ---
 
 ## Pi’s Mission and Vision

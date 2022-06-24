@@ -48,14 +48,14 @@ If you're using a framework or a boilerplate that supports it, you should be abl
 
 This depends on your setup, but running the Pi SDK in sandbox mode will generally happen whenever your app is running in development.
 
-##### Sandbox URL
+#### Sandbox URL
 To obtain the URL for your app within the Sandbox open the Pi Browser and navigate to your app's Developer Portal Page. Scroll to the bottom of the page and look for a section titled "Development URL." Copy and paste the URL found in that section into your prefered desktop browser and hit enter.
 
 You will be redirected to a page that looks similar to the below image and says "Sign-in required" and has a random string of letters and numbers on it.
 
 <img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="../../../../assets/images/authorizeAppSandbox.png" style="width:270px;height:550px;">
 
-##### Authorize Sandbox
+#### Authorize Sandbox
 You now need to authorize the sandbox to access the Pi SDK. To do this on your mobile phone open the Pi App. Within the sidebar menu click on the "Pi Utilities" option. You will be presented the screen below, and you need to click the link for "Authorize Sandbox" at the bottom of the page.
 
 <img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="../../../../assets/images/piAppAuthorizeSandbox.png" style="width:270px;height:550px;">
@@ -124,6 +124,7 @@ Security Note: The Pioneer information obtained with this method, `uid` and `acc
 When a Pioneer visits the app for the first time they will be presented a popup asking for permission to share their information with the app. Each scope requested will appear to the Pioneer and the Pioneer can choose to "Allow" or "Cancel" the request. When deciding what scopes to request its best to limit to only the needed scopes for core functionality of the app. Asking for too much information could result in Pioneers declining the request to share information with your app. 
 
 The screen presented to Pioneers when visiting an app for the first time:
+
 <img title="Pioneer Authenticate Request" alt="Popup request to share a Pioneer's information with an App" src="../../../../assets/images/authenticateRequestPermission.png" style="width:250px;height:300px;">
 
 The app will not receive any information from Pi until the Pioneer approves this request. If the Pioneer fails to respond to the request then it will time out and the app will not be sent the requested information. The Pioneer will need to reload the page and then confirm their decision. 

@@ -136,7 +136,7 @@ figure, pre { margin: 0; }
 
 li { margin: 0.25em 0; }
 
-img { max-width: 100%; height: auto; }
+img { max-width: 100%; height: auto; margin: auto; display: block; }
 
 hr { height: 1px; padding: 0; margin: 2rem 0; background-color: #44434d; border: 0; }
 
@@ -366,15 +366,15 @@ h3, .text-gamma { font-size: 16px !important; }
 
 @media (min-width: 31.25rem) { h3, .text-gamma { font-size: 18px !important; } }
 
-h4, .text-delta { font-size: 11px !important; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; }
+h4, .text-delta { font-size: 14px !important; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
 
-@media (min-width: 31.25rem) { h4, .text-delta { font-size: 12px !important; } }
+@media (min-width: 31.25rem) { h4, .text-delta { font-size: 16px !important; } }
 
 h4 code { text-transform: none; }
 
-h5, .text-epsilon { font-size: 12px !important; color: #44434d; }
+h5, .text-epsilon { font-size: 14px !important; color: #44434d; }
 
-@media (min-width: 31.25rem) { h5, .text-epsilon { font-size: 14px !important; } }
+@media (min-width: 31.25rem) { h5, .text-epsilon { font-size: 16px !important; } }
 
 h6, .text-zeta { font-size: 11px !important; color: #44434d; }
 
