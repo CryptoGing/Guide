@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pi Platform SDK
+title: Pi App Platform SDK
 parent: "Pi App Platform"
 grand_parent: "Getting Started"
 nav_order: 1

@@ -22,7 +22,7 @@ One way transfer from the wallet of a Pioneer, who initates the payment within t
 This page will not cover how to integrate the Pi SDK or Pi App Platform APIs and assumes you've read the following pages of this guide:
 
 <ul>
-<li> <a href="../../../gettingSetup/PiAppPlatform/piSDK"> Pi SDK </a> </li>
+<li> <a href="../../../gettingSetup/PiAppPlatform/piAppPlatformSDK"> Pi SDK </a> </li>
 <li> <a href="../../../gettingSetup/PiAppPlatform/PiAppPlatformAPIs"> Pi App Platform APIs </a> </li>
 <li> <a href="../piPaymentFlow"> Pi Payment Flow </a> </li>
 </ul>
