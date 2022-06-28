@@ -37,344 +37,434 @@
   },"6": {
     "doc": "Community Support",
     "title": "Pi App Chat",
-    "content": "You can also send a message within the chat feature can be accessed from the Pi App. Click on the sidebar menu within the Pi App, then click the “Chat” option. The “Developers” chatroom can be added using the plus in the lower right of the screen. The “Developers” chatroom is the best place to ask technical questions. One of our great Moderators will assist you. Follow us on Twitter for announcements . ",
+    "content": "You can also send a message within the chat feature can be accessed from the Pi App. Click on the sidebar menu within the Pi App, then click the “Chat” option. The “Developers” chatroom can be added using the plus in the lower right of the screen. The “Developers” chatroom is the best place to ask technical questions. One of our great Moderators will assist you. ",
     "url": "http://localhost:4000/Guide/docs/communitySupport/#pi-app-chat",
     "relUrl": "/docs/communitySupport/#pi-app-chat"
   },"7": {
+    "doc": "Community Support",
+    "title": "Twitter",
+    "content": "Follow us on Twitter for announcements . ",
+    "url": "http://localhost:4000/Guide/docs/communitySupport/#twitter",
+    "relUrl": "/docs/communitySupport/#twitter"
+  },"8": {
+    "doc": "Demo App Backend",
+    "title": "Pi Demo App Backend",
+    "content": "Demo app’s backend is using several environment variables, from which most have default values. In order to specify these, create .env file in the root backend directory. You can preview it in .env.example file. The only variable you need to provide is PI_API_KEY, which is required to authorize payments. You receive it upon app registration. For more guidelines on how to register you app refer to Developer Portal - API Key . ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppBackend/#pi-demo-app-backend",
+    "relUrl": "/docs/demoApp/demoAppBackend/#pi-demo-app-backend"
+  },"9": {
+    "doc": "Demo App Backend",
+    "title": "Setup",
+    "content": "In order to start, install dependencies: . npm install or yarn install . and then run the server: . npm start or yarn start . If everything is setup correctly you should see following message in the terminal: . App platform demo app - Backend listening on port 8080! . ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppBackend/#setup",
+    "relUrl": "/docs/demoApp/demoAppBackend/#setup"
+  },"10": {
+    "doc": "Demo App Backend",
+    "title": "MongoDB",
+    "content": "Demo app’s backend uses local MongoDB server to store user data and sessions’ details. ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppBackend/#mongodb",
+    "relUrl": "/docs/demoApp/demoAppBackend/#mongodb"
+  },"11": {
+    "doc": "Demo App Backend",
+    "title": "Setup",
+    "content": "If you haven’t already, install MongoDB Community following the official MongoDB docs and start MongoDB service. The default username, password and port for MongoDB are root, password and 27017 accordingly. If you have decided to change these values, make sure to update environment variables in backend .env file. In order to preview database, you can use Robo 3T or MongoDB Compass. ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppBackend/#setup-1",
+    "relUrl": "/docs/demoApp/demoAppBackend/#setup-1"
+  },"12": {
+    "doc": "Demo App Backend",
+    "title": "Demo App Backend",
+    "content": " ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppBackend/",
+    "relUrl": "/docs/demoApp/demoAppBackend/"
+  },"13": {
+    "doc": "Demo Pi Application Code",
+    "title": "Demo App",
+    "content": "Pi Demo App is an example of how you can implement the various required flows in your app’s code. It aims to show you how to use Pi Platform API on the backend side and Pi SDK on the frontend side of your app. ",
+    "url": "http://localhost:4000/Guide/docs/demoAppCode/#demo-app",
+    "relUrl": "/docs/demoAppCode/#demo-app"
+  },"14": {
+    "doc": "Demo Pi Application Code",
+    "title": "Demo Pi Application Code",
+    "content": " ",
+    "url": "http://localhost:4000/Guide/docs/demoAppCode/",
+    "relUrl": "/docs/demoAppCode/"
+  },"15": {
+    "doc": "Demo App Frontend",
+    "title": "Pi Demo App Frontend",
+    "content": "Pi Demo App is an example React app created with Create React App. ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppFrontend/#pi-demo-app-frontend",
+    "relUrl": "/docs/demoApp/demoAppFrontend/#pi-demo-app-frontend"
+  },"16": {
+    "doc": "Demo App Frontend",
+    "title": "Setup",
+    "content": "In order to start the app install dependencies . npm install or yarn install . and then run the app in development mode: . npm start or yarn start . ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppFrontend/#setup",
+    "relUrl": "/docs/demoApp/demoAppFrontend/#setup"
+  },"17": {
+    "doc": "Demo App Frontend",
+    "title": "Running app in the Sandbox",
+    "content": "To test all of the Demo App features, you need to open it in the Sandbox by pasting the correct Sandbox URL into your browser. Perform either one of the following: . | Use provided demo-app URL: https://sandbox.minepi.com/mobile-app-ui/app/demo-app-2 . | This Sandbox URL is listening for the frontend app running on port 3000 | . | . | Register a new app using Developer Portal and use your own Sandbox URL. | For guidelines on how to register an app and get the Sandbox URL, please refer to Developer Portal - Register an App . | Note: Make sure to run the app on the same port that you registered it with on the Developer Portal. By default, the app will run on port 3000. If you need, you can change the port by specifying it in .env file . | . | . ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppFrontend/#running-app-in-the-sandbox",
+    "relUrl": "/docs/demoApp/demoAppFrontend/#running-app-in-the-sandbox"
+  },"18": {
+    "doc": "Demo App Frontend",
+    "title": "Demo App Frontend",
+    "content": " ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoAppFrontend/",
+    "relUrl": "/docs/demoApp/demoAppFrontend/"
+  },"19": {
+    "doc": "Setup",
+    "title": "Pi Demo App",
+    "content": "Pi Demo App is an example of how you can implement the various required flows in your app’s code. It aims to show you how to use Pi Platform API on the backend side and Pi SDK on the frontend side of your app. ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoSetup/#pi-demo-app",
+    "relUrl": "/docs/demoApp/demoSetup/#pi-demo-app"
+  },"20": {
+    "doc": "Setup",
+    "title": "Getting started",
+    "content": "To test Demo App features, you need to run both frontend and backend apps. 1. Clone the Github repo: . git clone git@github.com:pi-apps/platform-demo-app.git . 2. Navigate to the repository folder: . cd platform-demo-app . 3. Setup frontend app . Setup frontend app following the Pi Demo App Frontend documentation. 4. Setup backend server . Setup backend server following the Pi Demo App Backend documentation. ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoSetup/#getting-started",
+    "relUrl": "/docs/demoApp/demoSetup/#getting-started"
+  },"21": {
+    "doc": "Setup",
+    "title": "Setup",
+    "content": " ",
+    "url": "http://localhost:4000/Guide/docs/demoApp/demoSetup/",
+    "relUrl": "/docs/demoApp/demoSetup/"
+  },"22": {
     "doc": "Developer Portal",
     "title": "Developer Portal",
     "content": " ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/devPortal/",
-    "relUrl": "/docs/gettingSetup/devPortal/"
-  },"8": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/devPortal/",
+    "relUrl": "/docs/gettingStarted/devPortal/"
+  },"23": {
     "doc": "Developer Portal",
     "title": "Table of contents",
     "content": ". | What is it . | Pi Brainstorm | . | Register &amp; Create API Key . | Step by Step Video Guide | Registering an App . | The basic fields | . | Self hosted or Hosted by Pi Core Team . | Self hosted | Hosted by Pi Core Team | . | Frontend Validation | API Key | . | . ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/devPortal/#table-of-contents",
-    "relUrl": "/docs/gettingSetup/devPortal/#table-of-contents"
-  },"9": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/devPortal/#table-of-contents",
+    "relUrl": "/docs/gettingStarted/devPortal/#table-of-contents"
+  },"24": {
     "doc": "Developer Portal",
     "title": "What is it",
     "content": "The Developer Portal is a Pi App that allows you to register as a developer and get developer credentials to create third-party Pi Apps – web-apps that can be accessed through the Pi Browser. By declaring your app’s URL here, your app will be able to access the Pi App Platform and communicate with the Pi servers and the Pi Blockchain. Your app will be accessible directly from your own URL through the Pi Browser. You can put your app on any domain you want and still have a fully functional Pi app. To access this feature head to develop.pi within the Pi Browser or open the Pi Browser and click on the develop.pi tile. Currently, all APIs are aimed the Pi Testnet, so only Test-Pi will be involved. This will allow developers to build apps ahead of the release of the Mainnet SDK. Check out the section Mainnet vs. Testnet . The only requirement at this stage is that you own the domain of the URL that you provide! You will be asked to verify its ownership which is detailed below. Pi Brainstorm . The Pi Brainstorm application is designed to be the hub where Pioneers can collaborate and propose ideas for new apps that will build utility in the Pi Ecosystem. All Pioneers are able to view, propose, and apply to join exsisting projects within the Brainstorm app. Check it out by clicking on the Brainstorm tile within the Pi Browser. ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/devPortal/#what-is-it",
-    "relUrl": "/docs/gettingSetup/devPortal/#what-is-it"
-  },"10": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/devPortal/#what-is-it",
+    "relUrl": "/docs/gettingStarted/devPortal/#what-is-it"
+  },"25": {
     "doc": "Developer Portal",
     "title": "Register &amp; Create API Key",
     "content": "Step by Step Video Guide . Captions for the video can be found on our Medium Blog Post . Registering an App . The basic fields . When you open the developer portal the homepage will be presented, there is a brief introduction of the app and information to keep in mind. At the bottom of the page you will see a “New App” button and if you have previously registered an app it will appear at the very bottom of the page. Click the “New App” button to start the creation process. You will now see the application creation form: . | Add an App Name and Description of the App. | . If you have a Brainstorm project associated with your app, you should use the same name. | At the end of the form, you will be asked for your Github and Discord usernames, both of which are optional. | . In the future, we may create a bridge between Brainstorm and the Developer Portal, so that the whole app lifecycle is seamless. Self hosted or Hosted by Pi Core Team . In the middle of the form, you will see a question asking if you want the app to be self hosted or hosted by Pi Core Team. Self hosted . Self Hosted means that you are the one handling your application on production. You can have your own infrastructure, but you are the one taking care of the scaling and the availability. If you select this option, you will be asked for the frontend URL of your application. See the Frontend Validation Section for validating this frontend URL. Hosted by Pi Core Team . On the other hand, “Hosted by Pi Core Team” means that will host your application — no infrastructure management, no availability issues, you simply take care of the code. Although the first option, self-hosting is available for everyone, the second requires approval from the Pi Core Team. The hosting of apps is facilitated through the Pi App Engine. Finally, when you select this action, instead of a frontend url, you will be asked for a gitlab username. This will be useful for us in order to provide you with a Gitlab project, already integrated with our deployment pipeline. You can now click the submit button and follow me to the next page. Frontend Validation . If you choose to host your application yourself, you will need to verify your domain ownership. This is meant to avoid developers creating apps from websites they do not represent. For instance, you shouldn’t be able to impersonate the wikipedia.com domain name. In order to prove your ownership over the domain name, you will need to place a specific file at the root of your domain. The content of the file must match the content of the text field in the gray box. When you are done placing the file with the correct content at the root of your domain, you can click the “Verify domain” button. You will either see an error message with some debugging information, or the gray box will disappear and a green check mark will appear next to your domain url. Your domain ownership is now verified, and you can access your app through the Pi Browser by typing your app url in the address bar. API Key . With the Pi App Platform comes the Pi API, where you can execute HTTP requests against the main Pi Servers. For now this is only meant to handle payments but more abilities will be added in the future, like creating chat conversations on the Pi Chat from your application. At the bottom of the page, you can see a section called “API Keys”. You will need it to access the Pi Backend as an application developer. Keep it safe! Anyone with this key can pretend to be you. Note that accessing the public Pi blockchain does not require any API keys, you can simply produce transactions using your App’s private key and submit them directly to the blockchain through any public node (e.g. your own node, one of Pi Core Team’s nodes, or any other node that is running the “Blockchain API service”) . ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/devPortal/#register--create-api-key",
-    "relUrl": "/docs/gettingSetup/devPortal/#register--create-api-key"
-  },"11": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/devPortal/#register--create-api-key",
+    "relUrl": "/docs/gettingStarted/devPortal/#register--create-api-key"
+  },"26": {
     "doc": "Getting Started",
     "title": "Getting Started",
     "content": "This section introduces the Pi Browser, Pi Platform, and the steps required to get your development on Pi started. ",
     "url": "http://localhost:4000/Guide/docs/gettingStarted/",
     "relUrl": "/docs/gettingStarted/"
-  },"12": {
+  },"27": {
     "doc": "Important Topics",
     "title": "Important Topics",
-    "content": " ",
+    "content": "This sections covers many of the unique or special tools that the Pi App Platform offers to developers. Also covered are the blockchain topics that a developer should be familiar with. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/",
     "relUrl": "/docs/importantTopics/"
-  },"13": {
+  },"28": {
     "doc": "Welcome",
     "title": "Pi New Developer Onboarding Guide",
     "content": "Welcome to Pi’s home of documentation for new developers. We are excited that you are interested in joining our Ecosystem. This guide is intended to introduce you to all the topics relevant to getting started with building on Pi. ",
     "url": "http://localhost:4000/Guide/#pi-new-developer-onboarding-guide",
     "relUrl": "/#pi-new-developer-onboarding-guide"
-  },"14": {
+  },"29": {
     "doc": "Welcome",
-    "title": "Pi’s Mission and Vision",
-    "content": "Pi vision is to build the world’s most inclusive peer-to-peer ecosystem and online experience, fueled by Pi, the world’s most widely used cryptocurrency. Pi strives to achieve this with a mobile-first approach that can be accessed by a worldwide user base. ",
-    "url": "http://localhost:4000/Guide/#pis-mission-and-vision",
-    "relUrl": "/#pis-mission-and-vision"
-  },"15": {
+    "title": "Pi’s Vision",
+    "content": "Pi vision is to build the world’s most inclusive peer-to-peer ecosystem and online experience, fueled by Pi, the world’s most widely used cryptocurrency. Pi delivers on the true promise of blockchain: a massive, open community powered by the world’s most widely distributed cryptocurrency that delivers accessibility and enables a robust ecosystem for members, merchants and developers alike. Founded in 2018 by a team of early innovators in blockchain and social computing, with PhDs from Stanford University, Pi Network is a utilities-based ecosystem for third-party apps on a mobile web platform, with widespread (rather than concentrated) token distribution. The blockchain platform offers a mobile-first mining approach, with low financial cost and a light environmental footprint within the crypto space. The community boasts an engaged 35M+ members in over 230 countries or regions. ",
+    "url": "http://localhost:4000/Guide/#pis-vision",
+    "relUrl": "/#pis-vision"
+  },"30": {
     "doc": "Welcome",
     "title": "Pi Mobile Apps",
-    "content": "There are two apps which are required to join the ecosystem. The first is Pi’s original Mining App and it is home to the unique mining mechanism of Pi. Downloading and creating an account allows anyone to participate in the ecosystem and mine Pi. Pi App is available for Android and iOS . The second is Pi Browser which is the window through which Pioneers (users and members of the Pi community) experience community developers applications. There is a more detailed explanation on the Pi Browser within the “Getting Started” category. Pi Browser is available for Android and iOS . Developers with Android phones that don’t have access to the Google Play Store the APKs for Pi App and Pi Browser . ",
+    "content": "There are two apps which are required to join the ecosystem. The first is Pi’s original Mining App and it is home to the unique mining mechanism of Pi. Downloading and creating an account allows anyone to participate in the ecosystem and mine Pi. Pi App is available for Android and iOS. The second is the Pi Browser, which is the mobile web platform for the Pi ecosystem – the window through which Pioneers (users and members of the Pi community) experience community developers applications. There is a more detailed explanation on the Pi Browser within the “Getting Started” category. Pi Browser is available for Android and iOS. Developers with Android phones that don’t have access to the Google Play Store can instead use the APKs for Pi App and Pi Browser. ",
     "url": "http://localhost:4000/Guide/#pi-mobile-apps",
     "relUrl": "/#pi-mobile-apps"
-  },"16": {
+  },"31": {
     "doc": "Welcome",
     "title": "Documentation",
-    "content": "There are two approaches to onboarding. First is to use this guide and move through its various categories. It will cover getting set up all the way through to processing payments. Head over to the “Getting Started” category and start with the Pi Browser Introduction. Or if you are looking for a less structured process you can go to our GitHub Repository and jump right into integrations. We advise against the second option because while it’s straightforward to integrate, you will miss out on learning the unique benefits and features that Pi has for developers. ",
+    "content": "There are two approaches to onboarding. First is to use this guide and move through its various categories. It will cover getting set up all the way through to processing payments. Head over to the Getting Started category and start with the Pi Browser Introduction. Or if you are looking for a less structured process you can go to our GitHub Repository and jump right into integrations. We advise against the second option because while it’s straightforward to integrate, you will miss out on learning the unique benefits and features that Pi has for developers. ",
     "url": "http://localhost:4000/Guide/#documentation",
     "relUrl": "/#documentation"
-  },"17": {
+  },"32": {
     "doc": "Welcome",
     "title": "Whitepaper",
-    "content": "We are currently updating the Original Pi Whitepaper to match the current state of the project. While our original vision remains unchanged, we have made large strides in the years since starting. The first released chapters of the Updated Whitepaper detail the token supply and mining mechanism as well as the project’s roadmap. ",
+    "content": "The Original Pi Whitepaper was published on PiDay, March 14, 2019. While our original vision remains unchanged, the details of this whitepaper are not fully up to date. On December 28, 2021, along with the release of the Enclosed mainnet, we published three draft chapters of the Updated Whitepaper, detailing the Pi token token model and mining mechanism as well as the project’s roadmap. ",
     "url": "http://localhost:4000/Guide/#whitepaper",
     "relUrl": "/#whitepaper"
-  },"18": {
+  },"33": {
     "doc": "Welcome",
     "title": "Developer Terms of Service",
     "content": "By accessing or using any part of the Pi Network Developer tools and resources, you agree that you are subject to and will comply with the Pi Network Developer Terms of Use. ",
     "url": "http://localhost:4000/Guide/#developer-terms-of-service",
     "relUrl": "/#developer-terms-of-service"
-  },"19": {
+  },"34": {
     "doc": "Welcome",
     "title": "Welcome",
     "content": " ",
     "url": "http://localhost:4000/Guide/",
     "relUrl": "/"
-  },"20": {
+  },"35": {
     "doc": "Pi Mainnet vs Pi Testnet",
     "title": "Pi Mainnet vs Pi Testnet",
     "content": " ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/mainnetVsTestnet/",
     "relUrl": "/docs/importantTopics/mainnetVsTestnet/"
-  },"21": {
+  },"36": {
     "doc": "Pi Mainnet vs Pi Testnet",
     "title": "Table of contents",
     "content": ". | Pi Mainnet . | Enclosed Network Period . | Restrictions in the Enclosed Network | . | The Open Network Period | . | Pi Testnet . | Sandbox (Local Environment) | . | Pi Wallet | . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/mainnetVsTestnet/#table-of-contents",
     "relUrl": "/docs/importantTopics/mainnetVsTestnet/#table-of-contents"
-  },"22": {
+  },"37": {
     "doc": "Pi Mainnet vs Pi Testnet",
     "title": "Pi Mainnet",
     "content": "The Pi Mainnet is the native blockchain centered around Pi. The mining mechanism that distributes Pi to Pioneers requires all Pioneers to migrate from the Pi App to the Pi Mainnet. The migration of Pioneer balances from their phone account to the Mainnet started in early 2022 with the launch of the Pi KYC App. KYC authentication of a Pioneer precedes their balance migration to the Mainnet. In order to allow for sufficient time for millions of Pioneers to successfully complete their KYC verification, create utilities in the Pi ecosystem, and our continued efforts to iterate on our technology and ecosystem design, the Mainnet will have two periods: . | Firewalled Mainnet (i.e., the Enclosed Network), | Open Mainnet (i.e., the Open Network). | . Enclosed Network Period . This period began in December 2021. The Enclosed Network period means that the Mainnet is live but with a firewall that prevents any unwanted external connectivity. KYC’ed Pioneers will be able to use their Pi on the Mainnet freely in an enclosed environment within Pi Network. Pi apps will be able to switch from Testnet to Mainnet—to production mode for real Pi transactions. However, this period will not allow connectivity between the Pi blockchain and other blockchains. Moreover, the Enclosed Network will allow the Mainnet to run with production data and real Pi, which differs from Testnet. Data gathered during the Enclosed Network will help calibrate and tweak any configurations and formulae, if necessary, to ensure a stable and successful Open Network. Restrictions in the Enclosed Network . While transactions between Pi apps and Pioneers and Pioneer-to-Pioneer transactions are allowed within Pi Network, the Enclosed Network will have in place the restrictions as listed below. These restrictions at this stage help enforce the enclosed nature of the network: . There will be no connectivity between Pi and other blockchains or crypto exchanges. Mainnet can only be accessed through the Pi Wallet and Pi apps on the Pi Browser. The Mainnet blockchain will be accessible to any computer on the internet but only through a firewall to enforce the above rules. There will only be Core Team Nodes on the Mainnet to ensure that the firewall is in place at all times. The Enclosed Network will support the growth of the Pi ecosystem. Thus, Pioneer-to-Pioneer transactions are possible through the Pi Wallet as KYC’ed Pioneers will be able to use the Pi Wallet to transact in Pi. Pioneers can also spend Pi in Pi apps on the Pi Browser, which can access the Mainnet through the Pi Apps SDK and the Pi Blockchain API. During the Enclosed Network period, an app on the Pi Browser can only use the Pi blockchain APIs whitelisted by the firewall to interact with the Mainnet. The following uses of Pioneer-to-Pioneer, Pioneer-to-App, and App-to-Pioneer transactions will be allowed: . | Exchange of Pi for goods and services through Pi Apps | Transfer of Pi between Pioneers for goods and services | . The following uses will be prohibited: . | Exchange of Pi for fiat currency | Exchange of Pi for other cryptocurrencies | Transfer for Pi for a future promise of fiat or other cryptocurrencies | . We will enforce the above restrictions by adding a firewall to the Mainnet and by exclusively running the Mainnet Nodes for this interim period. Community Nodes will continue to run on the Testnet in the Enclosed Network period. We will continue to implement interface and other changes to the Nodes in preparation for the Open Network period where the Community Nodes will be able to run on the Mainnet. The restrictions of the Network to keep it enclosed will be relaxed as it reaches the next period—Open Network. The Open Network Period . The launch of the Open Network Period depends on the maturity of the Enclosed Network ecosystem and the progress of KYC. The Open Network period means that the firewall in the Enclosed Network period will be removed, allowing any external connectivity, e.g., to other networks, wallets, and anyone who wants to connect to Pi Mainnet. API calls will not be firewalled, and Pioneers will be able to run their own Pi Nodes and API services. Pioneers will have connectivity with other blockchains. Community Nodes can also run the Mainnet. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/mainnetVsTestnet/#pi-mainnet",
     "relUrl": "/docs/importantTopics/mainnetVsTestnet/#pi-mainnet"
-  },"23": {
+  },"38": {
     "doc": "Pi Mainnet vs Pi Testnet",
     "title": "Pi Testnet",
     "content": "Pi Testnet allows for the testing of connectivity, performance, security, and scalability of the blockchain, and allows Pi app developers to develop the Pi apps before they deploy their app on the Pi Mainnet. The Pi Testnet is meant to mimic but is not a fork of the Pi Mainnet. Blockchain transactions are irreversable and cannot be refunded so its important to have a place for developers and Pioneers to test transcations in a risk free environment. Most parameters of the Pi Testnet match that of the Pi Network. The Pi Testnet uses Test Pi (or test-π) which is NOT REAL Pi. Test Pi is solely for the purpose of testing transactions on the Pi Testnet and contains NO VALUE. There is a faucet on the Pi Testnet which distributes Test Pi, if your wallet is running low on Test Pi more can be requested. The Test-Pi balance in the wallet may be reset because Testnet will be periodically reset as part of the testing. Sandbox (Local Environment) . The Sandbox is a local testing environment that utilizes the Pi Testnet and a local instance of your app. This is for testing purposes only and should only be used during development. In order to use this feature you must have a URL registered within the Developer Portal page of your app. To learn how to utilize the Sandbox and get it setup go to the Pi SDK page and see the section titled “The Sandbox Flag.” . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/mainnetVsTestnet/#pi-testnet",
     "relUrl": "/docs/importantTopics/mainnetVsTestnet/#pi-testnet"
-  },"24": {
+  },"39": {
     "doc": "Pi Mainnet vs Pi Testnet",
     "title": "Pi Wallet",
     "content": "The Pi Wallet can be utilized on both the Pi Mainnet and Pi Testnet. See the Pi Wallet page to learn more about the wallet. Instructions to switch between networks within the Pi Wallet is available on the page. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/mainnetVsTestnet/#pi-wallet",
     "relUrl": "/docs/importantTopics/mainnetVsTestnet/#pi-wallet"
-  },"25": {
+  },"40": {
     "doc": "Pi Payments",
     "title": "Pi Payments",
     "content": "This section covers all the relevent topics on creating, receiving, and sending payments of various types utilizing the Pi SDK. Pioneers utilize the Pi Wallet within Pi Browser and all documentation is related to the functionality associated with Pi Wallet. Currently Pioneer to App is the only payment method released. Coming soon will be App to Pioneer payments and Pioneer to Pioneer initaited by an App. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/",
     "relUrl": "/docs/importantTopics/paymentFlow/"
-  },"26": {
+  },"41": {
     "doc": "Pi App Platform APIs",
     "title": "Pi Platform APIs",
-    "content": "The platform API allows you to read and write data to the Pi Servers related with your app deployed on the Pi App Platform, and your app’s Pioneers. ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/piAppPlatformAPIs/#pi-platform-apis",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/piAppPlatformAPIs/#pi-platform-apis"
-  },"27": {
+    "content": "The platform API grants access to communicate with the Pi Servers related with your app deployed on the Pi App Platform, and the Pioneers that use your app. ",
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/piAppPlatformAPIs/#pi-platform-apis",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/piAppPlatformAPIs/#pi-platform-apis"
+  },"42": {
     "doc": "Pi App Platform APIs",
     "title": "Table of contents",
-    "content": ". | Making API Calls . | Headers and Authorization Methods . | Access Token (Bearer Token) | Server API Key (Authorization Key) | . | API Reference . | /me | /payments . | Example Request | . | . | Resource Types . | Pioneer DTO | Payment DTO | . | . | . ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/piAppPlatformAPIs/#table-of-contents",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/piAppPlatformAPIs/#table-of-contents"
-  },"28": {
+    "content": ". | Making API Calls . | Headers and Authorization Methods . | Access Token (Bearer Token) | Server API Key (Authorization Key) | . | API Reference . | /me | /payments . | Approve a Payment: | Complete a Payment: | Example Request | . | . | Resource Types . | Pioneer DTO | Payment DTO | . | . | . ",
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/piAppPlatformAPIs/#table-of-contents",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/piAppPlatformAPIs/#table-of-contents"
+  },"43": {
     "doc": "Pi App Platform APIs",
     "title": "Making API Calls",
-    "content": "Headers and Authorization Methods . This is how the Pi Servers will determine if the request is coming from a approved source. There are two formats depending on the endpoint being requested . Access Token (Bearer Token) . Some API calls require that you provide a Pioneer’s access token to access the resource. They are generally related with a Pioneer’s data (e.g: /me). The token Comes from the Pi.Authenticate Call to the SDK. Those endpoints can be accessed using the following Authorization header: . Authorization: Bearer &lt;Pioneer's access token&gt; . Example Code: . const PioneerAccessToken = accessToken; const headers = { headers: { authorization: \"Bearer \" + PioneerAccessToken }}; axios.get(\"https://api.minepi.com/v2/me\", headers); . Server API Key (Authorization Key) . For various reasons, some API calls must be made from the backend or server of your app. To obtain an authorization key for API requests, please see the section of this guide on the Developer Portal. Those endpoints can be accessed using the following Authorization header: Format: . Authorization: Key &lt;App's Server API Key&gt; . Example Code: . const postingURL = `https://api.minepi.com/v2/payments/${ payment_id }`; const headers = { headers: { authorization: `key ${ APIKEY }` } }; axios.get(postingURL, null, headers); . API Reference . /me . Access a Pioneer’s resource and retrieve the Pioneer’s information. GET minepi.com/api/v2/me . Authorization method: Access token Response type: PioneerDTO . The request will fail (401 HTTP error code) if the token has been tampered with as a tampered Access token would not belong to any Pioneer. /payments . Payments are covered in greater detail in the Pi Payment Flow section of this guide. If this is your first implentation of a Pi payment its highly recommended to read that section. It covers how Pi Paymemts are initaited and completed. This section covers the API calls portion only. The APIs for payments all have the base route /payments. It is important to note do not create payments using the Platform API. Use the client-side Javascript SDK for this purpose. Get Information: . GET minepi.com/api/v2/payments/{payment_id} . Authorization method: Server API Key Response type: PaymentDTO . Approve a Payment: This marks payment as approved, enabling the Pioneer to submit the transaction to the blockchain. POST minepi.com/api/v2/payments/{payment_id}/approve . Authorization method: Server API Key Response type: PaymentDTO . Complete a Payment: This marks a payment as completed by proving to the Pi Servers that your app has obtained the payment’s txid, enabling the Pioneer to close the payment flow. POST minepi.com/api/v2/payments/{payment_id}/complete . Authorization method: Server API Key Response type: PaymentDTO . Example Request . const tx_id = { txid: \"7a7ed20d3d72c365b9019baf8dc4c4e3cce4c08114d866e47ae157e3a796e9e7\" } const headers ={headers:{ authorization: `key ${ APIKEY }` } }; axios.post(PaymentURL, tx_id, headers) . Resource Types . Pioneer DTO . { \"uid\": string, // An app-specific Pioneer identifier \"username\": string, // The Pioneer's Pi username. Requires the `username` scope. } . Payment DTO . { // Payment data: \"identifier\": string, // The payment identifier \"Pioneer_uid\": string, // The Pioneer's app-specific ID \"amount\": number, // The payment amount \"memo\": string, // A string provided by the developer, shown to the Pioneer \"metadata\": Object, // An object provided by the developer for their own usage \"to_address\": string, // The recipient address of the blockchain transaction \"created_at\": string, // The payment's creation timestamp // Status flags representing the current state of this payment \"status\": { \"developer_approved\": boolean, // Server-Side Approval \"transaction_verified\": boolean, // Blockchain transaction verified \"developer_completed\": boolean, // Server-Side Completion \"cancelled\": boolean, // Cancelled by the developer or by Pi Network \"Pioneer_cancelled\": boolean, // Cancelled by the Pioneer }, // Blockchain transaction data: \"transaction\": null | { // This is null if no transaction has been made yet \"txid\": string, // The id of the blockchain transaction \"verified\": boolean, // True if the transaction matches the payment, false otherwise \"_link\": string, // A link to the operation on the Blockchain API }, }; . ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/piAppPlatformAPIs/#making-api-calls",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/piAppPlatformAPIs/#making-api-calls"
-  },"29": {
+    "content": "Headers and Authorization Methods . This is how the Pi Servers will determine if the request is coming from a approved source. There are two formats depending on the endpoint being requested . Access Token (Bearer Token) . These API calls require that you provide a Pioneer’s access token to obtain the resource. They are generally related with a Pioneer’s data (e.g: /me). The token is returned from the Pi.Authenticate function of the Pi App Platform SDK. Those endpoints can be accessed using the following Authorization header: . Authorization: Bearer &lt;Pioneer's access token&gt; . Example Code: . const headers = { headers: { authorization: \"Bearer \" + PioneerAccessToken }}; axios.get(\"https://api.minepi.com/v2/me\", headers); . Server API Key (Authorization Key) . For various reasons, some API calls must be made from the backend or server of your app. To obtain an authorization key for API requests, please see the section of this guide on the Developer Portal. Those endpoints can be accessed using the following Authorization header: . Authorization: Key &lt;App Server API Key&gt; . Example code calling the /payments endpoint to obtain the information on a payment using the paymentID string: . const postingURL = `https://api.minepi.com/v2/payments/${ payment_id }`; const headers = { headers: { authorization: `key ${ APIKEY }` } }; axios.get(postingURL, null, headers); . API Reference . /me . Access a Pioneer’s resource and retrieve the Pioneer’s information. GET minepi.com/api/v2/me . Authorization method: Access token Response type: PioneerDTO . The request will fail (401 HTTP error code) if the token has been tampered with, a tampered Access token would not belong to any Pioneer. /payments . Payments are covered in greater detail in the Pi Payment Flow section of this guide. If this is your first implentation of a Pi payment its highly recommended to read that section in addition. It covers how Pi Payments are initiated and completed. This section covers the API calls only. The APIs for payments all have the base route /payments. It is important to note do not create payments using the Platform API. Use the client-side Javascript SDK for this purpose. Get Information: . GET minepi.com/api/v2/payments/{payment_id} . Authorization method: Server API Key Response type: PaymentDTO . Approve a Payment: . This marks a payment as approved within the Pi Server, enabling the Pioneer to approve and submit the transaction to the blockchain. The paymentID is obtained as a argument of the callback function onReadyForServerApproval from the Pi App Platform SDK. Read more on that function on the Pi App Platform SDK page. The paymentID should be passed from your client side to your server side for this call. Once the paymentID is on your server side then call the /approve endpoint using the paymentID to identify the payment: . POST minepi.com/api/v2/payments/{payment_id}/approve . Authorization method: Server API Key Response type: PaymentDTO . Here is the code to call the /approve endpoint and console.log the returned Payment_DTO . //Using a fake paymentID for demonstration, would be passed from client side const paymentID = eWXszS7lkfsRLHcrDRghLpDD5tHc; const payment_id = paymentID; //Passed from the Client Side const headers = { headers: { authorization: `key ${ APIKEY }` } }; //Stored in a .env file const postingURL = `https://api.minepi.com/v2/payments/${ payment_id }/approve`; let payment_DTO = await axios.post(postingURL, null,headers); console.log(payment_DTO) . Complete a Payment: . This marks a payment as completed by proving to the Pi Servers that your app has obtained the payment’s transaction ID (txID). This is the final step in a payment before the payment flow closes and the Pioneer returns to your app. The txID is obtained through the callback function onReadyForServerCompletion of the Pi App Platform SDK. Passing that txID to your server side and using it to call this endpoint will complete a payment. Don’t forget that . POST minepi.com/api/v2/payments/{payment_id}/complete . Authorization method: Server API Key Response type: PaymentDTO . Example Request . //Using a fake txID string for demonstration, would be passed from client side const txid = \"7a7ed20d3d72c365b9019baf8dc4c4e3cce4c08114d866e47ae157e3a796e9e7\" const payment_id = payment_id; //Passed from client side const tx_id = { txid: txid }; //In production passed from client side const headers ={headers:{ authorization: `key ${ APIKEY }` } }; //API stored in .env file const postingURL = `https://api.minepi.com/v2/payments/${ payment_id }/complete` let payment_DTO = await axios.post(postingURL, tx_id, headers) console.log(payment_DTO) . Resource Types . There are two resources currently returned by the Pi App Platform API the Pioneer_DTO and the Payment_DTO. In the future there may be more. Pioneer DTO . { \"uid\": string, // An app-specific Pioneer identifier \"username\": string, // The Pioneer's Pi username. Requires the `username` scope. } . Payment DTO . { // Payment data: \"identifier\": string, // The payment identifier \"Pioneer_uid\": string, // The Pioneer's app-specific ID \"amount\": number, // The payment amount \"memo\": string, // A string provided by the developer, shown to the Pioneer \"metadata\": Object, // An object provided by the developer for their own usage \"to_address\": string, // The recipient address of the blockchain transaction \"created_at\": string, // The payment's creation timestamp // Status flags representing the current state of this payment \"status\": { \"developer_approved\": boolean, // Server-Side Approval \"transaction_verified\": boolean, // Blockchain transaction verified \"developer_completed\": boolean, // Server-Side Completion \"cancelled\": boolean, // Cancelled by the developer or by Pi Network \"Pioneer_cancelled\": boolean, // Cancelled by the Pioneer }, // Blockchain transaction data: \"transaction\": null | { // This is null if no transaction has been made yet \"txid\": string, // The id of the blockchain transaction \"verified\": boolean, // True if the transaction matches the payment, false otherwise \"_link\": string, // A link to the operation on the Blockchain API }, }; . ",
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/piAppPlatformAPIs/#making-api-calls",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/piAppPlatformAPIs/#making-api-calls"
+  },"44": {
     "doc": "Pi App Platform APIs",
     "title": "Pi App Platform APIs",
     "content": " ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/piAppPlatformAPIs/",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/piAppPlatformAPIs/"
-  },"30": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/piAppPlatformAPIs/",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/piAppPlatformAPIs/"
+  },"45": {
     "doc": "Pi App Platform SDK",
     "title": "Pi App Platform SDK",
     "content": "The SDK is a developer’s method to interact with and obtain information from Pi Network. Developers can request information such as a Pioneer’s username or create a payment within Pi Browser. ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/piAppPlatformSDK/",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/piAppPlatformSDK/"
-  },"31": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/piAppPlatformSDK/",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/piAppPlatformSDK/"
+  },"46": {
     "doc": "Pi App Platform SDK",
     "title": "Table of contents",
     "content": ". | How to integrate it . | HTML Code | The Sandbox Flag . | Sandbox URL | Authorize Sandbox | . | Calling the Pi App Platform SDK within your App . | Window.Pi | . | . | Functions . | Authenticate . | Calling Authenticate | Pioneer Approval | Scopes . | username | Payments | . | Code Exapmle | . | Create Payment | . | . ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/piAppPlatformSDK/#table-of-contents",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/piAppPlatformSDK/#table-of-contents"
-  },"32": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/piAppPlatformSDK/#table-of-contents",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/piAppPlatformSDK/#table-of-contents"
+  },"47": {
     "doc": "Pi App Platform SDK",
     "title": "How to integrate it",
     "content": "HTML Code . To use the Pi App Platform SDK, you need to add the SDK script tag to the frontend HTML code of your app’s home page. For most developers this will be the index.html file that is used as the “/” route or home page. Next you need to call the init function to initialize the SDK. You need to specify the version to ensure compatibility with future SDK releases. In the below code example the first script tag calls the SDK while the second script tag calls the init function and declares the version the SDK. &lt;script src=\"https://sdk.minepi.com/pi-sdk.js\"&gt;&lt;/script&gt; &lt;script&gt; Pi.init({ version: \"2.0\" }) &lt;/script&gt; . As of June 2022, version 2.0 is the latest. The Sandbox Flag . If you want to operate the Pi App Platform SDK within a local environment there is an optional tag that can be applied titled sandbox. You must have configured a development URL in the developer portal to use this feature. When testing within the Sandbox the flag should be set to true. &lt;script src=\"https://sdk.minepi.com/pi-sdk.js\"&gt;&lt;/script&gt; &lt;script&gt; Pi.init({ version: \"2.0\", sandbox: true }) &lt;/script&gt; . If you’re using a framework or a boilerplate that supports it, you should be able to set up your sandbox flag to match your development environment. For example, most good Node boilerplates will set up the value of process.env.NODE_ENV to either “development” or “production”, and you could do something like: . &lt;script&gt; Pi.init({ version: \"2.0\", sandbox: &lt;%= process.env.NODE_ENV !== 'production' %&gt; }) &lt;/script&gt; . This depends on your setup, but running the SDK in sandbox mode will generally happen whenever your app is running in development. Sandbox URL . To obtain the URL for your app within the Sandbox open the Pi Browser and navigate to your app’s Developer Portal Page. Scroll to the bottom of the page and look for a section titled “Development URL.” . Copy and paste the URL found in that section into your prefered desktop browser and hit enter. You will be redirected to a page that looks similar to the below image and says “Sign-in required” and has a random string of letters and numbers on it. Authorize Sandbox . You now need to authorize the sandbox to access you app within the Sandbox. This is required so that the Pi Servers know what Pioneer is accessing the sandox. To do this on your mobile phone open the Pi App. Within the sidebar menu click on the “Pi Utilities” option. You will be presented the screen below, and you need to click the link for “Authorize Sandbox” at the bottom of the page. After clicking on the “Authorize Sandbox” link you will be brought to the below page. Using the code displayed on the page within the desktop browser enter it into the “Sign-in code” field and click “confirm.” . The “Sign-In Required” page on the desktop browser should now redirect to the home page of your app. You are now able to test the functionality of your app within a local environment. You will need Test-Pi in you Pi Wallet to make any transactions. For more information on payments see the Pi Payments section. Calling the Pi App Platform SDK within your App . Window.Pi . In order to call the SDK you must first initalize a new window directed towards Pi. This can be done using the follow code: . const Pi = window.Pi; . You may name the varible whatever you prefer in this guide we use Pi. Now that the window has been initialized it is time to start utilizing the functions offered by the Pi App Platform SDK. ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/piAppPlatformSDK/#how-to-integrate-it",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/piAppPlatformSDK/#how-to-integrate-it"
-  },"33": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/piAppPlatformSDK/#how-to-integrate-it",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/piAppPlatformSDK/#how-to-integrate-it"
+  },"48": {
     "doc": "Pi App Platform SDK",
     "title": "Functions",
     "content": "A more detailed explination of functionality and use cases for payments and access token are covered in depth within the Important Topics section. Authenticate . The Authenicate funcation will request the Pioneer’s scope and retun them to the App in the form of a promise. Scopes, are aspects of a Pioneer’s information which can be requested by an application. The information is obscured when possible to protect the Pioneer. The Authenticate function will always return the uid and accessToken even when an empty array is passed for scopes requested. The Access Token is a dynamic identifier which can be used inconjuction with the Pi App Platform APIs to verify a Pioneer. The Access Token will change at set time intervals and should not be used to create a unique record for a Pioneer. The uid is an app-local identifier for the Pioneer, in that the uid is specific to that Pioneer, and the app. Calling Authenticate . The Authenticate function takes two arguements, scopes and onIncompletePaymentFound. Scopes is an array of strings and onIncompletePaymentFound is a pre-coded callback function. Both arguments are implemented by the developer and explinations are below. Javascript code example that will call the authenticate function and log the return in the console: . const Pi = window.Pi; // Empty array for testing purposes: const scopes = [ ]; //Empty function that will log an incomplete payment if found //Developer needs to implement this callback function function onIncompletePaymentFound(payment) { console.log(payment); }; Pi.authenticate(scopes, onIncompletePaymentFound).then(function(auth){ console.log(auth) }).catch(function(error) { console.error(error); . The empty scopes array will return a promise object in Javascript: . Object{ accessToken: string, user: { uid: string, } } . Security Note: The Pioneer information obtained with this method, uid and accessToken, should not be saved to your database and should only be used for presentation logic (e.g displaying the Pioneer’s username). Pass them to your backend and then verify the Pioneer’s identity by requesting the /me endpoint of the Pi Platform APIs, using the accessToken obtained with this method. The return from the /me endpoint will contain the uid for the Pioneer or will result in an error code if the Access Token is not found or valid. Pi Platform APIs are covered in depth on the Pi App Platform APIs page of this guide. Pioneer Approval . When a Pioneer visits the app for the first time they will be presented a popup asking for permission to share their information with the app. Each scope requested will appear to the Pioneer and the Pioneer can choose to “Allow” or “Cancel” the request. When deciding what scopes to request its best to limit to only the needed scopes for core functionality of the app. Asking for too much information could result in Pioneers declining the request to share information with your app. The screen presented to Pioneers when visiting an app for the first time: . The app will not receive any information from Pi until the Pioneer approves this request. If the Pioneer fails to respond to the request then it will time out and the app will not be sent the requested information. The Pioneer will need to reload the page and then confirm their decision. Scopes . username . The username scope will return a Pioneer’s username allowing the developer to integrate personalization into their app for the Pioneer. It can also be used for displaying progress or achievements such as on a leaderboard for a game. To request the username add the sting ‘username’ into the scopes array variable. Note this will not remove the accessToken or the uid from being returned. const scopes = ['username']; . The returned promise in Javascript: . Object{ accessToken: string, user: { uid: string, username: string } } . Payments . The payments string is needed to initialize Pi payments. It does not return any information within then returned promise object from the Authenticate function. To include it see the below code example: . Code Exapmle . // Requesting payment scope from the Pi App Platform SDK: const scopes = ['payments']; //Empty function that will log an incomplete payment if found //Developer needs to code this callback function function onIncompletePaymentFound(payment) { console.log(payment); }; Pi.authenticate(scopes, onIncompletePaymentFound).then(function(auth){ console.log(auth) }).catch(function(error) { console.error(error); . Now that you have implemented the payment scope you can create payments. Create Payment . The Pi App Platform SDK function to create a payment takes two arguments paymentData and paymentCallback. Payment Data is the variables of the payment and in Javascript it should be constructed using a Object {}. The format for the object is as follow, you can name the object as you prefer: . const paymentData = { amount: number, /* Pi Amount being Transacted */ memo: string, /* \"Any information that you want to add to payment\" */ metadata: object {}, /* { Special Information: 1234, ... } */ }; . The paymentCallbacks are a group of callback functions that will be utilized at points throughout the payment flow. The callback will come from the Pi App Platform SDK and each function is prefilled with the arguments it will receive. When implementing these functions the information should be passed to your server side to utilize the Pi App Platform APIs. Its important to have them all implemented so the app can handle errors. // Callbacks the developer needs to implement: const paymentCallbacks = { onReadyForServerApproval: function(paymentId) { /* ... */ }, onReadyForServerCompletion: function(paymentId, txid) { /* ... */ }, onCancel: function(paymentId) { /* ... */ }, onError: function(error, payment) { /* ... */ } }; . Here is a sample payment for 1 Pi using Javascript code and combining the variables from above. A .then function is used after the createPayment function to get the returned information and print it to the console and the .catch function receives any errors and prints them to the console. You don’t need to implement the error handling into your code but it makes troubleshooting much easier. const paymentData = { amount: 1, memo: 'This is a Test Payment', metadata: { InternalPaymentID: 1234 }, }; // Callbacks the developer needs to implement: const paymentCallbacks = { onReadyForServerApproval: function(paymentId) { /* ... */ }, onReadyForServerCompletion: function(paymentId, txid) { /* ... */ }, onCancel: function(paymentId) { /* ... */ }, onError: function(error, payment) { /* ... */ } }; Pi.createPayment(paymentData, paymentCallbacks).then(function(payment) { console.log(payment) }).catch(function(error) { console.error(error); }); } . The SDK is now integrated and you are ready to implement the Pi APIs . ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/piAppPlatformSDK/#functions",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/piAppPlatformSDK/#functions"
-  },"34": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/piAppPlatformSDK/#functions",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/piAppPlatformSDK/#functions"
+  },"49": {
     "doc": "Pi Browser Introduction",
     "title": "Pi Browser Introduction",
     "content": "What is it . The Pi Browser intends to provide a web experience in a decentralized world. In addition to supporting any Web2.0 applications, as do existing web browsers, the Pi Browser also enables people to browse, interact and transact in decentralized applications — applications that integrate with blockchain technology — for a seamless and friendly Pioneer experience. Additionally, the Pi Browser will have a directory of selected Pi Apps and its own DNS system to support a whole new class of .pi domains. Developers are able to host their apps on non-Pi domains if they choose. The Pi Browser is an open Pi Apps platform because it enables developers to test and deploy the applications that integrate with Pi, Pi Wallet and other elements of the Pi tech stack. It is the only browser that can support Pi applications. As a general-purpose browser tool, however, it is still primitive. That is, the browser is currently in its beta version, and more changes and features will be added later. Developers can integrate the Pi App Platform SDK with the Testnet and conduct Test-Pi transactions for Pi Apps that allow developers to test their Pi apps on Testnet from their own domains. Technicial Considerations . The Pi Browser utilizes iFrames to display App within the browser. This setup allows apps to be displayed on a wide array of devices without needing to create display logic for different devices or operating systems. Cookies or Session Tokens . iOS . Because iFrames are used, all apps displayed within Pi Browser will be considered Third Party Applications by the device. iOS natively disables cookies from all Third Party Applications, unless the device owner manually disables this feature. Developers should expect that Pioneers will have this feature enabled. The Core Team is actively working on an alterntive method for developers to have sessions. Android . Cookies or sessions can be utilized as expected. ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piBrowserIntroduction/",
-    "relUrl": "/docs/gettingSetup/piBrowserIntroduction/"
-  },"35": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piBrowserIntroduction/",
+    "relUrl": "/docs/gettingStarted/piBrowserIntroduction/"
+  },"50": {
     "doc": "Developer Payment Flow",
     "title": "Pi Payments",
     "content": "The platform API allows you to read and write data to the Pi Servers related with your app deployed on the Pi App Platform, and your app’s Pioneers. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piPaymentFlow/#pi-payments",
     "relUrl": "/docs/importantTopics/paymentFlow/piPaymentFlow/#pi-payments"
-  },"36": {
+  },"51": {
     "doc": "Developer Payment Flow",
     "title": "Table of contents",
     "content": ". | What are Pi Payments | Payment Flow Diagram | Payment Flow Steps . | Phase I - Payment creation and Server-Side Approval | Phase II - Pioneer interaction and blockchain transaction | Phase III - Server-Side Completion | . | App Payment Security | . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piPaymentFlow/#table-of-contents",
     "relUrl": "/docs/importantTopics/paymentFlow/piPaymentFlow/#table-of-contents"
-  },"37": {
+  },"52": {
     "doc": "Developer Payment Flow",
     "title": "What are Pi Payments",
     "content": "Payments are wrappers around blockchain transactions, which enable your app, the Pi blockchain, and the Pi Servers to be all synchronized when the Pioneer submits a blockchain transaction to pay for something in your app. They enable you, the developer of the app, to have full confidence that the Pioneer has actually made the transaction, while not having to bother with the technicalities involved when interacting with the Pi blockchain. The Payment flow . After they’re created, payments go through 3 major phases: . | Payment creation and Server-Side Approval | Pioneer interaction and blockchain transaction | Server-Side Completion | . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piPaymentFlow/#what-are-pi-payments",
     "relUrl": "/docs/importantTopics/paymentFlow/piPaymentFlow/#what-are-pi-payments"
-  },"38": {
+  },"53": {
     "doc": "Developer Payment Flow",
     "title": "Payment Flow Diagram",
     "content": "The below diagram outlines the steps involved in a Pioneer to App payment. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piPaymentFlow/#payment-flow-diagram",
     "relUrl": "/docs/importantTopics/paymentFlow/piPaymentFlow/#payment-flow-diagram"
-  },"39": {
+  },"54": {
     "doc": "Developer Payment Flow",
     "title": "Payment Flow Steps",
     "content": "Phase I - Payment creation and Server-Side Approval . | 1. createPayment: Your app's frontend creates the payment. The Payment Flow UI opens, but cannot be interacted with until the payment is approved by your server. | 2. onReadyForServerApproval: The JS SDK has obtained the payment identifier (PaymentID) and is passing it to your app for Server-Side approval. | . | Your app's frontend sends the PaymentID to your app's server. This implementation is your responsibility. | . | 3. Server-Side Approval: Your app's server approves the payment with Pi Servers through the /approve API call. This enables the Pioneer to submit the blockchain transaction. | . Phase II - Pioneer interaction and blockchain transaction . Steps 4a and 4b on the Pi Payment Flow Diagram. At this stage, the payment dialog becomes interactive and enables the Pioneer to confirm the transaction, sign it, and submit it to the Pi blockchain. You do not have anything to do at this stage, everything is handled by the Pi Apps Platform and the Pi Wallet. After the blockchain transaction is submitted, the payment flow will not close. You need to acknowledge the payment through Server-Side completion before your app is visible again. Phase III - Server-Side Completion . | 5. onReadyForServerCompletion: The Pi Servers will submit the Pioneer approved transaction to the Blockchain. Then Pi SDK passes the blockchain transaction identifier (TxID) to your app's frontend, through the callback function onReadyForServerCompletion. You need this value for the Server-Side Completion flow which uses the TxID in the Pi API call. | . | Your app's frontend sends the TxID to your app's server. This implementation is your responsibility. | . | 6. Server-Side Completion: Your app's server acknowledges the payment with the Pi Servers through the /complete API endpoint. This enables you to check whether the blockchain transaction has actually happened, and to let Pi know that you're aware of it. | 7. The payment flow closes. Your app is now visible to the Pioneer again. Your app's server and your app's frontend can exchange data, and update the app interface to show a confirmation screen to the Pioneer. | . | This implementation is your responsibility. | . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piPaymentFlow/#payment-flow-steps",
     "relUrl": "/docs/importantTopics/paymentFlow/piPaymentFlow/#payment-flow-steps"
-  },"40": {
+  },"55": {
     "doc": "Developer Payment Flow",
     "title": "App Payment Security",
     "content": "Do not complete any payment within your app until the payment has completed and had a paymentDTO returned from the /complete API endpoint of the Server-Side Completion. The Pioneer might be lying to your app, by running a hacked version of the SDK the Pioneer could pretend they have made a payment. If the API call to /payment/{ transaction_id }/complete returns a non-200 error code, do not mark the payment complete or paid with your app. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piPaymentFlow/#app-payment-security",
     "relUrl": "/docs/importantTopics/paymentFlow/piPaymentFlow/#app-payment-security"
-  },"41": {
+  },"56": {
     "doc": "Developer Payment Flow",
     "title": "Developer Payment Flow",
     "content": " ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piPaymentFlow/",
     "relUrl": "/docs/importantTopics/paymentFlow/piPaymentFlow/"
-  },"42": {
+  },"57": {
     "doc": "Pi App Platform",
     "title": "Pi App Platform",
     "content": "Ecompasses the many tools that Pi offers for developers to integrate their apps into the Pi Ecosystem. These are needed to communicate with the Pi servers for functions such as payments, verifying Pioneer information, and communicating with the Pi blockchain. ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piPlatform/",
-    "relUrl": "/docs/gettingSetup/piPlatform/"
-  },"43": {
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piPlatform/",
+    "relUrl": "/docs/gettingStarted/piPlatform/"
+  },"58": {
     "doc": "Pi Wallet Intro",
     "title": "Pi Wallet Introduction",
     "content": " ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piWallet/#pi-wallet-introduction",
     "relUrl": "/docs/importantTopics/paymentFlow/piWallet/#pi-wallet-introduction"
-  },"44": {
+  },"59": {
     "doc": "Pi Wallet Intro",
     "title": "Table of contents",
     "content": ". | What is the Pi Wallet | Switch between Pi Mainnet and Pi Testnet . | Testnet Faucet | . | Creating a Pi Wallet . | Personal Wallet . | Testnet | . | Developer Wallet | . | . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piWallet/#table-of-contents",
     "relUrl": "/docs/importantTopics/paymentFlow/piWallet/#table-of-contents"
-  },"45": {
+  },"60": {
     "doc": "Pi Wallet Intro",
     "title": "What is the Pi Wallet",
     "content": "To introduce the Pi Wallet, it’s worth briefly going over what a crypto wallet is. A crypto wallet is essentially a pair of “keys”: a public Address and a secret Passphrase (or a secret key). While the wallet address must be shared with others to transact on the blockchain, the passphrase must be kept secret as it is like a password to your bank account required to move any assets. In general, crypto wallets are categorized into custodial and non-custodial wallets with a difference in whether there is someone else helping you manage your passphrase/secret key or assets in the wallet. The Pi Wallet is a non-custodial wallet because the Pi servers never have access to your secret key or passphrase. To be more user-friendly and based on feedback from early testing Pioneers, the Pi Wallet secret key is represented by a list of more legible words called a ‘Passphrase’. The secret key can be dynamically derived from the passphrase so people only need to store a passphrase without actually saving a secret key. Using passphrases instead of the derived secret key for safekeeping reduces the chance of human mistakes in recording, and at the same time, achieves the same level of security as the secret key itself. In the mobile version of the Pi Wallet, if your phone has biometric authentication (fingerprint or face recognition), the passphrases are safely stored on your phone and can be retrieved through fingerprint or FaceID. The Pi Wallet can generate wallet addresses on multiple blockchains and hold different crypto assets on such blockchains using the same passphrase, but initially we are focusing on Pi assets only. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piWallet/#what-is-the-pi-wallet",
     "relUrl": "/docs/importantTopics/paymentFlow/piWallet/#what-is-the-pi-wallet"
-  },"46": {
+  },"61": {
     "doc": "Pi Wallet Intro",
     "title": "Switch between Pi Mainnet and Pi Testnet",
     "content": "The Pi Wallet has a feature to switch between the Pi Testnet and Mainnet Blockchains. Only one wallet will be needed for testing an app on Testnet and interacting on the Pi Mainnet. This limits the wallets needed reducing the number of Passphrases which must be secured. To change between the Pi Mainnet and Pi Testnet utilize the dropdown menu within the Pi Wallet. Press on the down arrow that is inside the red box on the left image below, and select the corresponding blockchain that you wish to interact on as seen on right image: . Testnet Faucet . On the Pi Testnet Blockchain anyone can take advantage of the test Pi faucet. The purpose of a faucet is to supply, free of charge, imitation tokens which function same as the real Pi tokens. This allows anyone to test interactions and transactions in a risk free environment. Test Pi cannot be transfered to Mainnet and holds no value. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piWallet/#switch-between-pi-mainnet-and-pi-testnet",
     "relUrl": "/docs/importantTopics/paymentFlow/piWallet/#switch-between-pi-mainnet-and-pi-testnet"
-  },"47": {
+  },"62": {
     "doc": "Pi Wallet Intro",
     "title": "Creating a Pi Wallet",
     "content": "Personal Wallet . To create a Pi Wallet, open the Pi Browser and click on the Pi Wallet tile to open the app. Once on the main page of the app, follow the steps to create a Pi Wallet. When creating a wallet there is a minimal balance which must be maintained in order for the wallet to be valid. In addition because there is a KYC component to the Pi Mainnet you will need to apply for Pi KYC before a Mainnet wallet can be created for you. In order to apply for Pi KYC you must continue to mine and an invitation will be sent to you. Testnet . The Pi Testnet faucet will initiate the wallet on the Pi Testnet with 100 Test Pi for you to test transactions with. We want to emphasize that Test Pi (or test π) is NOT REAL Pi! Test Pi is solely for the purpose of testing transactions on the Pi Testnet and contains NO VALUE. The Test Pi balance in the wallet may be reset because Testnet will be periodically reset as part of the testing. You can also request additional Test Pi from the faucet when your balance gets low. Developer Wallet . This feature is coming soon and will be updated once its available. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piWallet/#creating-a-pi-wallet",
     "relUrl": "/docs/importantTopics/paymentFlow/piWallet/#creating-a-pi-wallet"
-  },"48": {
+  },"63": {
     "doc": "Pi Wallet Intro",
     "title": "Pi Wallet Intro",
     "content": " ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/piWallet/",
     "relUrl": "/docs/importantTopics/paymentFlow/piWallet/"
-  },"49": {
+  },"64": {
     "doc": "Pioneer to App Payments",
     "title": "Pioneer to App Payments",
     "content": "This payment method creates a payment which will be sent from the wallet of the Pioneer to the wallet of the App. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPayment/",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPayment/"
-  },"50": {
+  },"65": {
     "doc": "Pioneer to App Payments",
     "title": "Table of contents",
     "content": ". | Payment Flow | Create Payment | Callback Functions . | Security Note on Completing Payments | . | . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPayment/#table-of-contents",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPayment/#table-of-contents"
-  },"51": {
+  },"66": {
     "doc": "Pioneer to App Payments",
     "title": "Payment Flow",
     "content": "One way transfer from the wallet of a Pioneer, who initates the payment within the app, to the wallet of the App in use. A different method is used to transfer from the wallet of the App to the wallet of a Pioneer. This page will not cover how to integrate the Pi SDK or Pi App Platform APIs and assumes you’ve read the following pages of this guide: . | Pi SDK | Pi App Platform APIs | Pi Payment Flow | . If you haven’t read these pages then please do so ahead of trying to implement a payment. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPayment/#payment-flow",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPayment/#payment-flow"
-  },"52": {
+  },"67": {
     "doc": "Pioneer to App Payments",
     "title": "Create Payment",
     "content": "This payment is initiated with the Pi.CreatePayment function of the Pi SDK. It takes two arguments PaymentData and PaymentCallbacks. Example code in Javascript for a 1 Pi payment is as follows: . // All fields can be replaced with variables to make them useable within your app // amount: number, // memo: string, // metadata: object { }, const paymentData = { amount: 1, memo: 'This is a Test Payment', metadata: { InternalPaymentID: 1234 }, }; const paymentCallbacks = { // Callbacks you need to implement - read more about these on the Pi SDK Page: onReadyForServerApproval: function(paymentId) { const body = { \"payment_Id\": paymentId } axios.post(ServerSide_onReadyForServerApprovalURL, body ) }, onReadyForServerCompletion: function(paymentId, txid) { const body = { \"payment_Id\": paymentId, \"tx_id\": txid } axios.post(ServerSide_onReadyForServerCompletionURL, body ) }, onCancel: function(paymentId) { console.log(paymentId) }, onError: function(error, payment) { console.log(error) } }; . The createPayment function is then called using the window.Pi variable that was created when integrating the Pi SDK in the “Getting Started” Section. The two previously created payment variables are passed as arguments. We used a .then function to handle any return and console.log to print it within the development console. A .catch function was used to handle any error that might be thrown and to console.error or print it in the development console. Pi.createPayment(paymentData, paymentCallbacks).then(function(payment) { console.log(payment) }).catch(function(error) { console.error(error); }); . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPayment/#create-payment",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPayment/#create-payment"
-  },"53": {
+  },"68": {
     "doc": "Pioneer to App Payments",
     "title": "Callback Functions",
     "content": "The Pi App Platform will start the payment and return the PaymentID. The onReadyForServerApproval function that was implemented by the developer within the paymentCallbacks will begin. At this point within in the App the Payment Dialog will open to the Pioneer but it is non-interactive until the onReadyForServerApproval callback is finished. The PaymentID should be passed to your app’s server side for the approval call to the Pi Platform API. Once the PaymentID is on your server side the /payment/{ PaymentID }/approve endpoint should be called, passing the PaymentID for this payment. A successful call to the approve endpoint will return the PaymentDTO resource as seen below: . { // Payment data: \"identifier\": string, // The payment identifier \"Pioneer_uid\": string, // The Pioneer's app-specific ID \"amount\": number, // The payment amount \"memo\": string, // A string provided by the developer, shown to the Pioneer \"metadata\": Object, // An object provided by the developer for their own usage \"to_address\": string, // The recipient address of the blockchain transaction \"created_at\": string, // The payment's creation timestamp // Status flags representing the current state of this payment \"status\": { \"developer_approved\": boolean, // Server-Side Approval \"transaction_verified\": boolean, // Blockchain transaction verified \"developer_completed\": boolean, // Server-Side Completion \"cancelled\": boolean, // Cancelled by the developer or by Pi Network \"Pioneer_cancelled\": boolean, // Cancelled by the Pioneer }, // Blockchain transaction data: \"transaction\": null | { // This is null if no transaction has been made yet \"txid\": string, // The id of the blockchain transaction \"verified\": boolean, // True if the transaction matches the payment, false otherwise \"_link\": string, // A link to the operation on the Blockchain API }, }; . At this point the Payment Dialog displayed to the Pioneer will become interactive. The Pioneer will need to input their passphrase and approve the transaction. Once the Pioneer approves the transaction the Payment Dialog will again become non-interactive. After the Pioneer approves the payment then the Pi App Platforms will send the transaction to the blockchain. That will return the TransactionID (txID) to the Pi App Platform. The Pi App Platform invokes the callback function onReadyForServerCompletion passing the PaymentID and the txID to the App. The App should pass the txID the server side and call the Pi API endpoint /payment/{ txID }/complete using the txID to complete the payment. A successful call to the /complete endpoint will return the PaymentDTO resource with the updated values. An unsuccessful call will return a non-200 error code . The Payment Dialog will now close and the Pioneer will be able to interact with the app again. Your app’s server and your app’s frontend can exchange data, and update the app interface to show a confirmation screen to the Pioneer. Security Note on Completing Payments . Do not complete any payment within your app until the payment has completed and had a paymentDTO returned from the /complete API endpoint of the Server-Side Completion. The Pioneer might be lying to your app, by running a hacked version of the SDK the Pioneer could pretend they have made a payment. If the API call to /payment/{ transaction_id }/complete returns a non-200 error code, do not mark the payment complete or paid with your app. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPayment/#callback-functions",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPayment/#callback-functions"
-  },"54": {
+  },"69": {
     "doc": "Video Integration - Pioneer to App Payments",
     "title": "Video Integration of Pioneer to App Payments",
     "content": " ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPaymentVideo/#video-integration-of-pioneer-to-app-payments",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPaymentVideo/#video-integration-of-pioneer-to-app-payments"
-  },"55": {
+  },"70": {
     "doc": "Video Integration - Pioneer to App Payments",
     "title": "Table of contents",
     "content": ". | Captions . | Introduction | Create Payment | onReadyForServerApproval | onReadyForServerCompletion | onIncompletePaymentFound | Generate Server API Key | Callback Functions | Server Side | Testing | . | . Captions for the video can also be found on our Medium Blog Post . ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPaymentVideo/#table-of-contents",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPaymentVideo/#table-of-contents"
-  },"56": {
+  },"71": {
     "doc": "Video Integration - Pioneer to App Payments",
     "title": "Captions",
     "content": "Introduction . Welcome back everyone. In the previous video, we saw how to use the Pi SDK, run your app in the sandbox and authenticate the user. In this video, I’m going to walk you through the overall payment process. The process I’m about to explain is at a very high level, but even with this, you’ll be able to understand what you need to do to create a payment. If you want to learn more about what’s actually happening behind the scene, please refer to our Pi Platform Documentation. Now let’s begin. Throughout the process, essentially 4 parties are involved. Your app, Your App Server, the Pi Servers and the Pi Blockchain. The most important point to remember is that all of them must be completely synchronized about the state of a payment to avoid any possible race conditions. If something goes wrong, a user may pay for an item that’s already given to someone else, or a user may pay for an item twice because the process gets interrupted. To avoid such cases, the Pi Core Team has implemented a protocol as a part of the Pi SDK and you don’t need to worry at all. Create Payment . With the Pi SDK, creating a payment in Pi Apps is very simple. Let’s have a look at the createPayment function. It takes 2 arguments, which are paymentData object and an object of callback functions. The paymentData object is comprised of three items. Amount to be paid, memo for users, and metadata for your own usage. If any of these are missing, you’ll get an error. onReadyForServerApproval . onReadyForServerApproval is a function that gets called when the payment id is ready. Using this function, you need to pass payment id and other relevant data to your app server. Then on your server, you should reserve an item for the user who’s about to buy it, and let Pi server know that you’re ready to proceed. In other words, you need to make sure that your server is aware of the current payment through this function. onReadyForServerCompletion . onReadyForServerCompletion is a function that gets called after the blockchain transaction has been submitted to the Pi blockchain. Your job is again to pass any relevant data to your app server. On your server, you can verify the payment and deliver the item that was reserved for the user. In the end, you should complete the payment by letting the Pi server know that you have received the payment and delivered the item. The other 2 functions are onCancel and onError functions. As their names suggest, they are functions that will be invoked when the payment gets canceled and when an error occurs. onIncompletePaymentFound . Let’s not forget about the onIncompletePaymentFound function that we saw in the previous video. To remind you, this function is in charge of completing any incomplete payment. You might be wondering why you need to implement this function. There’s a chance that a payment process gets interrupted unexpectedly. A user might lose the internet connection, the app might crash or the server might not respond. If the payment process fails before a user pays, then it’s fine. The user just needs to start the process again. Of course, you need to clean up the stale orders on your server. But what if the user already paid and all of a sudden the process ends without being completed gracefully? That’s where this function comes in and plays the role. The Pi SDK will detect such payment when the user is authenticated and when a user tries to make a new payment, and if it finds an incomplete payment, it will request your app to complete the payment. Okay, so we are going to implement the functions in a minute. But there’s one more step you can’t forget, which is obtaining the API Key. Generate Server API Key . Assuming that you have registered your app on the developer portal, let’s generate the API Key, if you haven’t done yet. Select your app at the bottom, and if you tap on the “get api key” button, you can create a new key. Save the key before you close the window. Using this key, you can hit our endpoints and update the status of the Payment. Callback Functions . We are back to our demo app, and now we are going to implement the callback functions. For the sake of time, I have prepared the code snippet. Let’s fill this in together. We now all know what this is. What you want to do here is to call your server to hit our endpoint from your server. Keep in mind that this slash approve is just an arbitrary route I’m using as an example. Again, to complete the payment, you need to call your server to hit our endpoint. The last two functions are for your own usage. When the payment is canceled, mark it as cancelled on your server as well. Also handle the error however you want. Server Side . Now let’s complete the backend. In this demo, I’m running the node server, but you can choose any backend you prefer. Also keep in mind that the actual implementation is up to you. I’m just demonstrating a rough example to help you understand the process. First, let’s see the approve route. When the payment is created, you need to reserve an item for the user, and map the paymentId to the current order. Then make sure to hit approve endpoint to approve the payment. The same thing goes for the complete route as well. You can verify the payment if you want, deliver the item to the user, mark the order as paid and complete the payment by hitting complete endpoint. We shouldn’t forget the incomplete route. Process the incomplete payment, and hit the complete endpoint. Although I’m skipping here, don’t forget to handle the cancel route as well. We are finally ready to create a payment. Testing . Now that the code is ready, let’s see the flow from the beginning. As soon as I tap on the button, the payment flow begins. I can see the next page only if the payment is approved from the app server. Then I can review the details and if I think it’s correct, I’ll use my passphrase to sign and submit the transaction to the Pi blockchain. Now the transaction is submitted, and we are waiting for the app server to complete the payment flow. When the app server finally completes the payment, I can see this result, and this is the end of the demo. Thanks for watching. ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPaymentVideo/#captions",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPaymentVideo/#captions"
-  },"57": {
+  },"72": {
     "doc": "Video Integration - Pioneer to App Payments",
     "title": "Video Integration - Pioneer to App Payments",
     "content": " ",
     "url": "http://localhost:4000/Guide/docs/importantTopics/paymentFlow/pioneerToAppPaymentVideo/",
     "relUrl": "/docs/importantTopics/paymentFlow/pioneerToAppPaymentVideo/"
-  },"58": {
-    "doc": "Video Ingtegration Pi SDK",
+  },"73": {
+    "doc": "Video Integration Pi SDK",
     "title": "Pi SDK Video Tutorial",
     "content": " ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/#pi-sdk-video-tutorial",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/#pi-sdk-video-tutorial"
-  },"59": {
-    "doc": "Video Ingtegration Pi SDK",
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/#pi-sdk-video-tutorial",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/#pi-sdk-video-tutorial"
+  },"74": {
+    "doc": "Video Integration Pi SDK",
     "title": "Table of contents",
     "content": ". | Video Guide to Integrating the Pi SDK | Captions . | Integrating the SDK | Developer Portal Parameters | Sandbox (Local Environment) | Authenticate Function | Scopes | onIncompletePaymentFound Callback Function | Authenticate Call Return | . | . ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/#table-of-contents",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/#table-of-contents"
-  },"60": {
-    "doc": "Video Ingtegration Pi SDK",
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/#table-of-contents",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/#table-of-contents"
+  },"75": {
+    "doc": "Video Integration Pi SDK",
     "title": "Video Guide to Integrating the Pi SDK",
     "content": "Captions for the video can also be found on our Medium Blog Post . ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/#video-guide-to-integrating-the-pi-sdk",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/#video-guide-to-integrating-the-pi-sdk"
-  },"61": {
-    "doc": "Video Ingtegration Pi SDK",
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/#video-guide-to-integrating-the-pi-sdk",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/#video-guide-to-integrating-the-pi-sdk"
+  },"76": {
+    "doc": "Video Integration Pi SDK",
     "title": "Captions",
     "content": "Integrating the SDK . To use Pi SDK, you need to add an SDK script tag to your frontend. Then you need to call the init function to initialize the SDK. You need to specify the version to ensure compatibility with future SDK releases. As of now, the version 2.0 is the latest so we put 2.0 here, and the sandbox flag to be true, which I’m going to talk about in a minute. This sandbox flag is optional and lets you configure the SDK to run in the sandbox. It’s handy if you control this variable with the environment variable, but to be explicit, I’m setting it to true here. Developer Portal Parameters . Let’s go to the developer portal. I’m assuming you have registered your app on the portal as I did here. To load your app in the sandbox, you need to set the “development URL”. Right now it says “Not configured” so let’s edit this. This will typically be localhost with a custom port which depends on your development environment. Here I’m using localhost with 3003 port. Once you set the development URL, a sandbox url is generated. Open this url in the desktop browser, and you’ll see this white page with authorization code. If you’re running Pi Node, you are probably familiar with this process. Open your mobile app and tap on the Authorize sandbox link at the bottom of Pi Utilities page. And you need to type the authorization code and press confirm. When your sandbox environment is authorized, you’ll see your app within the sandbox environment, which is the page you saw earlier. Sandbox (Local Environment) . Now open the devtool of the browser. There’s a small context selector here. You can select localhost to get your app’s context. After you select localhost, if you type Pi in the console, you can access it. Of course, you’ll see some value to be null because the current user is not authenticated yet. Authenticate Function . Now that we can run our app in the sandbox, let’s take a look at the SDK shortly. The very first function you’ll encounter is the authenticate function. It takes an array of strings called scopes, and one callback function called onIncompletePaymentFound. Scopes . There are two available scopes, which are username and payments. For now, the scopes feature is still a work in progress. What that means is the authenticate function will consider both scopes as requested for now. Nonetheless, you should implement your app with only relevant scopes. Check our SDK reference hosted on our github repository for future updates. onIncompletePaymentFound Callback Function . onIncompletePaymentFound function handles an incomplete payment between your app and this user you’re authenticating. A payment is considered incomplete when you don’t submit the server-side completion API call. In this demo app, we are proposing an example usage, where the payment is sent to the app server to find the previous order and mark it as paid. More details about payment is available in the Payment video. For now, let’s just keep in mind that we need to pass a callback function that handles the incomplete payment from the server side. Authenticate Call Return . The authenticate function will return a promise, which looks something like this. The return value might change later, but what’s important is that you need to make sure to send it to the app server and store this information in your database. It’s also important to verify this by hitting /me endpoint from your server, because malicious users can pretend they are someone else. You can find more about the /me endpoint on our Pi-Platform-documentation. ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/#captions",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/#captions"
-  },"62": {
-    "doc": "Video Ingtegration Pi SDK",
-    "title": "Video Ingtegration Pi SDK",
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/#captions",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/#captions"
+  },"77": {
+    "doc": "Video Integration Pi SDK",
+    "title": "Video Integration Pi SDK",
     "content": " ",
-    "url": "http://localhost:4000/Guide/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/",
-    "relUrl": "/docs/gettingSetup/piAppPlatform/videoIntegrationPiSDK/"
+    "url": "http://localhost:4000/Guide/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/",
+    "relUrl": "/docs/gettingStarted/piAppPlatform/videoIntegrationPiSDK/"
   }
 }

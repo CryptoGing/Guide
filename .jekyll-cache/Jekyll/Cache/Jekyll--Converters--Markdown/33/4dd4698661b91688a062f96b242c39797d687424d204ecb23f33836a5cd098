@@ -1,0 +1,26 @@
+I"·<h1 id="pi-demo-app">Pi Demo App</h1>
+
+<p>Pi Demo App is an example of how you can implement the various required flows in your appâ€™s code. It aims to show you how to use Pi Platform API on the backend side and Pi SDK on the frontend side of your app.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>To test Demo App features, you need to run both frontend and backend apps.</p>
+
+<h3 id="1-clone-the-gitub-repo">1. Clone the Gitub repo:</h3>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:pi-apps/platform-demo-app.git
+</code></pre></div></div>
+
+<h3 id="2-navigate-to-the-repository-folder">2. Navigate to the repository folder:</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd platform-demo-app
+</code></pre></div></div>
+
+<h3 id="3-setup-frontend-app">3. Setup frontend app</h3>
+
+<p>Setup frontend app following the <a href="../demoAppFrontend">Pi Demo App Frontend documentation</a>.</p>
+
+<h3 id="4-setup-backend-server">4. Setup backend server</h3>
+
+<p>Setup backend server following the <a href="../demoAppBackend">Pi Demo App Backend documentation</a>.</p>
+:ET

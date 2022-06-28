@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Access Token
 {: .no_toc }
-A long random string which uniquely identifies a Pioneer within an app. This page assumes that you've read the <a href="../../gettingSetup/PiAppPlatform/piAppPlatformSDK">Pi SDK</a> page and have an understanding of how the Pi SDK and Authenticate function work. 
+A long random string which uniquely identifies a Pioneer within an app. This page assumes that you've read the <a href="../../gettingStarted/PiAppPlatform/piAppPlatformSDK">Pi SDK</a> page and have an understanding of how the Pi SDK and Authenticate function work. 
 {: .fs-6 .fw-300 }
 
 ## Table of contents

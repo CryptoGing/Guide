@@ -13,5 +13,5 @@ The fastest way to ask a question or get help is to join our Pi Ecosystem Discor
 ## Pi App Chat
 You can also send a message within the chat feature can be accessed from the Pi App. Click on the sidebar menu within the Pi App, then click the "Chat" option. The "Developers" chatroom can be added using the plus in the lower right of the screen. The "Developers" chatroom is the best place to ask technical questions. One of our great Moderators will assist you.
 
-
+## Twitter
 Follow us on [Twitter](https://twitter.com/PiCoreTeam) for announcements

@@ -1,0 +1,167 @@
+I"�D<h1 class="no_toc" id="pi-platform-apis">Pi Platform APIs</h1>
+<p>The platform API grants access to communicate with the Pi Servers related with your app deployed on the Pi App Platform, and the Pioneers that use your app.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#making-api-calls" id="markdown-toc-making-api-calls">Making API Calls</a>    <ol>
+      <li><a href="#headers-and-authorization-methods" id="markdown-toc-headers-and-authorization-methods">Headers and Authorization Methods</a>        <ol>
+          <li><a href="#access-token-bearer-token" id="markdown-toc-access-token-bearer-token">Access Token (Bearer Token)</a></li>
+          <li><a href="#server-api-key-authorization-key" id="markdown-toc-server-api-key-authorization-key">Server API Key (Authorization Key)</a></li>
+        </ol>
+      </li>
+      <li><a href="#api-reference" id="markdown-toc-api-reference">API Reference</a>        <ol>
+          <li><a href="#me" id="markdown-toc-me">/me</a></li>
+          <li><a href="#payments" id="markdown-toc-payments">/payments</a>            <ol>
+              <li><a href="#approve-a-payment" id="markdown-toc-approve-a-payment">Approve a Payment:<br /></a></li>
+              <li><a href="#complete-a-payment" id="markdown-toc-complete-a-payment">Complete a Payment:<br /></a></li>
+              <li><a href="#example-request" id="markdown-toc-example-request">Example Request</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#resource-types" id="markdown-toc-resource-types">Resource Types</a>        <ol>
+          <li><a href="#pioneer-dto" id="markdown-toc-pioneer-dto">Pioneer DTO</a></li>
+          <li><a href="#payment-dto" id="markdown-toc-payment-dto">Payment DTO</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="making-api-calls">Making API Calls</h2>
+<h3 id="headers-and-authorization-methods">Headers and Authorization Methods</h3>
+<p>This is how the Pi Servers will determine if the request is coming from a approved source. 
+There are two formats depending on the endpoint being requested</p>
+
+<h4 id="access-token-bearer-token">Access Token (Bearer Token)</h4>
+<p>These API calls require that you provide a Pioneer’s access token to obtain the resource. They are generally related with a Pioneer’s data (e.g: /me). The token is returned from the Pi.Authenticate function of the Pi App Platform SDK.</p>
+
+<p>Those endpoints can be accessed using the following Authorization header:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">Authorization: Bearer <span class="nt">&lt;Pioneer</span><span class="err">'</span><span class="na">s</span> <span class="na">access</span> <span class="na">token</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>Example Code:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span> <span class="na">headers</span><span class="p">:</span> <span class="p">{</span> <span class="na">authorization</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Bearer </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">PioneerAccessToken</span> <span class="p">}};</span>
+<span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://api.minepi.com/v2/me</span><span class="dl">"</span><span class="p">,</span> <span class="nx">headers</span><span class="p">);</span></code></pre></figure>
+
+<h4 id="server-api-key-authorization-key">Server API Key (Authorization Key)</h4>
+<p>For various reasons, some API calls must be made from the backend or server of your app. To obtain an authorization key for API requests, please see the section of this guide on the <a href="../../devPortal">Developer Portal</a>.</p>
+
+<p>Those endpoints can be accessed using the following Authorization header:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">Authorization: Key <span class="nt">&lt;App</span> <span class="na">Server</span> <span class="na">API</span> <span class="na">Key</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>Example code calling the <code class="language-plaintext highlighter-rouge">/payments</code> endpoint to obtain the information on a payment using the paymentID string:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">postingURL</span> <span class="o">=</span> <span class="s2">`https://api.minepi.com/v2/payments/</span><span class="p">${</span> <span class="nx">payment_id</span> <span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span> <span class="na">headers</span><span class="p">:</span> <span class="p">{</span> <span class="na">authorization</span><span class="p">:</span> <span class="s2">`key </span><span class="p">${</span> <span class="nx">APIKEY</span> <span class="p">}</span><span class="s2">`</span> <span class="p">}</span> <span class="p">};</span>
+<span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">postingURL</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">headers</span><span class="p">);</span></code></pre></figure>
+
+<h3 id="api-reference">API Reference</h3>
+<h4 id="me">/me</h4>
+<p>Access a Pioneer’s resource and retrieve the Pioneer’s information.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">GET minepi.com/api/v2/me</code></pre></figure>
+
+<p>Authorization method: Access token
+<br />
+Response type: PioneerDTO</p>
+
+<p>The request will fail (401 HTTP error code) if the token has been tampered with, a tampered Access token would not belong to any Pioneer.</p>
+
+<h4 id="payments">/payments</h4>
+<p>Payments are covered in greater detail in the <a href="../../../importantTopics/paymentFlow">Pi Payment Flow</a> section of this guide. If this is your first implentation of a Pi payment its highly recommended to read that section in addition. It covers how Pi Payments are initiated and completed. This section covers the API calls only.</p>
+
+<p>The APIs for payments all have the base route <code class="language-plaintext highlighter-rouge">/payments</code>. It is important to note do not create payments using the Platform API. Use the client-side Javascript SDK for this purpose.</p>
+
+<p>Get Information:<br /></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">GET minepi.com/api/v2/payments/{payment_id}</code></pre></figure>
+
+<p>Authorization method: Server API Key <br />
+Response type: PaymentDTO</p>
+
+<h5 id="approve-a-payment">Approve a Payment:<br /></h5>
+<p>This marks a payment as approved within the Pi Server, enabling the Pioneer to approve and submit the transaction to the blockchain. The <code class="language-plaintext highlighter-rouge">paymentID</code> is obtained as a argument of the callback function <code class="language-plaintext highlighter-rouge">onReadyForServerApproval</code> from the Pi App Platform SDK. Read more on that function on the <a href="../../importantTopics/mainnetVsTestnet">Pi App Platform SDK</a> page. The <code class="language-plaintext highlighter-rouge">paymentID</code> should be passed from your client side to your server side for this call.</p>
+
+<p>Once the <code class="language-plaintext highlighter-rouge">paymentID</code> is on your server side then call the <code class="language-plaintext highlighter-rouge">/approve</code> endpoint using the <code class="language-plaintext highlighter-rouge">paymentID</code> to identify the payment:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">POST minepi.com/api/v2/payments/{payment_id}/approve</code></pre></figure>
+
+<p>Authorization method: Server API Key <br />
+Response type: PaymentDTO</p>
+
+<p>Here is the code to call the <code class="language-plaintext highlighter-rouge">/approve</code> endpoint and <code class="language-plaintext highlighter-rouge">console.log</code> the returned <code class="language-plaintext highlighter-rouge">Payment_DTO</code></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">//Using a fake paymentID for demonstration, would be passed from client side
+const paymentID = eWXszS7lkfsRLHcrDRghLpDD5tHc;
+const payment_id = paymentID; //Passed from the Client Side
+const headers = { headers: { authorization: `key ${ APIKEY }` } }; //Stored in a .env file
+const postingURL = `https://api.minepi.com/v2/payments/${ payment_id }/approve`;
+let payment_DTO = await axios.post(postingURL, null,headers);
+console.log(payment_DTO)</code></pre></figure>
+
+<h5 id="complete-a-payment">Complete a Payment:<br /></h5>
+<p>This marks a payment as completed by proving to the Pi Servers that your app has obtained the payment’s transaction ID (txID). This is the final step in a payment before the payment flow closes and the Pioneer returns to your app. The <code class="language-plaintext highlighter-rouge">txID</code> is obtained through the callback function <code class="language-plaintext highlighter-rouge">onReadyForServerCompletion</code> of the Pi App Platform SDK. Passing that <code class="language-plaintext highlighter-rouge">txID</code> to your server side and using it to call this endpoint will complete a payment.</p>
+
+<p>Don’t forget that</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">POST minepi.com/api/v2/payments/{payment_id}/complete</code></pre></figure>
+
+<p>Authorization method: Server API Key <br />
+Response type: PaymentDTO</p>
+
+<h5 id="example-request">Example Request</h5>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//Using a fake txID string for demonstration, would be passed from client side</span>
+<span class="kd">const</span> <span class="nx">txid</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">7a7ed20d3d72c365b9019baf8dc4c4e3cce4c08114d866e47ae157e3a796e9e7</span><span class="dl">"</span> 
+<span class="kd">const</span> <span class="nx">payment_id</span> <span class="o">=</span> <span class="nx">payment_id</span><span class="p">;</span> <span class="c1">//Passed from client side</span>
+<span class="kd">const</span> <span class="nx">tx_id</span> <span class="o">=</span> <span class="p">{</span> <span class="na">txid</span><span class="p">:</span> <span class="nx">txid</span> <span class="p">};</span> <span class="c1">//In production passed from client side</span>
+<span class="kd">const</span> <span class="nx">headers</span> <span class="o">=</span><span class="p">{</span><span class="na">headers</span><span class="p">:{</span> <span class="na">authorization</span><span class="p">:</span> <span class="s2">`key </span><span class="p">${</span> <span class="nx">APIKEY</span> <span class="p">}</span><span class="s2">`</span> <span class="p">}</span> <span class="p">};</span> <span class="c1">//API stored in .env file</span>
+<span class="kd">const</span> <span class="nx">postingURL</span> <span class="o">=</span> <span class="s2">`https://api.minepi.com/v2/payments/</span><span class="p">${</span> <span class="nx">payment_id</span> <span class="p">}</span><span class="s2">/complete`</span>
+<span class="kd">let</span> <span class="nx">payment_DTO</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">axios</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">postingURL</span><span class="p">,</span> <span class="nx">tx_id</span><span class="p">,</span> <span class="nx">headers</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">payment_DTO</span><span class="p">)</span></code></pre></figure>
+
+<h3 id="resource-types">Resource Types</h3>
+<p>There are two resources currently returned by the Pi App Platform API the <code class="language-plaintext highlighter-rouge">Pioneer_DTO</code> and the <code class="language-plaintext highlighter-rouge">Payment_DTO</code>. In the future there may be more.</p>
+
+<h4 id="pioneer-dto">Pioneer DTO</h4>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">uid</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// An app-specific Pioneer identifier</span>
+  <span class="dl">"</span><span class="s2">username</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The Pioneer's Pi username. Requires the `username` scope.</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="payment-dto">Payment DTO</h4>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+  <span class="c1">// Payment data:</span>
+  <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The payment identifier</span>
+  <span class="dl">"</span><span class="s2">Pioneer_uid</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The Pioneer's app-specific ID</span>
+  <span class="dl">"</span><span class="s2">amount</span><span class="dl">"</span><span class="p">:</span> <span class="nx">number</span><span class="p">,</span> <span class="c1">// The payment amount</span>
+  <span class="dl">"</span><span class="s2">memo</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// A string provided by the developer, shown to the Pioneer</span>
+  <span class="dl">"</span><span class="s2">metadata</span><span class="dl">"</span><span class="p">:</span> <span class="nb">Object</span><span class="p">,</span> <span class="c1">// An object provided by the developer for their own usage</span>
+  <span class="dl">"</span><span class="s2">to_address</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The recipient address of the blockchain transaction</span>
+  <span class="dl">"</span><span class="s2">created_at</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The payment's creation timestamp</span>
+  
+  <span class="c1">// Status flags representing the current state of this payment</span>
+  <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">developer_approved</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Server-Side Approval</span>
+    <span class="dl">"</span><span class="s2">transaction_verified</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Blockchain transaction verified</span>
+    <span class="dl">"</span><span class="s2">developer_completed</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Server-Side Completion</span>
+    <span class="dl">"</span><span class="s2">cancelled</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Cancelled by the developer or by Pi Network</span>
+    <span class="dl">"</span><span class="s2">Pioneer_cancelled</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// Cancelled by the Pioneer</span>
+  <span class="p">},</span>
+  
+  <span class="c1">// Blockchain transaction data:</span>
+  <span class="dl">"</span><span class="s2">transaction</span><span class="dl">"</span><span class="p">:</span> <span class="kc">null</span> <span class="o">|</span> <span class="p">{</span> <span class="c1">// This is null if no transaction has been made yet</span>
+    <span class="dl">"</span><span class="s2">txid</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// The id of the blockchain transaction</span>
+    <span class="dl">"</span><span class="s2">verified</span><span class="dl">"</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">,</span> <span class="c1">// True if the transaction matches the payment, false otherwise</span>
+    <span class="dl">"</span><span class="s2">_link</span><span class="dl">"</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="c1">// A link to the operation on the Blockchain API</span>
+  <span class="p">},</span>
+<span class="p">};</span></code></pre></figure>
+:ET

@@ -1,0 +1,36 @@
+I"	<h1 id="pi-demo-app-backend">Pi Demo App Backend</h1>
+
+<p>Demo app’s backend is using several environment variables, from which most have default values. In order to specify these, create <code class="language-plaintext highlighter-rouge">.env</code> file in the root backend directory. You can preview it in <code class="language-plaintext highlighter-rouge">.env.example</code> file.</p>
+
+<p>The only variable you need to provide is <code class="language-plaintext highlighter-rouge">PI_API_KEY</code>, which is required to authorize payments. You receive it upon app registration. For more guidelines on how to register you app refer to <a href="../../gettingStarted/devPortal/#api-key">Developer Portal - API Key</a></p>
+
+<h2 id="setup">Setup</h2>
+
+<p>In order to start, install dependencies:</p>
+
+<h4 id="npm-install-or-yarn-install"><code class="language-plaintext highlighter-rouge">npm install</code> or <code class="language-plaintext highlighter-rouge">yarn install</code></h4>
+
+<p><br /></p>
+
+<p>and then run the server:</p>
+
+<h4 id="npm-start-or-yarn-start"><code class="language-plaintext highlighter-rouge">npm start</code> or <code class="language-plaintext highlighter-rouge">yarn start</code></h4>
+
+<p><br /></p>
+
+<p>If everything is setup correctly you should see following message in the terminal:</p>
+
+<p><code class="language-plaintext highlighter-rouge">App platform demo app - Backend listening on port 8080!</code></p>
+
+<h1 id="mongodb">MongoDB</h1>
+<p>Demo app’s backend uses local MongoDB server to store user data and sessions’ details.</p>
+
+<h2 id="setup-1">Setup</h2>
+
+<p>If you haven’t already, install MongoDB Community following the <a href="https://www.mongodb.com/docs/manual/administration/install-community/">official MongoDB docs</a> and start MongoDB service.</p>
+
+<p>The default username, password and port for MongoDB are <code class="language-plaintext highlighter-rouge">root</code>, <code class="language-plaintext highlighter-rouge">password</code> and <code class="language-plaintext highlighter-rouge">27017</code> accordingly. If you have decided to change these values, make sure to update environment variables in backend <code class="language-plaintext highlighter-rouge">.env</code> file.</p>
+
+<p>In order to preview database, you can use Robo 3T or MongoDB Compass.</p>
+
+:ET
