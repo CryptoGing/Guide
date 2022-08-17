@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Demo Pi Application Code"
-has_children: true
 nav_order: 5
 ---
 

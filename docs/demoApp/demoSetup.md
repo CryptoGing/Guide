@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Setup
-parent: "Demo Pi Application Code"
 nav_order: 1
 ---
 

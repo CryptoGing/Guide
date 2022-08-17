@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Demo App Backend
-parent: "Demo Pi Application Code"
 nav_order: 3
 ---
 

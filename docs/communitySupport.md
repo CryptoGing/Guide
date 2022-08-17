@@ -17,8 +17,10 @@ You can also send a message on the Developer chat room on the Pi App for help fr
 Pi app’s home screen offers regular network updates, including any tech or ecosystem-related updates. Some of these updates are published on the [Website](https://minepi.com/blog) blog as well. You can also follow us on  [Twitter](https://twitter.com/PiCoreTeam) for announcements. 
 
 ## Other Platforms
-Facebook: [PiCoreTeam](https://www.facebook.com/PiCoreTeam) 
-Instagram: [@pi_network](https://www.instagram.com/pi_network) 
-Telegram:[PiAnnouncements](https://t.me/PiAnnouncements)
-YouTube: [PiCoreTeam](https://www.youtube.com/c/PiCoreTeam)
-Medium: [pinetwork-official](https://pinetwork-official.medium.com)
+<ul>
+    <li>Facebook: [PiCoreTeam](https://www.facebook.com/PiCoreTeam)</li>
+    <li>Instagram: [@pi_network](https://www.instagram.com/pi_network)</li>
+    <li>Telegram:[PiAnnouncements](https://t.me/PiAnnouncements)</li>
+    <li>YouTube: [PiCoreTeam](https://www.youtube.com/c/PiCoreTeam)</li>
+    <li>Medium: [pinetwork-official](https://pinetwork-official.medium.com)</li>
+</ul>
