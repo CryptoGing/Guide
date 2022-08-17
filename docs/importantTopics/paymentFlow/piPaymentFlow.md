@@ -35,7 +35,7 @@ After a payment is created, it goes through 3 major phases:
 ## Payment Flow Diagram
 The diagram below outlines the steps involved in a Pioneer to App payment.
 
-<img title="Pi Payment Flow" alt="Pi Payment Flow Diagram" src="../../../assets/images/wBackground_pi_payment_flow_diagram.png">
+<img title="Pi Payment Flow" alt="Pi Payment Flow Diagram" src="../../assets/images/wBackground_pi_payment_flow_diagram.png">
 
 ## Payment Flow Steps
 
