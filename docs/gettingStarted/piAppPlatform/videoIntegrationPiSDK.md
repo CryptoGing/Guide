@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Video Integration Pi SDK
+title: Pi SDK Video Integration Tutorial
 parent: "Pi App Platform"
 grand_parent: "Getting Started"
 nav_order: 2
@@ -31,7 +31,7 @@ Let’s go to the developer portal. I’m assuming you have registered your app 
 Now open the devtool of the browser. There’s a small context selector here. You can select localhost to get your app’s context. After you select localhost, if you type Pi in the console, you can access it. Of course, you’ll see some value to be null because the current user is not authenticated yet.
 
 ### Authenticate Function
-Now that we can run our app in the sandbox, let’s take a look at the SDK shortly. The very first function you’ll encounter is the authenticate function. It takes an array of strings called scopes, and one callback function called onIncompletePaymentFound. 
+Now that we can run our app in the sandbox, let’s take a look at the SDK shortly. The very first function you’ll encounter is the authenticate function. It takes an array of strings called scopes, and one callback function called onIncompletePaymentFound.
 
 ### Scopes
 There are two available scopes, which are username and payments. For now, the scopes feature is still a work in progress. What that means is the authenticate function will consider both scopes as requested for now. Nonetheless, you should implement your app with only relevant scopes. Check our SDK reference hosted on our github repository for future updates.
