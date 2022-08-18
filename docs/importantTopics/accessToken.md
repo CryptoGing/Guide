@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Access Token
 {: .no_toc }
-The access token is a long random string that uniquely identifies a Pioneer within an app. The Access Token is the identifier that Applications use to communicate with the Pi Servers about a Pioneer. The Access Token is designed to protect the Pioneer’s information from unapproved access. This page assumes that you've read the <a href="../../gettingStarted/PiAppPlatform/piAppPlatformSDK">Pi SDK</a> page and have an understanding of how the Pi SDK and the Authenticate function work.
+The access token is a long random string that uniquely identifies a Pioneer within an app. The Access Token is the identifier that Applications use to communicate with the Pi Servers about a Pioneer. The Access Token is designed to protect the Pioneer’s information from unapproved access. This page assumes that you've read the [Pi SDK](../../gettingStarted/PiAppPlatform/piAppPlatformSDK) page and have an understanding of how the Pi SDK and the Authenticate function work.
 {: .fs-6 .fw-300 }
 
 ## Table of contents

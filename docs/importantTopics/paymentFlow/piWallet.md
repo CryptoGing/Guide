@@ -21,7 +21,7 @@ To introduce the Pi Wallet, it’s worth briefly going over what a crypto wallet
 
 The Pi Wallet is a non-custodial wallet because the Pi servers never have access to your secret key or passphrase. To be more user-friendly and based on feedback from early testing Pioneers, the Pi Wallet secret key is represented by a list of more legible words called a 'Passphrase'.  The secret key can be dynamically derived from the passphrase so people only need to store a passphrase without actually saving a secret key. Using passphrases instead of the derived secret key for safekeeping reduces the chance of human mistakes in recording, and at the same time, achieves the same level of security as the secret key itself. In the mobile version of the Pi Wallet, if your phone has biometric authentication (fingerprint or face recognition), the passphrases can be safely stored on your phone and retrieved through fingerprint or FaceID.
 
-For more information and to learn about other features of the Pi Wallet watch our <a href=”https://www.youtube.com/watch?v=q8R_-R8Wkls”> Introductory Pi Wallet Video </a> 
+For more information and to learn about other features of the Pi Wallet watch our [])https://www.youtube.com/watch?v=q8R_-R8Wkls”> Introductory Pi Wallet Video </a> 
 
 The Pi Wallet can generate wallet addresses on multiple blockchains and hold different crypto assets on such blockchains using the same passphrase, but initially we are focusing only on Pi assets.
 

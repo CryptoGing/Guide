@@ -73,7 +73,7 @@ Enter the code displayed on this page into the "Sign-in code" field of your desk
 
 <img title="App Sandbox Screen" alt="Authorize sandbox screen presented when an App tries to access the sandbox" src="../../../../assets/images/piAppAuthorizeAppCodeScreen.png" style="width:270px;height:550px;">
 
-The "Sign-In Required" page on the desktop browser should now redirect to the homepage of your app. You are now able to test the functionality of your app within a local environment. You will need Test-Pi in your Pi Wallet to make any transactions. For more information on payments, see the <a href="../../../importantTopics/paymentFlow">Pi Payments</a> section.
+The "Sign-In Required" page on the desktop browser should now redirect to the homepage of your app. You are now able to test the functionality of your app within a local environment. You will need Test-Pi in your Pi Wallet to make any transactions. For more information on payments, see the [Pi Payments](../../../importantTopics/paymentFlow) section.
 
 ### Calling the Pi App Platform SDK within your App
 #### Window.Pi
@@ -86,7 +86,7 @@ const Pi = window.Pi;
 You may name the variable whatever you prefer. In this guide, we use `Pi`. Now that the window has been initialized, it is time to start utilizing the functions offered by the Pi App Platform SDK.
 
 ## Functions
-A more detailed explanation of the functionality and use cases for payments and access token are covered in depth within the <a href="../../../importantTopics">Important Topics</a> section. This section covers the basics of how to use two Authenticate and Payment functions. 
+A more detailed explanation of the functionality and use cases for payments and access token are covered in depth within the [Important Topics](../../../importantTopics) section. This section covers the basics of how to use two Authenticate and Payment functions. 
 
 ### Authenticate
 The Authenticate function will request the Pioneer's scope and return them to the App in the form of a promise.
@@ -127,7 +127,7 @@ Object{
 }
 {% endhighlight %}
 
-**Security Note:** The Pioneer information obtained with this method, `uid` and `accessToken`, should not be saved to your database prior to verifying them and should only be used for presentation logic (e.g., displaying the Pioneer’s username). Pass them to your backend and then verify the Pioneer's identity by requesting the `/me` endpoint of the Pi Platform APIs, using the `accessToken` obtained with this method. The return from the `/me` endpoint will contain the `uid` for the Pioneer or will result in an error code if the Access Token is not found or is invalid. Pi Platform APIs are covered in depth on the <a href="../PiAppPlatformAPIs">Pi App Platform APIs</a> page of this guide.
+**Security Note:** The Pioneer information obtained with this method, `uid` and `accessToken`, should not be saved to your database prior to verifying them and should only be used for presentation logic (e.g., displaying the Pioneer’s username). Pass them to your backend and then verify the Pioneer's identity by requesting the `/me` endpoint of the Pi Platform APIs, using the `accessToken` obtained with this method. The return from the `/me` endpoint will contain the `uid` for the Pioneer or will result in an error code if the Access Token is not found or is invalid. Pi Platform APIs are covered in depth on the [Pi App Platform APIs](../PiAppPlatformAPIs") page of this guide.
 
 #### Pioneer Approval
 When a Pioneer visits the app for the first time, they will be presented a popup asking for permission to share their information with the app. Each scope requested will appear to the Pioneer and the Pioneer can choose to "Allow" or "Cancel" the request. 
