@@ -1,10 +1,12 @@
+<!-- 
 ---
 layout: default
 title: Pioneer to App Payments
 parent: "Pi Payments"
 grand_parent: "Important Topics"
 nav_order: 3
----
+--- 
+-->
 # Pioneer to App Payments
 {: .no_toc }
 This payment method creates a payment which will be sent from the wallet of the Pioneer to the wallet of the App. 
