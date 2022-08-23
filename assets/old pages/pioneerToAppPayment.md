@@ -1,11 +1,4 @@
 
-<!-- 
----
-layout: default
-title: Pioneer to App Payments
-nav_order: 
---- 
--->
 # Pioneer to App Payments
 {: .no_toc }
 This payment method creates a payment which will be sent from the wallet of the Pioneer to the wallet of the App. 
