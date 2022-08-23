@@ -1,3 +1,4 @@
+
 <!-- 
 ---
 layout: default
@@ -18,7 +19,7 @@ This payment method creates a payment which will be sent from the wallet of the 
 1. TOC
 {:toc}
 
-##Payment Flow
+## Payment Flow
 This method sets up the ability to enable a one-way transfer from the wallet of a Pioneer, who initiates the payment within the App, to the Application’s wallet. A different method will be used to transfer from the wallet of the App to the wallet of a Pioneer (this functionality will be available in the future).
 
 This page will not cover how to integrate the Pi SDK or Pi App Platform APIs, and assumes that you’ve read the following pages of this guide:
@@ -29,8 +30,10 @@ Pi Payment Flow
 
 If you haven’t read these pages, then please do so ahead of trying to implement a payment.
 
-##Create Payment
-This payment is initiated with the Pi.CreatePayment function of the Pi SDK. It takes two arguments PaymentData and PaymentCallbacks. Example code in Javascript for a 1 Pi payment is as follows: {% highlight javascript %} // All fields can be replaced with variables to make them useable within your app // amount: number, // memo: string, // metadata: object { }, const paymentData = { amount: 1, memo: 'This is a Test Payment', metadata: { InternalPaymentID: 1234 }, };
+## Create Payment
+This payment is initiated with the Pi.CreatePayment function of the Pi SDK. It takes two arguments PaymentData and PaymentCallbacks. Example code in Javascript for a 1 Pi payment is as follows: 
+
+{% highlight javascript %} 
 const paymentCallbacks = {
   // Callbacks you need to implement - read more about these on the Pi SDK Page:
     onReadyForServerApproval: function(paymentId) {                 
