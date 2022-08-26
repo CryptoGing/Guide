@@ -1,4 +1,4 @@
-
+//Convert Doc to a .md and place into docs folder
 # Pioneer to App Payments
 {: .no_toc }
 This payment method creates a payment which will be sent from the wallet of the Pioneer to the wallet of the App. 
