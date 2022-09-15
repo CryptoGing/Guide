@@ -3,7 +3,7 @@ layout: default
 title: "Pi App Platform"
 parent: "Getting Started"
 has_children: true
-nav_order: 5
+nav_order: 6
 ---
 
 # Pi App Platform
