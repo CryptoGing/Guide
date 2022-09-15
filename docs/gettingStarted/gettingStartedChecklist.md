@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Developer Portal
+title: Checklist
 parent: "Getting Started"
 nav_order: 2
 ---
