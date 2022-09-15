@@ -5,6 +5,9 @@ parent: "Getting Started"
 nav_order: 2
 ---
 
+# Getting Started Checklist
+{: .no_toc }
+
 1. Download the Pi App and Pi Browser
 2. Register for an account and become a Pioneer
 3. Register Project within the Developer Portal
