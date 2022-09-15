@@ -5,7 +5,16 @@ parent: "Getting Started"
 nav_order: 3
 ---
 
-## Pi Browser Introduction
+# Pi Browser Introduction
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ### What is it
 The Pi Browser provides a web experience in a decentralized world. In addition to supporting any Web2.0 applications, the Pi Browser also enables people to browse, interact and transact in decentralized applications — applications that integrate with blockchain technology — for a seamless and friendly user experience. 
