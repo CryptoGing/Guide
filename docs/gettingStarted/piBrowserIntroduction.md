@@ -2,7 +2,7 @@
 layout: default
 title: Pi Browser Introduction
 parent: "Getting Started"
-nav_order: 1
+nav_order: 2
 ---
 
 ## Pi Browser Introduction

@@ -37,7 +37,7 @@ Developers with Android phones that don't have access to the Google Play Store c
 
 There are two approaches to onboarding.
 
-The first option is to use this guide and move through its various categories. It will cover getting set up all the way through to processing payments. Head over to the [Getting Started](../../gettingStarted) category and start with the Pi Browser Introduction.
+The first option is to use this guide and move through its various categories. It will cover getting set up all the way through to processing payments. Head over to the <a href="../../gettingStarted">Getting Started</a> category and start with the Pi Browser Introduction.
 
 If you are looking for a less structured process, the second option is to go to our [GitHub Repository](https://github.com/pi-apps/pi-platform-docs) and jump right into integrations. We advise against the second option because while it's straightforward to integrate, you will miss out on learning the unique benefits and features that Pi has for developers.
 

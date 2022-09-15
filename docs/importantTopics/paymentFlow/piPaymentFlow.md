@@ -35,7 +35,7 @@ After a payment is created, it goes through 3 major phases:
 ## Payment Flow Diagram
 The diagram below outlines the steps involved in a Pioneer to App payment.
 
-<img title="Pi Payment Flow" alt="Pi Payment Flow Diagram" src="../../../../assets/images/wBackground_pi_payment_flow_diagram.png">
+<img title="Pi Payment Flow" alt="Pi Payment Flow Diagram" src="/assets/images/wBackground_pi_payment_flow_diagram.png">
 
 ## Payment Flow Steps
 
@@ -69,4 +69,3 @@ After the blockchain transaction is submitted, the payment flow will not close. 
 
 ## App Payment Security
 Do not complete any payment within your app until the payment has completed and had a paymentDTO returned from the /complete API endpoint of the Server-Side Completion. A malicious user can run a hacked version of the SDK to pretend they have made a payment without making the actual payment. Therefore, if the API call to `/payment/{ transaction_id }/complete` returns a non-200 error code, do not mark the payment complete or paid with your app.
-

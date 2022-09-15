@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Access Token
 {: .no_toc }
-The access token is a long random string that uniquely identifies a Pioneer within an app. The Access Token is the identifier that Applications use to communicate with the Pi Servers about a Pioneer. The Access Token is designed to protect the Pioneer’s information from unapproved access. This page assumes that you've read the [Pi SDK](../../gettingStarted/PiAppPlatform/piAppPlatformSDK) page and have an understanding of how the Pi SDK and the Authenticate function work.
+The access token is a long random string that uniquely identifies a Pioneer within an app. The Access Token is the identifier that Applications use to communicate with the Pi Servers about a Pioneer. The Access Token is designed to protect the Pioneer’s information from unapproved access. This page assumes that you've read the <a href="../../gettingStarted/PiAppPlatform/piAppPlatformSDK">Pi SDK</a> page and have an understanding of how the Pi SDK and the Authenticate function work.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -21,7 +21,7 @@ The Access Token is received by calling the Authenticate function of the Pi SDK.
 
 The Authenticate Function call will return an Access Token as a promise object in the format below:
 {% highlight javascript %}
-Object{
+AuthResults{
   accessToken: string,
   user: {
     uid: string }}
@@ -34,7 +34,7 @@ The Access Token is a dynamic string and will change at preset time intervals. A
 The `uid` is a static string which uniquely identifies a Pioneer to an app. The `uid` that comes with the Authenticate function is unverified and should be treated as not valid. Only the `uid` received from the `/me` endpoint of the Pi Platform APIs should be considered valid.
 
 ### Verifying the Access Token
-Once the App has the Access token in its backend, then it should call the `/me` endpoint of the Platform APIs. This call will return the PioneerDTO with the `uid` and the `username`. If the access token is not valid for any reason, the call will return a 401 error.
+Once the App has the Access token in its backend, then it should call the `/me` endpoint of the Platform APIs. This call will return the UserDTO with the `uid` and the `username`. If the access token is not valid for any reason, the call will return a 401 error.
 
 The first step to call the Pi API is to create the Authorization Header that is needed. A Bearer header is combined with the Access Token to validate the call.
 
@@ -49,7 +49,7 @@ const header = { headers: { authorization: "Bearer " + PioneerAccessToken }};
 axios.get("https://api.minepi.com/v2/me", header);
 {% endhighlight %}
 
-The `/me` endpoint will return either the PioneerDTO, if the Access Token was valid, or a 401 Error Code if the token was fake or invalid. The returned PioneerDTO will look as follows:
+The `/me` endpoint will return either the UserDTO, if the Access Token was valid, or a 401 Error Code if the token was fake or invalid. The returned UserDTO will look as follows:
 
 {% highlight javascript %}
 Object{
@@ -68,3 +68,4 @@ Using the verified `uid` which is obtained from the `/me` Pi Platform API endpoi
 Everytime a Pioneer visits the app, the Pi Platform SDK Authenticate function will be called. This will return the Access Token, which needs to be verified. Once that token is verified the `uid` can be used to locate the Pioneer's record within the app's Database, which enables the app to personalize the Pioneer’s experience.
 
 For example, you have an app that offers videos that require purchase. Upon visiting the site within the Pi Browser, the Pioneer is first presented with a loading screen. Within a few seconds, when the app has received and verified the access token, then the homepage can load. Using the `uid,` the app now displays to the Pioneer all of the videos that they've purchased in the past. Included the `uid` is the `username` that can be displayed in a custom header on the app homepage so the Pioneer knows they are accessing their account. In addition, the app could use the Pioneer’s purchase history to recommend new videos. This is all done without the Pioneer signing in or remembering any passwords, making for a seamless user experience. 
+

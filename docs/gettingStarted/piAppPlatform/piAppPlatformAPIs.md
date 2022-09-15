@@ -32,12 +32,12 @@ Authorization: Bearer <Pioneer's access token>
 
 Example Code:
 {% highlight javascript %}
-const headers = { headers: { authorization: "Bearer " + PioneerAccessToken }};
+const headers = { headers: { authorization: "Bearer " + { PioneerAccessToken } }};
 axios.get("https://api.minepi.com/v2/me", headers);
 {% endhighlight %}
 
 #### Server API Key (Authorization Key)
-For various reasons, some API calls must be made from the backend or server of your app. To obtain an authorization key for API requests, please see the section of this guide on the [Developer Portal](../../devPortal).
+For various reasons, some API calls must be made from the backend or server of your app. To obtain an authorization key for API requests, please see the section of this guide on the <a href="../../devPortal">Developer Portal</a>.
 
 Those endpoints can be accessed using the following Authorization header:
 {% highlight html %}
@@ -62,12 +62,12 @@ GET api.minepi.com/v2/me
 
 Authorization method: Access token
 <br>
-Response type: PioneerDTO
+Response type: UserDTO
 
 The request will fail (401 HTTP error code) if the token has been tampered with, as a tampered Access token would not belong to any Pioneer.
 
 #### /payments
-Payments are covered in greater detail in the [Pi Payment Flow](../../../importantTopics/paymentFlow) section of this guide. If this is your first implementation of a Pi payment, it's highly recommended to read that section in addition. It covers how Pi Payments are initiated and completed. This section only covers the API calls.
+Payments are covered in greater detail in the <a href="../../../importantTopics/paymentFlow">Pi Payment Flow</a> section of this guide. If this is your first implementation of a Pi payment, it's highly recommended to read that section in addition. It covers how Pi Payments are initiated and completed. This section only covers the API calls.
 
 The APIs for payments all have the base route `/payments`. It is important to not create payments using the Platform API. Use the client-side Javascript SDK for this purpose.
 
@@ -80,7 +80,7 @@ Authorization method: Server API Key <br />
 Response type: PaymentDTO
 
 ##### Approve a Payment:<br />
-This marks a payment as approved within the Pi Server, enabling the Pioneer to approve and submit the transaction to the blockchain. The `paymentID` is obtained as a argument of the callback function `onReadyForServerApproval` from the Pi App Platform SDK. Read more on that function on the [Pi App Platform SDK](../../importantTopics/mainnetVsTestnet") page. The `paymentID` should be passed from your client side to your server side for this call.
+This marks a payment as approved within the Pi Server, enabling the Pioneer to approve and submit the transaction to the blockchain. The `paymentID` is obtained as a argument of the callback function `onReadyForServerApproval` from the Pi App Platform SDK. Read more on that function on the <a href="../../importantTopics/mainnetVsTestnet">Pi App Platform SDK</a> page. The `paymentID` should be passed from your client side to your server side for this call.
 
 Once the `paymentID` is on your server side then call the `/approve` endpoint using the `paymentID` to identify the payment:
 {% highlight html %}
@@ -126,16 +126,16 @@ console.log(paymentDTO)
 {% endhighlight %}
 
 ### Resource Types
-There are two resources currently returned by the Pi App Platform API: the `UserDTO` and the `PaymentDTO`. In the future, there may be more.
+There are two resources currently returned by the Pi App Platform API: ‘AuthResults’’ and the `PaymentDTO`. In the future, there may be more.
 
-#### Pioneer DTO
+####UserDTO
 {% highlight javascript %}
 {
   "uid": string, // An app-specific Pioneer identifier
   "username": string, // The Pioneer's Pi username. Requires the `username` scope.
 }
 {% endhighlight %}
-#### Payment DTO
+#### PaymentDTO
 {% highlight javascript %}
 {
   // Payment data:
