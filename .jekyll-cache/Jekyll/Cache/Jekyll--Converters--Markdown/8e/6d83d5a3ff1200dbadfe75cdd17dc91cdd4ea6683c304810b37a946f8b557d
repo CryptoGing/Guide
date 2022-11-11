@@ -1,0 +1,42 @@
+I"7	<h1 class="no_toc" id="steps-to-build-on-pi">Steps to Build on Pi</h1>
+
+<h2 id="initial-setup-and-pi-sandbox-launch">Initial Setup and Pi Sandbox Launch</h2>
+<ol>
+  <li><strong>Register your App</strong>
+    <ul>
+      <li>Enter your App Name, App Description, and App’s Network</li>
+      <li>Once registered the network an app points to cannot be changed</li>
+      <li>See our <a href="../../importantTopics/mainnetVsTestnet">Pi Mainnet vs Testnet</a> Page for more on selecting a network</li>
+      <li><em>Developer Portal App Checklist Step - 1</em></li>
+    </ul>
+  </li>
+  <li><strong>Configure App Hosting</strong>
+    <ul>
+      <li>Either setup hosting through a third-party provider or host it on Pi Network’s Pi Engine.</li>
+      <li>Note: Hosting on Pi Network is coming soon</li>
+      <li><em>Developer Portal App Checklist Step - 2</em></li>
+    </ul>
+  </li>
+  <li><strong>Read Documentation and Review Demo App</strong>
+    <ul>
+      <li>Note: If you don’t want to start from scratch or if you are part of a hackathon, we recommend using our <a href="../../demoApp">Pi Demo App</a> as a boilerplate to get setup quickly</li>
+      <li>Visit <a href="pi://demo.pi">pi://demo.pi</a> within the Pi Browser to interact with the Demo App</li>
+      <li><em>Developer Portal App Checklist Step - 4</em></li>
+    </ul>
+  </li>
+  <li><strong>Configure your App’s Development URL</strong>
+    <ul>
+      <li>Enter the URL that the app will be accessed from on your local host, while running in the sandbox mode.</li>
+      <li>Note: This is not user facing nor accessable on the web</li>
+      <li><em>Developer Portal App Checklist Step - 5</em></li>
+    </ul>
+  </li>
+  <li><strong>Run your development App in the sandbox</strong>
+    <ul>
+      <li>First, set sandbox flag to “true” within your FE app code. Copy URL from dev portal and paste in your desktop browser. Enter the provided code in the utilities page of your Pi Mining App, found in the hamburger menu on the top left. Your browser will now be in sandbox mode and connected to your pi account</li>
+      <li>If using the Pi Demo App using <code class="language-plaintext highlighter-rouge">yarn start</code> on the frontend will automatically launch the app in the Pi Sandbox</li>
+      <li><em>Developer Portal App Checklist Step - 6</em></li>
+    </ul>
+  </li>
+</ol>
+:ET

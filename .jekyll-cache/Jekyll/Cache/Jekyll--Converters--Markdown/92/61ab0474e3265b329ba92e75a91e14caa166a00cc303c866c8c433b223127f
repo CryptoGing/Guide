@@ -1,0 +1,36 @@
+I"�<h1 class="no_toc" id="pi-browser-introduction">Pi Browser Introduction</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#what-is-it" id="markdown-toc-what-is-it">What is it</a></li>
+  <li><a href="#technical-considerations" id="markdown-toc-technical-considerations">Technical Considerations</a>    <ol>
+      <li><a href="#cookies-or-session-tokens" id="markdown-toc-cookies-or-session-tokens">Cookies or Session Tokens</a>        <ol>
+          <li><a href="#ios" id="markdown-toc-ios">iOS</a></li>
+          <li><a href="#android" id="markdown-toc-android">Android</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="what-is-it">What is it</h3>
+<p>The Pi Browser provides a web experience in a decentralized world. In addition to supporting any Web2.0 applications, the Pi Browser also enables people to browse, interact and transact in decentralized applications — applications that integrate with blockchain technology — for a seamless and friendly user experience.</p>
+
+<p>The Pi Browser is an open Pi Apps platform because it enables developers to test and deploy the applications that integrate with Pi, Pi Wallet and other elements of the Pi tech stack. Developers can integrate the Pi App Platform SDK with the Testnet and conduct Test-Pi transactions for Pi Apps that allow developers to test their Pi apps on Testnet from their own domains. After successful tests, developers can transition to the Mainnet (Mainnet SDK will be released soon.) Additionally, the Pi Browser will have a directory of selected Pi Apps and its own DNS system to support a whole new class of .pi domains. Developers are able to host their apps on non-Pi domains if they choose.</p>
+
+<p>It is the only browser that can support Pi applications at the moment. As a general-purpose browser tool, however, it is still primitive. That is, the browser is currently in its beta version, and more changes and features are being developed. The Pi Browser now supports interactions with Apps that are the Pi Mainnet Blockchain.</p>
+
+<h3 id="technical-considerations">Technical Considerations</h3>
+<p>The Pi Browser utilizes iFrames to display App within the browser. This setup allows apps to be displayed on a wide array of devices without needing to create display logic for different devices or operating systems.</p>
+
+<h4 id="cookies-or-session-tokens">Cookies or Session Tokens</h4>
+<h5 id="ios">iOS</h5>
+<p>Because iFrames are used, all apps displayed within Pi Browser will be considered Third Party Applications by the device. iOS natively disables cookies from all Third Party Applications by default, unless the device owner chooses to enable the cookies. Developers should expect that most Pioneers will have the cookies disabled. The Core Team is actively working on an alternative method for developers to have sessions.</p>
+
+<h5 id="android">Android</h5>
+<p>Cookies or sessions can be utilized as expected.</p>
+
+:ET

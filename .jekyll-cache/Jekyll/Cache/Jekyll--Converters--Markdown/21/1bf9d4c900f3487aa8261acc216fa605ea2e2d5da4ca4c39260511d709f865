@@ -1,0 +1,70 @@
+I"Ú<h1 class="no_toc" id="pi-payments">Pi Payments</h1>
+<p class="fs-6 fw-300">The platform API allows you to read and write data to the Pi Servers related to your app deployed on the Pi Apps platform and Pioneers using your app.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#what-are-pi-payments" id="markdown-toc-what-are-pi-payments">What are Pi Payments</a></li>
+  <li><a href="#payment-flow-diagram" id="markdown-toc-payment-flow-diagram">Payment Flow Diagram</a></li>
+  <li><a href="#payment-flow-steps" id="markdown-toc-payment-flow-steps">Payment Flow Steps</a>    <ol>
+      <li><a href="#phase-i---payment-creation-and-server-side-approval" id="markdown-toc-phase-i---payment-creation-and-server-side-approval">Phase I - Payment creation and Server-Side Approval</a></li>
+      <li><a href="#phase-ii---pioneer-interaction-and-blockchain-transaction" id="markdown-toc-phase-ii---pioneer-interaction-and-blockchain-transaction">Phase II - Pioneer interaction and blockchain transaction</a></li>
+      <li><a href="#phase-iii---server-side-completion" id="markdown-toc-phase-iii---server-side-completion">Phase III - Server-Side Completion</a></li>
+    </ol>
+  </li>
+  <li><a href="#app-payment-security" id="markdown-toc-app-payment-security">App Payment Security</a></li>
+</ol>
+
+<hr />
+
+<h2 id="what-are-pi-payments">What are Pi Payments</h2>
+<p>Payments are wrappers around blockchain transactions, which enable your app, the Pi blockchain, and the Pi Servers to be all synchronized when the Pioneer submits a blockchain transaction to pay for something in your app.</p>
+
+<p>They abstract away the technicalities involved when interacting with the Pi blockchain and enable you, the developer of the app, to have full confidence that the Pioneer has actually made the transaction.</p>
+
+<p>After a payment is created, it goes through 3 major phases:</p>
+
+<ol>
+<li> Payment creation and Server-Side Approval </li>
+<li> Pioneer interaction and blockchain transaction </li>
+<li> Server-Side Completion </li>
+</ol>
+
+<h2 id="payment-flow-diagram">Payment Flow Diagram</h2>
+<p>The diagram below outlines the steps involved in a Pioneer to App payment.</p>
+
+<p><img title="Developer Payment Flow Diagram" alt="Developer portal project page screenshot showing the sandbox URL" src="../../../../assets/images/transparentBackground_pi_payment_flow_diagram.png" style="width:900px;height:500px;" /></p>
+
+<h2 id="payment-flow-steps">Payment Flow Steps</h2>
+
+<h3 id="phase-i---payment-creation-and-server-side-approval">Phase I - Payment creation and Server-Side Approval</h3>
+<ul>
+<li>1. createPayment: Your app's frontend creates the payment. The Payment Flow UI opens, but cannot be interacted with until the payment is approved by your server. </li>
+<li>2. onReadyForServerApproval: The JS SDK has obtained the payment identifier (PaymentID) and is passing it to your app for Server-Side approval. </li>
+<ul><li> Your app's frontend sends the PaymentID to your app's server. This implementation is your responsibility.</li></ul>
+<li>3. Server-Side Approval: Your app's server approves the payment with Pi Servers through the /approve API call. This enables the Pioneer to submit the blockchain transaction (as explained in Phase II below).</li>
+</ul>
+
+<h3 id="phase-ii---pioneer-interaction-and-blockchain-transaction">Phase II - Pioneer interaction and blockchain transaction</h3>
+<p>Steps 4a and 4b on the Pi Payment Flow Diagram.</p>
+
+<p>At this stage, the payment dialog becomes interactive and enables the Pioneer to (4a) confirm the transaction, sign it, and submit it to the Pi blockchain and (4b) the blockchain completes the transaction and returns the transaction information to the Pi App Platform.</p>
+
+<p>You do not have anything to do at this stage; everything is handled by the Pi Apps Platform and the Pi Wallet.</p>
+
+<p>After the blockchain transaction is submitted, the payment flow will not close. You need to acknowledge the payment through Server-Side completion before your app is visible to the Pioneer again (as explained in Phase III below).</p>
+
+<h3 id="phase-iii---server-side-completion">Phase III - Server-Side Completion</h3>
+<ul>
+<li>5. onReadyForServerCompletion: The Pi Servers will submit the Pioneer-approved transaction to the Blockchain. Then the Pi SDK passes the blockchain transaction identifier (TxID) to your app's frontend through the callback function onReadyForServerCompletion. You need this value for the Server-Side Completion flow which uses the TxID in the Pi API call.</li>
+<ul>
+<li> Your app's frontend sends the TxID to your app's server. This implementation is your responsibility.</li>
+</ul>
+<li>6. Server-Side Completion: Your app's server acknowledges the payment with the Pi Servers through the /complete API endpoint. This enables you to check whether the blockchain transaction has actually happened, and to let the Pi Server know that you're aware of it.</li>
+<li>7. The payment flow closes. Your app is now visible to the Pioneer again. Your app's server and your app's frontend can exchange data, and update the app interface to show a confirmation screen to the Pioneer. </li>
+<ul><li> This implementation is your responsibility.</li></ul>
+</ul>
+
+<h2 id="app-payment-security">App Payment Security</h2>
+<p>Do not complete any payment within your app until the payment has completed and had a paymentDTO returned from the /complete API endpoint of the Server-Side Completion. A malicious user can run a hacked version of the SDK to pretend they have made a payment without making the actual payment. Therefore, if the API call to <code class="language-plaintext highlighter-rouge">/payment/{ transaction_id }/complete</code> returns a non-200 error code, do not mark the payment complete or paid with your app.</p>
+:ET

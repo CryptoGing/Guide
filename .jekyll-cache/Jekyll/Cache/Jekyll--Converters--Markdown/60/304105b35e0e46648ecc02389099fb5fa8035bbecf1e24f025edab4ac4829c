@@ -1,0 +1,48 @@
+I"É	<h1 class="no_toc" id="pi-bakery-demo-app">Pi Bakery Demo App</h1>
+
+<p class="fs-6 fw-300">The Pi Core Team has released a demo application which shows the integration of many of the features described throughout this guide. Developers are encouraged to clone this application and use it as a base to being your Pi application.</p>
+
+<p>To interact with a live version of the demo app head to <a href="pi://demo.pi">pi://demo.pi</a> within the Pi Browser.</p>
+
+<h1 id="getting-started">Getting Started</h1>
+
+<p>Prior to setup you will need to register for a Pi account if you have not already done so. Head to <a href="../../StepsToGetStarted/createAnAccount/">Creating a Pi Account</a> for the steps and links to complete this process.</p>
+
+<p><br /></p>
+
+<p>The instructions and the code for the demo application can be found in this <a href="https://github.com/pi-apps/demo">Github repository</a>.</p>
+<ul>
+  <li><a href="https://github.com/pi-apps/demo">Development</a> is the initial setup and local development instance</li>
+  <li><a href="https://github.com/pi-apps/demo">Deployment</a> is the steps to deploy the app to a server</li>
+</ul>
+
+<p><br /></p>
+
+<p>If you have questions or want to learn more about the implemenations within the demo app read the <a href="https://github.com/pi-apps/demo/blob/main/FLOWS.md">Flows</a> document which has a breakdown of how each step was implemented.</p>
+
+<p><br /></p>
+
+<p>If following the <a href="../checklists">Steps to Build on Pi</a> or the Developer Portal Checklist:</p>
+<ul>
+  <li>Initial Setup and Development
+    <ul>
+      <li>Steps to Build on Pi - <a href="../StepsToGetStarted/createAnAccount">Creating a Pi Account</a> and <a href="../StepsToGetStarted/developmentApp">Initial Development</a></li>
+      <li>Developer Portal Checklist - Completing steps 1 thru 5</li>
+    </ul>
+  </li>
+  <li>Once the Demo App is started in development and a Pi Sandbox payment has been processed
+    <ul>
+      <li>Steps to Build on Pi - Completed thru Initial Development</li>
+      <li>Developer Portal Checklist - Completed thru step 6</li>
+    </ul>
+  </li>
+  <li>Deploying the app to a server
+    <ul>
+      <li>Steps to Build on Pi - <a href="../StepsToGetStarted/deploymemtApp">Testnet Deployment</a></li>
+      <li>Developer Portal Checklist - Completing Steps 7 thru 9</li>
+    </ul>
+  </li>
+  <li>To Deploy a Mainnet App see the <a href="../StepsToGetStarted/mainnetApp">Launch on Mainnet</a> page which details
+steps for this process</li>
+</ul>
+:ET

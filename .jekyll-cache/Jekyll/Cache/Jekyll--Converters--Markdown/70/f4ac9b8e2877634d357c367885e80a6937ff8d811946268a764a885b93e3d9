@@ -1,0 +1,45 @@
+I"¯<h1 class="no_toc" id="steps-to-build-on-pi">Steps to Build on Pi</h1>
+
+<h2 id="launching-on-pi-mainnet">Launching on Pi Mainnet</h2>
+
+<ol>
+  <li>Obtain a Mainnet Wallet
+    <ul>
+      <li>Pi KYC is required</li>
+      <li>Slots to apply are currently sent on an invitation basis</li>
+      <li>The wallet address of the Pioneer who registers the Developer Portal project will be used for all mainnet transfers associated with the app.</li>
+    </ul>
+  </li>
+  <li>Create a Developer Portal Project directed at the Pi Mainnet
+    <ul>
+      <li>Follow the previous steps to register an App and set the parameters</li>
+      <li>When registering your app in the Developer Portal select Pi Mainnet as the Appâ€™s Network</li>
+      <li>You cannot change a previously registered project to point to a different network than selected at the time of registration</li>
+    </ul>
+  </li>
+  <li>Verify App URL
+    <ul>
+      <li>URL cannot match the URL that is verified of another Developer Portal Project</li>
+      <li>If adjusting the URL of another Developer Portal Project then you must verify a new URL on the other project prior to reuse of that URL on another project.</li>
+    </ul>
+  </li>
+  <li>Generate API Key
+    <ul>
+      <li>API calls will fail if the API Key from a Testnet application is not updated</li>
+      <li>This will cause Payment failures</li>
+    </ul>
+  </li>
+  <li>Launch App and complete a Pi payment
+    <ul>
+      <li>It is recommended to have deployed a testnet app prior to launching on Mainnet to ensure payments function as intended</li>
+      <li>All Mainnet payments use Pi</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="special-considerations">Special Considerations</h2>
+<ul>
+  <li>To process payments successfully on Pi Mainnet a wallet that has received a migration is required</li>
+  <li>Developers must maintain compliance with the <a href="https://socialchain.app/developer_terms">Developer Terms of Service</a> at all times</li>
+</ul>
+:ET

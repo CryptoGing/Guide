@@ -1,0 +1,43 @@
+I"�<h1 class="no_toc" id="steps-to-build-on-pi">Steps to Build on Pi</h1>
+
+<h2 id="registering-for-an-account-and-initial-setup">Registering for an Account and Initial Setup</h2>
+<p>The following steps are required before launching an app in the Pi Ecosystem. Once these steps are completed a developer can choose their development path.</p>
+
+<ol>
+  <li><strong>Download the Pi App</strong>
+    <ul>
+      <li><a href="https://play.google.com/store/apps/details?id=com.blockchainvault">Google Play Store Link</a></li>
+      <li><a href="https://itunes.apple.com/us/app/pi-network/id1445472541">Apple App Store Link</a></li>
+    </ul>
+  </li>
+  <li>Register for an account
+    <ul>
+      <li>Use a friend’s invitation code to get 1 Pi</li>
+    </ul>
+  </li>
+  <li><strong>Download and Sign into the Pi Browser</strong>
+    <ul>
+      <li>Watch our <a href="https://www.youtube.com/watch?v=q8R_-R8Wkls">video tutorial</a> to learn how to complete this</li>
+      <li><a href="https://play.google.com/store/apps/details?id=pi.browser">Google Play Store Link</a></li>
+      <li><a href="https://apps.apple.com/us/app/pi-browser/id1560911608">Apple App Store Link</a></li>
+    </ul>
+  </li>
+  <li><strong>Verify Email Address</strong>
+    <ul>
+      <li>Enter the Pi Mining App and click on the ‘☰’ in the top left corner.</li>
+      <li>Select the Profile option and confirm email address.</li>
+    </ul>
+  </li>
+  <li><strong>Create a Pi Wallet</strong>
+    <ul>
+      <li>Create a Pi Wallet by heading to <a href="pi://wallet.pi">pi://wallet.pi</a> within the Pi Browser.</li>
+      <li>You will be asked to confirm access by opening the wallet you created on the Developer Portal App Checklist.</li>
+      <li><em>Developer Portal App Checklist Step - 3</em></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="developer-portal-app-checklist">Developer Portal App Checklist</h2>
+<p>The Pi Developer Portal is an application accesable within the Pi Browser which is home to all things building on Pi. For a more detailed explination see the <a href="../../GettingStarted/devPortal.md">Developer Portal</a> page of this guide, or visit the <a href="../../GettingStarted/devPortal/#app-checklist">App Checklist</a></p>
+
+:ET

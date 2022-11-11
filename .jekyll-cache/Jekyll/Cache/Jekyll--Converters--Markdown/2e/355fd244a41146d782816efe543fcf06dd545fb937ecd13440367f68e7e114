@@ -1,0 +1,156 @@
+I"�<h1 class="no_toc" id="getting-started-checklist">Getting Started Checklist</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#registering-for-an-account-and-initial-setup" id="markdown-toc-registering-for-an-account-and-initial-setup">Registering for an Account and Initial Setup</a></li>
+  <li><a href="#initial-setup-and-pi-sandbox-launch" id="markdown-toc-initial-setup-and-pi-sandbox-launch">Initial Setup and Pi Sandbox Launch</a></li>
+  <li><a href="#deploy-app-on-pi-testnet" id="markdown-toc-deploy-app-on-pi-testnet">Deploy App on Pi Testnet</a></li>
+  <li><a href="#launching-on-pi-mainnet" id="markdown-toc-launching-on-pi-mainnet">Launching on Pi Mainnet</a></li>
+  <li><a href="#special-considerations" id="markdown-toc-special-considerations">Special Considerations</a></li>
+</ol>
+
+<h2 id="registering-for-an-account-and-initial-setup">Registering for an Account and Initial Setup</h2>
+<p>The following steps are required before launching an app in the Pi Ecosystem. Once these steps are completed a developer can choose their development path.</p>
+
+<ol>
+  <li><strong>Download the Pi App</strong>
+    <ul>
+      <li><a href="https://play.google.com/store/apps/details?id=com.blockchainvault">Google Play Store Link</a></li>
+      <li><a href="https://itunes.apple.com/us/app/pi-network/id1445472541">Apple App Store Link</a></li>
+    </ul>
+  </li>
+  <li>Register for an account
+    <ul>
+      <li>Use a friend’s invitation code to get 1 Pi</li>
+    </ul>
+  </li>
+  <li><strong>Download and Sign into the Pi Browser</strong>
+    <ul>
+      <li>Watch our <a href="https://www.youtube.com/watch?v=q8R_-R8Wkls">video tutorial</a> to learn how to complete this</li>
+      <li><a href="https://play.google.com/store/apps/details?id=pi.browser">Google Play Store Link</a></li>
+      <li><a href="https://apps.apple.com/us/app/pi-browser/id1560911608">Apple App Store Link</a></li>
+    </ul>
+  </li>
+  <li><strong>Verify Email Address</strong>
+    <ul>
+      <li>Enter the Pi Mining App and click on the ‘☰’ in the top left corner.</li>
+      <li>Select the Profile option and confirm email address.</li>
+    </ul>
+  </li>
+  <li><strong>Create a Pi Wallet</strong>
+    <ul>
+      <li>Create a Pi Wallet by heading to <a href="pi://wallet.pi">pi://wallet.pi</a> within the Pi Browser.</li>
+      <li>You will be asked to confirm access by opening the wallet you created on the Developer Portal App Checklist.</li>
+      <li><em>Developer Portal App Checklist Step - 3</em></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="initial-setup-and-pi-sandbox-launch">Initial Setup and Pi Sandbox Launch</h2>
+<ol>
+  <li><strong>Register your App</strong>
+    <ul>
+      <li>Enter your App Name, App Description, and App’s Network</li>
+      <li>Once registered the network an app points to cannot be changed</li>
+      <li>See our <a href="../../importantTopics/mainnetVsTestnet">Pi Mainnet vs Testnet</a> Page for more on selecting a network</li>
+      <li><em>Developer Portal App Checklist Step - 1</em></li>
+    </ul>
+  </li>
+  <li><strong>Configure App Hosting</strong>
+    <ul>
+      <li>Either setup hosting through a third-party provider or host it on Pi Network’s Pi Engine.</li>
+      <li>Note: Hosting on Pi Network is coming soon</li>
+      <li><em>Developer Portal App Checklist Step - 2</em></li>
+    </ul>
+  </li>
+  <li><strong>Read Documentation and Review Demo App</strong>
+    <ul>
+      <li>Note: If you don’t want to start from scratch or if you are part of a hackathon, we recommend using our <a href="../../demoApp">Pi Demo App</a> as a boilerplate to get setup quickly</li>
+      <li>Visit <a href="pi://demo.pi">pi://demo.pi</a> within the Pi Browser to interact with the Demo App</li>
+      <li><em>Developer Portal App Checklist Step - 4</em></li>
+    </ul>
+  </li>
+  <li><strong>Configure your App’s Development URL</strong>
+    <ul>
+      <li>Enter the URL that the app will be accessed from on your local host, while running in the sandbox mode.</li>
+      <li>Note: This is not user facing nor accessable on the web</li>
+      <li><em>Developer Portal App Checklist Step - 5</em></li>
+    </ul>
+  </li>
+  <li><strong>Run your development App in the sandbox</strong>
+    <ul>
+      <li>First, set sandbox flag to “true” within your FE app code. Copy URL from dev portal and paste in your desktop browser. Enter the provided code in the utilities page of your Pi Mining App, found in the hamburger menu on the top left. Your browser will now be in sandbox mode and connected to your pi account</li>
+      <li>If using the Pi Demo App using <code class="language-plaintext highlighter-rouge">yarn start</code> on the frontend will automatically launch the app in the Pi Sandbox</li>
+      <li><em>Developer Portal App Checklist Step - 6</em></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="deploy-app-on-pi-testnet">Deploy App on Pi Testnet</h2>
+<ol>
+  <li><strong>Deploy your app in a production environment</strong>
+    <ul>
+      <li>Enter the desired Production URL. This is the URL the app will be accessible from within the pi browser</li>
+      <li><em>Developer Portal App Checklist Step - 7</em></li>
+    </ul>
+  </li>
+  <li><strong>Validate Domain Ownership</strong>
+    <ul>
+      <li>Prove ownership of your domain by adding the provided validation key to a .txt file named ‘validation-key.txt’ and place it on your hosting domain. Click on the step to get your validation key and URL to place the file</li>
+      <li>If using the Pi Demo App adding the validation string to your environment variables will automatically produce the needed page on your App for validation</li>
+      <li><em>Developer Portal App Checklist Step - 8</em></li>
+    </ul>
+  </li>
+  <li><strong>Process a transaction on your app</strong>
+    <ul>
+      <li>Visit the App at the verified URL within the Pi Browser to see and interact with it</li>
+      <li>Have your app process a User-to-App Pi Transaction to confirm you have successfully connected to the Pi Ecosystem</li>
+      <li>Users will be able to see and interact with your testnet application. All testnet payments use test-Pi</li>
+      <li><em>Developer Portal App Checklist Step - 9</em></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="launching-on-pi-mainnet">Launching on Pi Mainnet</h2>
+<ol>
+  <li>Obtain a Mainnet Wallet
+    <ul>
+      <li>Pi KYC is required</li>
+      <li>Slots to apply are currently sent on an invitation basis</li>
+      <li>The wallet address of the Pioneer who registers the Developer Portal project will be used for all mainnet transfers associated with the app.</li>
+    </ul>
+  </li>
+  <li>Create a Developer Portal Project directed at the Pi Mainnet
+    <ul>
+      <li>Follow the previous steps to register an App and set the parameters</li>
+      <li>When registering your app in the Developer Portal select Pi Mainnet as the App’s Network</li>
+      <li>You cannot change a previously registered project to point to a different network than selected at the time of registration</li>
+    </ul>
+  </li>
+  <li>Verify App URL
+    <ul>
+      <li>URL cannot match the URL that is verified of another Developer Portal Project</li>
+      <li>If adjusting the URL of another Developer Portal Project then you must verify a new URL on the other project prior to reuse of that URL on another project.</li>
+    </ul>
+  </li>
+  <li>Generate API Key
+    <ul>
+      <li>API calls will fail if the API Key from a Testnet application is not updated</li>
+      <li>This will cause Payment failures</li>
+    </ul>
+  </li>
+  <li>Launch App and complete a Pi payment
+    <ul>
+      <li>It is recommended to have deployed a testnet app prior to launching on Mainnet to ensure payments function as intended</li>
+      <li>All Mainnet payments use Pi</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="special-considerations">Special Considerations</h2>
+<ul>
+  <li>To process payments successfully on Pi Mainnet a wallet that has received a migration is required</li>
+  <li>Developers must maintain compliance with the <a href="https://socialchain.app/developer_terms">Developer Terms of Service</a> at all times</li>
+</ul>
+:ET

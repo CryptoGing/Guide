@@ -1,0 +1,27 @@
+I"�<h1 class="no_toc" id="steps-to-build-on-pi">Steps to Build on Pi</h1>
+
+<h2 id="deploy-app-on-pi-testnet">Deploy App on Pi Testnet</h2>
+<ol>
+  <li><strong>Deploy your app in a production environment</strong>
+    <ul>
+      <li>Enter the desired Production URL. This is the URL the app will be accessible from within the pi browser</li>
+      <li><em>Developer Portal App Checklist Step - 7</em></li>
+    </ul>
+  </li>
+  <li><strong>Validate Domain Ownership</strong>
+    <ul>
+      <li>Prove ownership of your domain by adding the provided validation key to a .txt file named ‘validation-key.txt’ and place it on your hosting domain. Click on the step to get your validation key and URL to place the file</li>
+      <li>If using the Pi Demo App adding the validation string to your environment variables will automatically produce the needed page on your App for validation</li>
+      <li><em>Developer Portal App Checklist Step - 8</em></li>
+    </ul>
+  </li>
+  <li><strong>Process a transaction on your app</strong>
+    <ul>
+      <li>Visit the App at the verified URL within the Pi Browser to see and interact with it</li>
+      <li>Have your app process a User-to-App Pi Transaction to confirm you have successfully connected to the Pi Ecosystem</li>
+      <li>Users will be able to see and interact with your testnet application. All testnet payments use test-Pi</li>
+      <li><em>Developer Portal App Checklist Step - 9</em></li>
+    </ul>
+  </li>
+</ol>
+:ET
