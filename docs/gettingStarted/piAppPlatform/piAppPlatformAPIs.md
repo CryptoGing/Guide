@@ -2,7 +2,7 @@
 layout: default
 title: Pi App Platform APIs
 parent: "Pi App Platform"
-grand_parent: "Getting Started"
+grand_parent: "Introduction to Pi"
 nav_order: 3
 ---
 # Pi Platform APIs   

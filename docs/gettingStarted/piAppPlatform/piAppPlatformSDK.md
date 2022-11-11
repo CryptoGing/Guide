@@ -2,7 +2,7 @@
 layout: default
 title: Pi App Platform SDK
 parent: "Pi App Platform"
-grand_parent: "Getting Started"
+grand_parent: "Introduction to Pi"
 nav_order: 1
 ---
 
@@ -35,14 +35,14 @@ In the code example below, the first script tag calls the SDK while the second s
 As of August 2022, version 2.0 is the latest.
 
 ### The Sandbox Flag
-If you want to operate the Pi App Platform SDK within a local environment, you can apply an optional tag titled sandbox. You must have configured a development URL in the Developer Portal to use this feature. When testing within the Sandbox, the flag should be set to true.
+If you want to operate the Pi App Platform SDK within a local environment, you can apply an optional tag titled sandbox. You must have configured a Development URL in the Developer Portal to use this feature. When testing within the Sandbox, the flag should be set to true.
 
 {% highlight html %}
 <script src="https://sdk.minepi.com/pi-sdk.js"></script>
 <script> Pi.init({ version: "2.0", sandbox: true }) </script>
 {% endhighlight %}
 
-You should be able to set up your sandbox flag to match your development environment if you're using a framework or a boilerplate that supports it. For example, most good Node boilerplates will set up the value of process.env.NODE_ENV to either "development" or "production", and you could do something like:
+You can set up your sandbox flag to match your development environment if you're using a framework or a boilerplate that supports it. For example, most good Node boilerplates will set up the value of process.env.NODE_ENV to either "development" or "production", and you could do something like:
 
 {% highlight html %}
 <script>
@@ -50,7 +50,7 @@ You should be able to set up your sandbox flag to match your development environ
 </script>
 {% endhighlight %}
 
-This depends on your setup, but running the SDK in sandbox mode will generally happen whenever your app is running in development.
+If you are running your app on a local development environment, you will want to configure your app to run the SDK in sandbox mode.
 
 #### Sandbox URL
 To obtain the URL for your app within the Sandbox, open the Pi Browser and navigate to your app's Developer Portal Page. Scroll to the bottom of the page and look for a section titled "Development URL."

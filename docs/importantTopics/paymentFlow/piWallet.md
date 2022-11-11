@@ -33,7 +33,9 @@ To change between the Pi Mainnet and Pi Testnet, utilize the dropdown menu withi
 Press on the down arrow that is inside the red box of the first image, and select the corresponding blockchain that you wish to interact with as seen on second image:
 
 <br>
-<img title="Pi Wallet Mainnet" alt="Pi Wallet showing the Pi Mainnet is selected" src="../../../../assets/images/mainnetWallet.png" style="width:270px;height:550px;"> <img title="Pi Wallet Network Selection" alt="Pi Wallet showing the dropdown network selection feature" src="../../../../assets/images/mainnet_v_testnet_wallet.png" style="width:270px;height:550px;">
+<img title="Pi Wallet Mainnet" alt="Pi Wallet showing the Pi Mainnet is selected" src="../../../../assets/images/mainnetWallet.png" style="width:300px;height:550px;"> 
+  
+<img title="Pi Wallet Network Selection" alt="Pi Wallet showing the dropdown network selection feature" src="../../../../assets/images/mainnet_v_testnet_wallet.png" style="width:300px;height:550px;">
 
 ## Creating a Pi Wallet
 ### Personal Wallet

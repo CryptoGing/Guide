@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Brainstorm
-parent: "Getting Started"
+parent: "Introduction to Pi"
 nav_order: 4
 ---
 

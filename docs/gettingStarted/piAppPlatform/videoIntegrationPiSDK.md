@@ -2,7 +2,7 @@
 layout: default
 title: Pi SDK Video Integration Tutorial
 parent: "Pi App Platform"
-grand_parent: "Getting Started"
+grand_parent: "Introduction to Pi"
 nav_order: 2
 ---
 

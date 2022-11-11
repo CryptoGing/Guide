@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Pi App Platform"
-parent: "Getting Started"
+parent: "Introduction to Pi"
 has_children: true
 nav_order: 6
 ---

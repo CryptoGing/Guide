@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pi Browser Introduction
-parent: "Getting Started"
+parent: "Introduction to Pi"
 nav_order: 3
 ---
 
@@ -21,7 +21,7 @@ The Pi Browser provides a web experience in a decentralized world. In addition t
 
 The Pi Browser is an open Pi Apps platform because it enables developers to test and deploy the applications that integrate with Pi, Pi Wallet and other elements of the Pi tech stack. Developers can integrate the Pi App Platform SDK with the Testnet and conduct Test-Pi transactions for Pi Apps that allow developers to test their Pi apps on Testnet from their own domains. After successful tests, developers can transition to the Mainnet (Mainnet SDK will be released soon.) Additionally, the Pi Browser will have a directory of selected Pi Apps and its own DNS system to support a whole new class of .pi domains. Developers are able to host their apps on non-Pi domains if they choose.
 
-It is the only browser that can support Pi applications. As a general-purpose browser tool, however, it is still primitive. That is, the browser is currently in its beta version, and more changes and features are being developed. The Pi Browser now supports interactions with Apps that are Pi Mainnet Blockchain. 
+It is the only browser that can support Pi applications at the moment. As a general-purpose browser tool, however, it is still primitive. That is, the browser is currently in its beta version, and more changes and features are being developed. The Pi Browser now supports interactions with Apps that are the Pi Mainnet Blockchain. 
 
 ### Technical Considerations
 The Pi Browser utilizes iFrames to display App within the browser. This setup allows apps to be displayed on a wide array of devices without needing to create display logic for different devices or operating systems.

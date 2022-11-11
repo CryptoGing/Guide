@@ -50,7 +50,7 @@ The diagram below outlines the steps involved in a Pioneer to App payment.
 ### Phase II - Pioneer interaction and blockchain transaction
 Steps 4a and 4b on the Pi Payment Flow Diagram.
 
-At this stage, the payment dialog becomes interactive and enables the Pioneer to (4a) confirm the transaction, sign it, and (4b) submit it to the Pi blockchain.
+At this stage, the payment dialog becomes interactive and enables the Pioneer to (4a) confirm the transaction, sign it, and submit it to the Pi blockchain and (4b) the blockchain completes the transaction and returns the transaction information to the Pi App Platform.
 
 You do not have anything to do at this stage; everything is handled by the Pi Apps Platform and the Pi Wallet.
 
