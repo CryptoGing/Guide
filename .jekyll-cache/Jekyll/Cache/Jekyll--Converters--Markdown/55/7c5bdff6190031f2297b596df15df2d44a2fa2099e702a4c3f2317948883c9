@@ -1,0 +1,47 @@
+I";	<h1 class="no_toc" id="steps-to-build-on-pi">Steps to Build on Pi</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#registering-for-an-account-and-initial-setup" id="markdown-toc-registering-for-an-account-and-initial-setup">Registering for an Account and Initial Setup</a></li>
+  <li><a href="#initial-setup-and-pi-sandbox-launch" id="markdown-toc-initial-setup-and-pi-sandbox-launch">Initial Setup and Pi Sandbox Launch</a></li>
+  <li><a href="#deploy-app-on-pi-testnet" id="markdown-toc-deploy-app-on-pi-testnet">Deploy App on Pi Testnet</a></li>
+  <li><a href="#launching-on-pi-mainnet" id="markdown-toc-launching-on-pi-mainnet">Launching on Pi Mainnet</a></li>
+</ol>
+
+<p>Click on the checklist header to see a more detailed explination of those steps.</p>
+
+<h2 id="registering-for-an-account-and-initial-setup"><a href="../createAnAccount">Registering for an Account and Initial Setup</a></h2>
+<ol>
+  <li><strong>Download the Pi App</strong></li>
+  <li><strong>Register for an account</strong></li>
+  <li><strong>Download and Sign into the Pi Browser</strong></li>
+  <li><strong>Verify Email Address</strong></li>
+  <li><strong>Create a Pi Wallet</strong></li>
+</ol>
+
+<h2 id="initial-setup-and-pi-sandbox-launch"><a href="../developmentApp">Initial Setup and Pi Sandbox Launch</a></h2>
+<ol>
+  <li><strong>Register your App</strong></li>
+  <li><strong>Configure App Hosting</strong></li>
+  <li><strong>Read Documentation and Review Demo App</strong></li>
+  <li><strong>Configure your App’s Development URL</strong></li>
+  <li><strong>Run your development App in the sandbox</strong></li>
+</ol>
+
+<h2 id="deploy-app-on-pi-testnet"><a href="../deploymentApp">Deploy App on Pi Testnet</a></h2>
+<ol>
+  <li><strong>Deploy your app in a production environment</strong></li>
+  <li><strong>Validate Domain Ownership</strong></li>
+  <li><strong>Process a transaction on your app</strong></li>
+</ol>
+
+<h2 id="launching-on-pi-mainnet"><a href="../mainnetApp">Launching on Pi Mainnet</a></h2>
+<ol>
+  <li><strong>Obtain a Mainnet Wallet</strong></li>
+  <li><strong>Create a Developer Portal Project directed at the Pi Mainnet</strong></li>
+  <li><strong>Verify App URL</strong></li>
+  <li><strong>Generate API Key</strong></li>
+  <li><strong>Launch App and complete a Pi payment</strong></li>
+</ol>
+:ET

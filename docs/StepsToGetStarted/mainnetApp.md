@@ -2,7 +2,7 @@
 layout: default
 title: Launch on Mainnet
 parent: "Steps to Build on Pi"
-nav_order: 4
+nav_order: 5
 ---
 
 # Steps to Build on Pi

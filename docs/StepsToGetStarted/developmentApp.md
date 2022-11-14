@@ -2,7 +2,7 @@
 layout: default
 title: Initial Development
 parent: "Steps to Build on Pi"
-nav_order: 2
+nav_order: 3
 ---
 
 # Steps to Build on Pi

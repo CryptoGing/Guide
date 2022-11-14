@@ -2,7 +2,7 @@
 layout: default
 title: Testnet Deployment
 parent: "Steps to Build on Pi"
-nav_order: 3
+nav_order: 4
 ---
 
 # Steps to Build on Pi

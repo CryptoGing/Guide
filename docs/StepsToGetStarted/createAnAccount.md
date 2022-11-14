@@ -2,7 +2,7 @@
 layout: default
 title: Creating Pi Account
 parent: "Steps to Build on Pi"
-nav_order: 1
+nav_order: 2
 ---
 
 # Steps to Build on Pi
